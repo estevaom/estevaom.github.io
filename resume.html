@@ -4,9 +4,16 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-orange.min.css">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-orange.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <style type="text/css">
+    .mdl-card__title {
+      background-color: rgb(3, 169, 244);
+      color: white;
+    }
+    .mdl-card__title-text {
+      margin-left: .4em;
+    }
     .mdl-list__item--three-line .mdl-list__item-primary-content .mdl-list__item-avatar {
       margin: 0.48em 0.4em 1em 0px;
     }
@@ -22,15 +29,6 @@
     .mdl-card {
       min-height: auto;
     }
-    .mdl-card__title {
-      padding: 0.5em;
-    }
-    .mdl-card__supporting-text {
-      padding: 0;
-    }
-    p {
-      margin-left: 40px;
-    }
   </style>
 </head>
 <body>
@@ -40,19 +38,20 @@
         <span class="mdl-layout__title">Estevão Machado</span>
         <div class="mdl-layout-spacer"></div>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="#">Description</a>
-          <a class="mdl-navigation__link" href="#">Objectives</a>
-          <a class="mdl-navigation__link" href="#">Employment</a>
-          <a class="mdl-navigation__link" href="#">Education</a>
-          <a class="mdl-navigation__link" href="#">Contact</a>
+          <a class="mdl-navigation__link" href="#description">Description</a>
+          <a class="mdl-navigation__link" href="#objectives">Objectives</a>
+          <a class="mdl-navigation__link" href="#employment">Employment</a>
+          <a class="mdl-navigation__link" href="#education">Education</a>
+          <a class="mdl-navigation__link" href="#contact">Contact</a>
         </nav>
       </div>
     </header>
     <div class="mdl-layout__drawer"></div>
     <div class="mdl-layout__content">
       <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp" id="description">
           <div class="mdl-card__title">
+            <i class="material-icons">person</i>
             <h2 class="mdl-card__title-text">Description</h2>
           </div>
           <div class="mdl-card__supporting-text mdl-cell--12-col">
@@ -67,8 +66,9 @@
           </div>
         </div>
 
-        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp" id="objectives">
           <div class="mdl-card__title">
+            <i class="material-icons">settings</i>
             <h2 class="mdl-card__title-text">Objectives</h2>
           </div>
           <div class="mdl-card__supporting-text">
@@ -80,8 +80,9 @@
           </div>
         </div>
 
-        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp" id="employment">
           <div class="mdl-card__title">
+            <i class="material-icons">work</i>
             <h2 class="mdl-card__title-text">Employment</h2>
           </div>
           <div class="mdl-card__supporting-text mdl-cell--12-col">
@@ -126,14 +127,15 @@
             </ul>
           </div>
           <div class="mdl-card__actions mdl-card--border">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">DashBid Media (2015 ~ present)</a>
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">XL Solutions (2012 ~ 2015)</a>
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Hands S.A. (2007 ~ 2012)</a>
+            <a href="https://www.dashbid.com/" target="blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">DashBid Media (2015 ~ present)</a>
+            <a href="http://www.xlsol.com/" target="blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">XL Solutions (2012 ~ 2015)</a>
+            <a href="http://www.hands.com.br/" target="blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Hands S.A. (2007 ~ 2012)</a>
           </div>
         </div>
 
-        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp" id="education">
           <div class="mdl-card__title">
+            <i class="material-icons">school</i>
             <h2 class="mdl-card__title-text">Education</h2>
           </div>
           <div class="mdl-card__supporting-text">
@@ -144,8 +146,9 @@
           </div>
         </div>
 
-        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp" id="contact">
           <div class="mdl-card__title">
+            <i class="material-icons">email</i>
             <h2 class="mdl-card__title-text">Contact</h2>
           </div>
           <div class="mdl-card__supporting-text">
