@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-blue.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <style type="text/css">
+    .mdl-layout__title {
+      font-size: 24px;
+      font-weight: 300;
+    }
     .material-icons {
       color: orange;
     }
@@ -21,13 +25,8 @@
     .mdl-card__title-text {
       margin-left: .4em;
     }
-    .mdl-list__item--three-line .mdl-list__item-primary-content .mdl-list__item-avatar {
-      margin: 0.48em 0.4em 1em 0px;
-    }
     .mdl-list__item--three-line {
-      height: 112px;
-      padding-top: 3em;
-      padding-bottom: 4em;
+      height: auto;
     }
     .items-list {
       padding-left: 0;
@@ -47,18 +46,26 @@
     .mdl-layout__header-row .mdl-navigation__link {
       color: orange;
     }
-
     #objectives, #education, #contact {
       margin-bottom: 1em;
       width: 100%;
     }
+    .mdl-list__item--three-line .mdl-list__item-text-body {
+      height: auto;
+      margin-left: 2.4em;
+    }
+    .mdl-list__item--three-line .mdl-list__item-primary-content {
+      height: auto;
+    }
   </style>
 </head>
 <body class="mdl-typography--body-1-force-preferred-font">
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <div class="mdl-layout mdl-js-layout">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout__title">Estevão Machado</span>
+        <span class="mdl-layout__title">
+          Estevão Machado
+        </span>
         <div class="mdl-layout-spacer"></div>
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="#description">Description</a>
@@ -109,9 +116,11 @@
                   <i class="material-icons mdl-list__item-avatar">star</i>
                   <span>Senior Web Developer @ Dashbid ~ New York (remote)</span>
                   <span class="mdl-list__item-text-body">
-                    Developed and tested applications in Ruby on Rails and Node.js/Angular4<br>
-                    Created Treasure Data and RedShift big data services queries to populate our employee's and customer's dashboards<br>
-                    Designed and built APIs to be used by our many customers<br>
+                    <ul>
+                      <li>Developed and tested applications in Ruby on Rails and Node.js/Angular4</li>
+                      <li>Created Treasure Data and RedShift big data services queries to populate our employee's and customer's dashboards</li>
+                      <li>Designed and built APIs to be used by our many customers</li>
+                    </ul>
                   </span>
                 </span>
               </li>
@@ -121,10 +130,12 @@
                   <i class="material-icons mdl-list__item-avatar">star</i>
                   <span>Web Developer @ XL Solutions ~ Rio de Janeiro</span>
                   <span class="mdl-list__item-text-body">
-                    Built e-commerces for the biggest phone carriers in Brazil (Claro, Tim, Vivo, Oi, Porto Seguro)<br>
-                    Often worked in a support role answering tickets, fixing bugs, talking to customers, going to meetings and creating new features on demand for our many projects<br>
-                    Developed and tested APIs and high traffic websites like real time auction, e-learning school and e-commerces<br>
-                    Developed mobile sites to be opened on specific tablets and be used as interface for selling mobile phones in stores<br>
+                    <ul>
+                      <li>Built e-commerces for the biggest phone carriers in Brazil (Claro, Tim, Vivo, Oi, Porto Seguro)</li>
+                      <li>Often worked in a support role answering tickets, fixing bugs, talking to customers, going to meetings and creating new features on demand for our many projects</li>
+                      <li>Developed and tested APIs and high traffic websites like real time auction, e-learning school and e-commerces</li>
+                      <li>Developed mobile sites to be opened on specific tablets and be used as interface for selling mobile phones in stores</li>
+                    </ul>
                   </span>
                 </span>
               </li>
@@ -134,10 +145,12 @@
                   <i class="material-icons mdl-list__item-avatar">star</i>
                   <span>Software Developer @ Hands ~ Rio de Janeiro</span>
                   <span class="mdl-list__item-text-body">
-                    Maintained a crawler in C#, and later in Ruby, that saved websites news to be displayed in a mobile environment<br>
-                    Released the first mobile portal in Brazil the same day the first iPhone was<br>
-                    Planned and executed the codebase migration from C# to Ruby on Rails<br>
-                    Developed mobile websites<br>
+                    <ul>
+                      <li>Maintained a crawler in C#, and later in Ruby, that saved websites news to be displayed in a mobile environment</li>
+                      <li>Released the first mobile portal in Brazil the same day the first iPhone was</li>
+                      <li>Planned and executed the codebase migration from C# to Ruby on Rails</li>
+                      <li>Developed mobile websites</li>
+                    </ul>
                   </span>
                 </span>
               </li>
