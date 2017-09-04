@@ -1,136 +1,165 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <style>
-  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-  body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 15px;
-    background-color: #f5f5f5;
-    height: 10em;
-    font-weight: 400;
-    line-height: 20px;
-    color: rgba(0,0,0,.55);
-  }
-  .top {
-    background-color: rgb(84, 84, 84);
-    color: #f4f4f4;
-    text-align: center;
-    font-size: 2.5em;
-    padding: .5em;
-  }
-  .middle {
-    background: rgba(226,226,226,1);
-    background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(50%, rgba(219,219,219,1)), color-stop(51%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
-    background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
-    background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
-    background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
-    background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
-    text-align: center;
-    font-size: 1.2em;
-    padding: .7em;
-    font-weight: 500;
-    color: #3f4243;
-  }
-  .bottom {
-    padding: 0 2em 1em;
-  }
-  .main {
-    width: 860px;
-    background: white;
-    margin: 0 auto 1em;
-    /*box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 3px rgba(0,0,0,.2);*/
-  }
-  .title {
-    font-weight: 600;
-    color: rgba(0,0,0,.85);
-  }
-  .job-title, .user {
-    font-weight: 400;
-    color: rgba(0,0,0,.85);
-  }
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-orange.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style type="text/css">
+    .mdl-list__item--three-line .mdl-list__item-primary-content .mdl-list__item-avatar {
+      margin: 0.48em 0.4em 1em 0px;
+    }
+    .mdl-list__item--three-line {
+      height: 112px;
+      padding-top: 3em;
+      padding-bottom: 4em;
+    }
+    .mdl-list {
+      padding-top: 0;
+      margin-top: 0;
+    }
+    .mdl-card {
+      min-height: auto;
+    }
+    .mdl-card__title {
+      padding: 0.5em;
+    }
+    .mdl-card__supporting-text {
+      padding: 0;
+    }
+    p {
+      margin-left: 40px;
+    }
   </style>
-  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 </head>
 <body>
-  <div class='main'>
-    <div class='top'>Estevão Machado</div>
-    <div class='middle'>Web Developer</div>
-    <div class='bottom'>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout__title">Estevão Machado</span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="#">Description</a>
+          <a class="mdl-navigation__link" href="#">Objectives</a>
+          <a class="mdl-navigation__link" href="#">Employment</a>
+          <a class="mdl-navigation__link" href="#">Education</a>
+          <a class="mdl-navigation__link" href="#">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer"></div>
+    <div class="mdl-layout__content">
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Description</h2>
+          </div>
+          <div class="mdl-card__supporting-text mdl-cell--12-col">
+            <p>
+              I'm a software developer who likes to write clean and organized code that will be easily read by other people and myself in the future.
+              I read a lot of "Best Practices", "Patterns" and "Refactoring" articles and books.<br>
 
-        <span class='title'>Description:</span><br>
-        <p>
-          I'm a software developer who likes to write clean and organized code that will be easily read by other people and myself in the future.
-          I read a lot of "Best Practices", "Patterns" and "Refactoring" articles and books. <br><br>
+              I have designed, built and tested many high traffic e-commerces, real time auction websites, advertisement platforms, e-learning schools, dating apps, social networks, news crawlers...<br>
 
-          I have designed, built and tested many high traffic e-commerces, real time auction websites, advertisement platforms, e-learning schools, dating apps, social networks, news crawlers...<br><br>
+              I have experience in both backend and frontend web development using Ruby on Rails, Node.js, Javascript, CSS, AngularJS/2/4, MySQL, PostgreSQL, Redis, Memcached, Elasticsearch, Amazon AWS (EC2, Beanstalk, S3, RDS, ElastiCache, DynamoDB (NOSQL)), Rspec, Capybara, Jasmine, Bootstrap and Google Material.<br>
+                </p>
+          </div>
+        </div>
 
-          I have experience in both backend and frontend web development using Ruby on Rails, Node.js, Javascript, CSS, AngularJS/2/4, MySQL, PostgreSQL, Redis, Memcached, Elasticsearch, Amazon AWS (EC2, Beanstalk, S3, RDS, ElastiCache, DynamoDB (NOSQL)), testing stack (Rspec, Capybara, Jasmine..).
-        </p>
+        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Objectives</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <p>
+              Developing and maintaining web apps using Ruby on Rails and other technologies.<br>
+              Being challenged to find solutions to hard problems.<br>
+              Working with other talented and skilled people.<br>
+            </p>
+          </div>
+        </div>
 
-        <span class='title'>Objectives:</span><br>
-        <p>
-          Developing and maintaining web apps using Ruby on Rails and other technologies.
-          Being challenged to find solutions to hard problems.
-          Working with other talented and skilled people.
-        </p>
+        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Employment</h2>
+          </div>
+          <div class="mdl-card__supporting-text mdl-cell--12-col">
+            <ul class="mdl-list">
+              <li class="mdl-list__item mdl-list__item--three-line">
+                <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-avatar">person</i>
+                  <span>Senior Web Developer ~ New York (remote)</span>
+                  <span class="mdl-list__item-text-body">
+                    Developed and tested applications in Ruby on Rails and Node.js/Angular4<br>
+                    Created Treasure Data and RedShift big data services queries to populate our empolyee's and customer's dashboards.<br>
+                    Designed and built APIs to be used by our many customers<br>
+                  </span>
+                </span>
+              </li>
 
-        <span class='title'>Employment:</span><br>
-        <p>
-          <span class='job-title'>Senior Web Developer | New York (remote)<br></span>
-          2015 ~ present<br>
-          DashBid Media<br>
-          <ul>
-            <li>Developed and tested applications in Ruby on Rails and Node.js/Angular4</li>
-            <li>Created Treasure Data and RedShift big data services queries to populate our empolyee's and customer's dashboards.</li>
-            <li>Designed and built APIs to be used by our many customers</li>
-          </ul>
-        </p>
+              <li class="mdl-list__item mdl-list__item--three-line">
+                <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-avatar">person</i>
+                  <span>Web Developer | Rio de Janeiro</span>
+                  <span class="mdl-list__item-text-body">
+                    Built e-commerces for the biggest phone carriers in Brazil (Claro, Tim, Vivo, Oi, Porto Seguro).<br>
+                    Often worked in a support role answering tickets, fixing bugs, talking to customers, going to meetings and creating new features on demand for our many projects.<br>
+                    Developed and tested APIs and high traffic websites like real time auction, e-learning school and e-commerces<br>
+                    Developed mobile sites to be opened on specific tablets and be used as interface for selling mobile phones in stores.<br>
+                  </span>
+                </span>
+              </li>
 
+              <li class="mdl-list__item mdl-list__item--three-line">
+                <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-avatar">person</i>
+                  <span>Software Developer | Rio de Janeiro</span>
+                  <span class="mdl-list__item-text-body">
+                    Maintained a crawler in C#, and later in Ruby, that saved websites news to be displayed in a mobile environment.<br>
+                    Released the first mobile portal in Brazil the same day the first iPhone was.<br>
+                    Planned and executed the codebase migration from C# to Ruby on Rails.<br>
+                    Developed mobile websites <br>
+                  </span>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">DashBid Media (2015 ~ present)</a>
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">XL Solutions (2012 ~ 2015)</a>
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Hands S.A. (2007 ~ 2012)</a>
+          </div>
+        </div>
 
-        <p>
-          <span class='job-title'>Web Developer | Rio de Janeiro<br></span>
-          2012 ~ 2015<br>
-          XL Solutions<br>
-          <ul>
-            <li>Built e-commerces for the biggest phone carriers in Brazil (Claro, Tim, Vivo, Oi, Porto Seguro).</li>
-            <li>Often worked in a support role answering tickets, fixing bugs, talking to customers (sometimes even going to meetings) and creating new features on demand for our many projects.</li>
-            <li>Developed and tested APIs and high traffic websites like real time auction, e-learning school and e-commerces</li>
-            <li>Developed mobile sites to be opened on specific tablets and be used as interface for selling mobile phones in stores.</li>
-          </ul>
-        </p>
+        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Education</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <p>
+              B.A., Computer Science &amp; Project Management - 2009<br>
+              Universidade Gama Filho, Rio de Janeiro, RJ
+            </p>
+          </div>
+        </div>
 
-
-        <p>
-          <span class='job-title'>Software Developer | Rio de Janeiro<br></span>
-          2007 ~ 2012<br>
-          Hands S.A.<br>
-          <ul>
-            <li>I maintained a crawler in C#, and later in Ruby, that saved websites news to be displayed in a mobile environment. Released the first mobile portal in Brazil the same day the first iPhone was.</li>
-            <li>Planned and executed the codebase migration from C# to Ruby on Rails.</li>
-            <li>Developed mobile websites </li>
-          </ul>
-        </p>
-
-        <br>
-        <span class='title'>Education:</span>
-        <p>
-          B.A., Computer Science &amp; Project Management - 2009<br>
-          Universidade Gama Filho, Rio de Janeiro, RJ
-        </p>
-
-        <div class='user'>
-          <span class='title'>Contact:</span>
-          <p>
-            Estevão de Abreu Machado<br>
-            Praia de Botafogo 316, Ap 640<br>
-            Rio de Janeiro, RJ<br>
-            +55 (21) 98258-8197<br>
-            estevaom@gmail.com
-          </p>
+        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Contact</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <p>
+              Estevão de Abreu Machado<br>
+              Praia de Botafogo 316, Ap 640<br>
+              Rio de Janeiro, RJ<br>
+              +55 (21) 98258-8197<br>
+              estevaom@gmail.com
+            </p>
+          </div>
         </div>
       </div>
     </div>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
 </body>
 </html>
