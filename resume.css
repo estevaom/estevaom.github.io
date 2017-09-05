@@ -85,6 +85,7 @@ body {
   color: orange;
   font-weight: 300;
   font-size: 16px;
+  padding: 0 15px;
 }
 .mdl-layout__header-row .mdl-navigation__link:hover {
   cursor: default;
