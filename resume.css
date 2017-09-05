@@ -28,7 +28,7 @@ body {
 }
 .mdl-layout__title {
   font-size: 35px;
-  font-weight: 100;
+  font-weight: 300;
 }
 .mdl-card__title .material-icons {
   color: orange;
@@ -57,6 +57,7 @@ body {
 }
 .mdl-card__title-text {
   margin-left: .4em;
+  font-weight: 100;
 }
 .mdl-list__item--three-line {
   height: auto;
