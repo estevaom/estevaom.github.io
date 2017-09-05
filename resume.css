@@ -38,7 +38,7 @@ body {
   transform: scale(2);
 }
 .mdl-layout__header {
-  background-image: url(http://www.apptio.com/sites/default/files/pane-background/focused_poly_ds_header_4.png);
+  background-image: url('./header.png');
   color: white;
   height: 8em;
   padding-top: 1.5em;
