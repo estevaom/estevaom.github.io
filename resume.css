@@ -105,6 +105,18 @@ body {
   height: auto;
 }
 
+.skills {
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .04em;
+  line-height: 1;
+  padding: 8px 16px;
+  cursor: default;
+  color: rgba(0,0,0,.87);
+  overflow: hidden;
+}
+
 @media (max-width: 839px) {
   .mdl-cell--12-col.mdl-card__supporting-text {
     padding: 16px 16px 16px 8px;
