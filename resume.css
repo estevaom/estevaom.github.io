@@ -133,6 +133,7 @@ body {
 }
 #employment .mdl-card__supporting-text {
   padding: 0;
+  width: 100%
 }
 .employment-card .footer {
   padding: 1em;
