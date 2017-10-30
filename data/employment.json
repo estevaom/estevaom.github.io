@@ -1,6 +1,15 @@
 [
   {
-    "name": "DashBid Media (2015 ~ present)",
+    "name": "Reinteractive (2017 ~ Present)",
+    "title": "Senior Web Developer @ Reinteractive ~ Sydney (remote)",
+    "url": "https://www.reinteractive.net/",
+    "description": [
+    ],
+    "technologies": [
+    ]
+  },
+  {
+    "name": "DashBid Media (2015 ~ 2017)",
     "title": "Senior Web Developer @ Dashbid ~ New York (remote)",
     "url": "https://www.dashbid.com/",
     "description": [
@@ -42,7 +51,7 @@
       { "url": "https://jquery.com/", "name": "JQuery" },
       { "url": "https://developer.mozilla.org/en-US/docs/Web/CSS", "name": "CSS" },
       { "url": "https://www.mysql.com/", "name": "MySQL" },
-      { "url": "https://angular.io/", "name": "Angular 1.5" },
+      { "url": "https://angularjs.org/", "name": "AngularJS 1.5" },
       { "url": "https://aws.amazon.com/s3/", "name": "Amazon S3" },
       { "url": "http://sidekiq.org/", "name": "Sidekiq" },
       { "url": "https://www.elastic.co/products/elasticsearch", "name": "Elasticsearch" }
@@ -50,7 +59,7 @@
   },
   {
     "name": "Kissy (2012 ~ 2014)",
-    "title": "Web Developer, DevOps @ Kissy ~ Rio de Janeiro",
+    "title": "Web Developer, Operations @ Kissy ~ Rio de Janeiro",
     "url": "#",
     "description": [
       "Created and maintained an iphone and android webview dating app with push notification and html5 geolocation",
@@ -69,7 +78,7 @@
   },
   {
     "name": "Hands S.A. (2007 ~ 2012)",
-    "title": "Software Developer @ Hands ~ Rio de Janeiro",
+    "title": "Web Developer @ Hands ~ Rio de Janeiro",
     "url": "http://www.hands.com.br/",
     "description": [
       "Maintained a crawler that saved websites news to be displayed in a mobile environment",

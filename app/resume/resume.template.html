@@ -28,12 +28,12 @@
             <i class="material-icons">star</i>
             <h3 class="mdl-card__title-text">{{job.title}}</h3>
           </div>
-          <div class="mdl-card__supporting-text mdl-cell--12-col">
+          <div class="mdl-card__supporting-text mdl-cell--12-col" ng-show="job.description[0]">
             <ul>
               <li ng-repeat="desc in job.description">{{desc}}</li>
             </ul>
           </div>
-          <div class="footer">
+          <div class="footer" ng-show="job.technologies[0]">
             <span ng-repeat="tech in job.technologies">
               <a target="blank" href="{{tech.url}}"><span class="mdl-chip"><span class="mdl-chip__text">{{tech.name}}</span></span></a>
             </span>

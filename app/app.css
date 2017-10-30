@@ -30,6 +30,9 @@ body {
   font-size: 35px;
   font-weight: 300;
 }
+.material-icons {
+  cursor: default;
+}
 .mdl-card__title .material-icons {
   color: orange;
   transition: all 1s ease-in-out;
@@ -119,12 +122,11 @@ body {
   font-size: small;
 }
 .employment-card ul {
-  margin-bottom: 0;
+  margin: 0;
 }
 .employment-card .mdl-card__title {
   background-color: #FFF;
   color: #000;
-  padding-bottom: 0;
 }
 .employment-card .mdl-card__title-text {
   font-size: 1.5em;
