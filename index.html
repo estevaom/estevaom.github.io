@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="estevaoApp">
 <head>
   <title>Estevão de Abreu Machado</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -7,149 +7,19 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-blue.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="./resume.css">
+  <link rel="stylesheet" href="./app/app.css">
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
-  <script src="app.js"></script>
+  <script src="app/app.module.js"></script>
+  <script src="app/resume/resume.module.js"></script>
+  <script src="app/resume/resume.component.js"></script>
 </head>
-<body class="mdl-typography--body-1-force-preferred-font" ng-app="app" ng-controller="AppController">
+<body class="mdl-typography--body-1-force-preferred-font">
   <div class="mdl-layout mdl-js-layout">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <span class="mdl-layout__title">
-          Estevão de Abreu Machado
-        </span>
-        <div class="mdl-layout-spacer"></div>
-        <nav class="mdl-navigation">
-          <a ng-repeat="link in navigation_links" class="mdl-navigation__link" href="{{link.url}}">{{link.title}}</a>
-        </nav>
-      </div>
-    </header>
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Resume</span>
-      <nav class="mdl-navigation">
-        <a ng-repeat="link in navigation_links" class="mdl-navigation__link" href="{{link.url}}">{{link.title}}</a>
-      </nav>
-    </div>
-    <div class="mdl-layout__content">
-      <span id="top"></span>
-      <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp" id="about-me">
-          <div class="mdl-card__title">
-            <i class="material-icons">person</i>
-            <h2 class="mdl-card__title-text">About Me</h2>
-          </div>
-          <div class="mdl-card__supporting-text mdl-cell--12-col">
-            <p>
-              I'm a full stack web developer who likes to write clean and organized code that will be easily read by other people and myself in the future.<br>
-              I read a lot of "Best Practices", "Patterns" and "Refactoring" articles and books.<br>
-              I have designed, built and tested many high traffic e-commerces, real time auction, advertisement platforms, e-learning schools, dating apps, social networks, news crawlers, marketplaces, dashboards, admins...<br>
-              I care about unit and integration testing, continuous integration, continous deployment and performance measurement.<br>
-              When I'm not working, I can usually be found practicing the piano or playing old arcade games :)
-            </p>
-          </div>
-        </div>
-
-        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp" id="employment">
-          <div class="mdl-card__title">
-            <i class="material-icons">work</i>
-            <h2 class="mdl-card__title-text">Employment</h2>
-          </div>
-          <div class="mdl-card__supporting-text mdl-cell--12-col">
-            <div class="mdl-cell mdl-cell--12-col mdl-card employment-card mdl-shadow--2dp" ng-repeat="job in employment">
-              <div class="mdl-card__title">
-                <i class="material-icons">star</i>
-                <h3 class="mdl-card__title-text">{{job.title}}</h3>
-              </div>
-              <div class="mdl-card__supporting-text mdl-cell--12-col">
-                <ul>
-                  <li ng-repeat="desc in job.description">{{desc}}</li>
-                </ul>
-              </div>
-              <div class="footer">
-                <span ng-repeat="tech in job.technologies">
-                  <a target="blank" href="{{tech.url}}"><span class="mdl-chip"><span class="mdl-chip__text">{{tech.name}}</span></span></a>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <span ng-repeat="job in employment">
-              <a href="{{job.url}}" target="blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">{{job.name}}</a>
-            </span>
-          </div>
-        </div>
-
-        <div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp" id="technologies">
-          <div class="mdl-card__title">
-            <i class="material-icons">laptop_mac</i>
-            <h2 class="mdl-card__title-text">Technologies</h2>
-          </div>
-          <div class="mdl-card__supporting-text mdl-cell--12-col items-list">
-            <div class="skills" ng-repeat="tech in technologies">
-              <div>{{tech.type}}:</div>
-              <span ng-repeat="title in tech.titles">
-                <a href="#"><div class="mdl-chip"><div class="mdl-chip__text">{{title}}</div></div></a>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="mdl-cell mdl-cell--6-col">
-          <div class="mdl-card mdl-shadow--4dp mdl-cell--12-col" id="objectives">
-            <div class="mdl-card__title">
-              <i class="material-icons">done</i>
-              <h2 class="mdl-card__title-text">Objectives</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-              <p>
-                Developing and maintaining web apps using Ruby on Rails and other technologies.<br>
-                Being challenged to find solutions to hard problems.<br>
-                Working with other talented and skilled people.<br>
-              </p>
-            </div>
-          </div>
-
-          <div class="mdl-card mdl-shadow--4dp mdl-cell--12-col" id="education">
-            <div class="mdl-card__title">
-              <i class="material-icons">school</i>
-              <h2 class="mdl-card__title-text">Education</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-              <p>
-                B.A., Computer Science &amp; Project Management - 2009<br>
-                Universidade Gama Filho, Rio de Janeiro, RJ
-              </p>
-            </div>
-          </div>
-
-          <div class="mdl-card mdl-shadow--4dp mdl-cell--12-col" id="contact">
-            <div class="mdl-card__title">
-              <i class="material-icons">email</i>
-              <h2 class="mdl-card__title-text">Contact</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-              <p>
-                Estevão de Abreu Machado, 34<br>
-                Rio de Janeiro, Brazil<br>
-                estevaom [at] gmail.com<br>
-                <a target="blank" href="http://www.github.com/estevaom"><span class="mdl-chip"><span class="mdl-chip__text">Github</span></span></a>
-                <a target="blank" href="http://www.linkedin.com/in/estevaom"><span class="mdl-chip"><span class="mdl-chip__text">LinkedIn</span></span></a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <resume></resume>
     <a href="#top">
       <button class="up-button mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
         <i class="material-icons">keyboard_arrow_up</i>
       </button>
     </a>
-    <script type="text/javascript">
-      document.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
-        document.querySelector('.mdl-layout__obfuscator').classList.remove('is-visible');
-        this.classList.remove('is-visible');
-      }, false);
-    </script>
 </body>
 </html>
