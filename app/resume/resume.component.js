@@ -1,19 +1,10 @@
-var resume = angular.module('resume')
+var resume = angular.module('resume');
 
 resume.component('resume', {
   templateUrl: 'app/resume/resume.template.html',
   controller: ['$http',
     function ResumeComponentController($http) {
       var self = this;
-
-      self.navigation_links = [
-        { title: 'About Me', url: '#about' },
-        { title: 'Employment', url: '#employment' },
-        { title: 'Technologies', url: '#technologies' },
-        { title: 'Objectives', url: '#objectives' },
-        { title: 'Education', url: '#education' },
-        { title: 'Contact', url: '#contact' }
-      ];
 
       $http.get('./data/employment.json').then(function(response) {
         self.employment = response.data;

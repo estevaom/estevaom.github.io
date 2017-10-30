@@ -10,16 +10,22 @@
   <link rel="stylesheet" href="./app/app.css">
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
   <script src="app/app.module.js"></script>
+  <script src="app/site-header/site-header.module.js"></script>
+  <script src="app/site-header/site-header.component.js"></script>
   <script src="app/resume/resume.module.js"></script>
   <script src="app/resume/resume.component.js"></script>
 </head>
 <body class="mdl-typography--body-1-force-preferred-font">
   <div class="mdl-layout mdl-js-layout">
+    <site-header></site-header>
+
     <resume></resume>
+
     <a href="#top">
       <button class="up-button mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
         <i class="material-icons">keyboard_arrow_up</i>
       </button>
     </a>
+  </div>
 </body>
 </html>
