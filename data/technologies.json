@@ -1,0 +1,23 @@
+[
+    { "handler": "amazon-dynamodb", "name": "Amazon DynamoDB", "url": "https://aws.amazon.com/dynamodb/" },
+    { "handler": "amazon-ec2", "name": "Amazon EC2", "url": "https://aws.amazon.com/ec2/" },
+    { "handler": "amazon-elasticache", "name": "Amazon ElastiCache", "url": "https://aws.amazon.com/elasticache/" },
+    { "handler": "amazon-rds", "name": "Amazon RDS", "url": "https://aws.amazon.com/rds/" },
+    { "handler": "amazon-redshift", "name": "Amazon Redshift", "url": "https://aws.amazon.com/redshift/" },
+    { "handler": "amazon-s3", "name": "Amazon S3", "url": "https://aws.amazon.com/s3/" },
+    { "handler": "angular-4", "name": "Angular 4", "url": "https://angular.io/" },
+    { "handler": "angularjs", "name": "AngularJS", "url": "https://angularjs.org/" },
+    { "handler": "csharp", "name": "C#", "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" },
+    { "handler": "css", "name": "CSS", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+    { "handler": "elasticsearch", "name": "Elasticsearch", "url": "https://www.elastic.co/products/elasticsearch" },
+    { "handler": "html5", "name": "HTML5", "url": "https://www.w3.org/TR/html5/" },
+    { "handler": "jquery", "name": "JQuery", "url": "https://jquery.com/" },
+    { "handler": "javascript", "name": "Javascript", "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+    { "handler": "mysql", "name": "MySQL", "url": "https://www.mysql.com/" },
+    { "handler": "node-js", "name": "Node.js", "url": "https://nodejs.org/en/" },
+    { "handler": "ruby", "name": "Ruby", "url": "https://www.ruby-lang.org/en/" },
+    { "handler": "ruby-on-rails", "name": "Ruby on Rails", "url": "http://rubyonrails.org/" },
+    { "handler": "sidekiq", "name": "Sidekiq", "url": "http://sidekiq.org/" },
+    { "handler": "treasure-data", "name": "Treasure Data", "url": "https://www.treasuredata.com/" },
+    { "handler": "xml", "name": "XML", "url": "https://www.w3.org/XML/" }
+]

@@ -21,16 +21,7 @@
       "Set up and maintained applications on Amazon Web Services"
     ],
     "technologies": [
-      { "url": "https://nodejs.org/en/", "name": "Node.js" },
-      { "url": "https://angular.io/", "name": "Angular 4" },
-      { "url": "https://aws.amazon.com/dynamodb/", "name": "Amazon DynamoDB" },
-      { "url": "http://rubyonrails.org/", "name": "Ruby on Rails" },
-      { "url": "https://jquery.com/", "name": "JQuery" },
-      { "url": "https://developer.mozilla.org/en-US/docs/Web/CSS", "name": "CSS" },
-      { "url": "https://www.mysql.com/", "name": "MySQL" },
-      { "url": "https://aws.amazon.com/elasticache/", "name": "Amazon ElastiCache" },
-      { "url": "https://aws.amazon.com/redshift/", "name": "Amazon Redshift" },
-      { "url": "https://www.treasuredata.com/", "name": "Treasure Data" }
+      "node-js", "angular-4", "amazon-dynamodb", "ruby-on-rails", "jquery", "css", "mysql", "amazon-elasticache", "amazon-redshift", "treasure-data"
     ]
   },
   {
@@ -47,14 +38,7 @@
     ],
 
     "technologies": [
-      { "url": "http://rubyonrails.org/", "name": "Ruby on Rails" },
-      { "url": "https://jquery.com/", "name": "JQuery" },
-      { "url": "https://developer.mozilla.org/en-US/docs/Web/CSS", "name": "CSS" },
-      { "url": "https://www.mysql.com/", "name": "MySQL" },
-      { "url": "https://angularjs.org/", "name": "AngularJS 1.5" },
-      { "url": "https://aws.amazon.com/s3/", "name": "Amazon S3" },
-      { "url": "http://sidekiq.org/", "name": "Sidekiq" },
-      { "url": "https://www.elastic.co/products/elasticsearch", "name": "Elasticsearch" }
+      "ruby-on-rails", "jquery", "css", "mysql", "angularjs", "amazon-s3", "sidekiq", "elasticsearch"
     ]
   },
   {
@@ -67,13 +51,7 @@
       "Interacted with many social network APIs like Gmail, Google Maps, Facebook and Foursquare"
     ],
     "technologies": [
-      { "url": "http://rubyonrails.org/", "name": "Ruby on Rails" },
-      { "url": "https://jquery.com/", "name": "JQuery" },
-      { "url": "https://developer.mozilla.org/en-US/docs/Web/CSS", "name": "CSS" },
-      { "url": "https://www.mysql.com/", "name": "MySQL" },
-      { "url": "https://aws.amazon.com/ec2/", "name": "Amazon EC2" },
-      { "url": "https://aws.amazon.com/rds/", "name": "Amazon RDS" },
-      { "url": "https://aws.amazon.com/s3/", "name": "Amazon S3" }
+      "ruby-on-rails", "jquery", "css", "mysql", "amazon-ec2", "amazon-rds", "amazon-s3"
     ]
   },
   {
@@ -88,13 +66,7 @@
       "Developed and maintained a CMS in Ruby on Rails"
     ],
     "technologies": [
-      { "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)", "name": "C#" },
-      { "url": "https://www.w3.org/XML/", "name": "XML" },
-      { "url": "https://www.w3.org/TR/html5/", "name": "HTML5" },
-      { "url": "https://www.ruby-lang.org/en/", "name": "Ruby" },
-      { "url": "http://rubyonrails.org/", "name": "Ruby on Rails" },
-      { "url": "https://developer.mozilla.org/en-US/docs/Web/CSS", "name": "CSS" },
-      { "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript", "name": "Javascript" }
+      "csharp", "xml", "html5", "ruby", "ruby-on-rails", "css", "javascript"
     ]
   }
 ]

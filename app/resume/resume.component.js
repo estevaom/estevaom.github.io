@@ -8,7 +8,7 @@ resume.component('resume', {
 
       $http.get('./data/employment.json').then(function(response) {
         self.employment = response.data;
-      })
+      });
 
       self.technologies = [
         { type: 'Backend', titles: ['Ruby on Rails', 'Node.js'] },

@@ -1,1 +1,1 @@
-angular.module('estevaoApp', ['site-header', 'resume']);
+angular.module('estevaoApp', ['site-header', 'tech-item', 'resume']);

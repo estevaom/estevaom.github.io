@@ -35,7 +35,7 @@
           </div>
           <div class="footer" ng-show="job.technologies[0]">
             <span ng-repeat="tech in job.technologies">
-              <a target="blank" href="{{tech.url}}"><span class="mdl-chip"><span class="mdl-chip__text">{{tech.name}}</span></span></a>
+              <tech-item handler="{{tech}}"></tech-item>
             </span>
           </div>
         </div>

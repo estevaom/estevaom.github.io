@@ -1,6 +1,9 @@
 body {
   background-color: #ddd;
 }
+tech-item a {
+  text-decoration: none;
+}
 .mdl-button.up-button {
   display: none;
   position: fixed;
