@@ -1,0 +1,5 @@
+node_modules
+app/services/technologies.service.spec.js
+karma.conf.js
+package.json
+yarn.lock

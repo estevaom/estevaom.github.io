@@ -10,7 +10,7 @@ techItem.component('techItem', {
       var self = this;
 
       technologies.then(function(tech) {
-        self.item = tech.find(techByHandler);
+        self.item = tech.data.find(techByHandler);
       });
 
       function techByHandler(techlist) {
