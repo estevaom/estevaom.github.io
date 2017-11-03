@@ -55,8 +55,8 @@
       <div class="mdl-card__supporting-text mdl-cell--12-col items-list">
         <div class="skills" ng-repeat="tech in $ctrl.technologies">
           <div>{{tech.type}}:</div>
-          <span ng-repeat="title in tech.titles">
-            <a href="#"><div class="mdl-chip"><div class="mdl-chip__text">{{title}}</div></div></a>
+          <span ng-repeat="handler in tech.handlers">
+            <tech-item handler="{{handler}}"></tech-item>
           </span>
         </div>
       </div>

@@ -11,13 +11,13 @@ resume.component('resume', {
       });
 
       self.technologies = [
-        { type: 'Backend', titles: ['Ruby on Rails', 'Node.js'] },
-        { type: 'Frontend', titles: ['Angular 1.5', 'Angular 4', 'Bootstrap', 'CSS', 'Google Material', 'HTML5', 'Javascript', 'jQuery'] },
-        { type: 'Database', titles: ['Mysql', 'Postgresql', 'Amazon DynamoDB', 'Amazon Redshift', 'Treasure Data'] },
-        { type: 'Cache Storage', titles: ['ElasticSearch', 'Memcached', 'Redis'] },
-        { type: 'Test', titles: ['Capybara', 'Jasmine', 'Karma', 'Minitest', 'Mocha', 'Protractor', 'Rspec'] },
-        { type: 'CI/CD', titles: ['Jenkins', 'Semaphore', 'Wercker'] },
-        { type: 'Other', titles: ['Apotomo', 'Amazon S3', 'Capistrano', 'Datamapper', 'Git', 'New Relic', 'Sidekiq', 'Typescript', 'Vagrant', 'Webpack'] }
+        { type: 'Backend', handlers: ['ruby-on-rails', 'node-js'] },
+        { type: 'Frontend', handlers: ['angularjs', 'angular-4', 'bootstrap', 'css', 'google-material', 'html5', 'javascript', 'jquery'] },
+        { type: 'Database', handlers: ['mysql', 'postgresql', 'amazon-dynamodb', 'amazon-redshift', 'treasure-data'] },
+        { type: 'Cache Storage', handlers: ['elasticsearch', 'memcached', 'redis'] },
+        { type: 'Test', handlers: ['capybara', 'jasmine', 'karma', 'minitest', 'mocha', 'protractor', 'rspec'] },
+        { type: 'CI/CD', handlers: ['jenkins', 'semaphore', 'wercker'] },
+        { type: 'Other', handlers: ['amazon-s3', 'capistrano', 'datamapper', 'git', 'new-relic', 'sidekiq', 'typescript', 'vagrant', 'webpack'] }
       ];
     }
   ]
