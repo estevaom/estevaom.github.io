@@ -150,4 +150,7 @@ tech-item a {
   .mdl-button.up-button {
     display: block;
   }
+  .mdl-cell--6-col {
+      width: calc(100% - 16px);
+  }
 }
