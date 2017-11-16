@@ -99,9 +99,17 @@ tech-item a {
   transition: color 1s ease-in-out;
   color: rgba(255,165,0,0.25);
 }
+#grid {
+  display: grid;
+}
 #objectives, #education, #contact {
-  margin-bottom: 1em;
   width: 100%;
+}
+#objectives, #education {
+  margin-bottom: 1em;
+}
+#contact {
+  margin-bottom: 0;
 }
 .mdl-list__item--three-line .mdl-list__item-text-body {
   height: auto;
