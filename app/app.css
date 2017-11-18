@@ -87,6 +87,7 @@ tech-item a {
 
 .mdl-card__supporting-text.mdl-cell--12-col.items-list {
   padding-left: 0;
+  padding-bottom: 8px;
 }
 
 .mdl-list {
@@ -127,16 +128,24 @@ tech-item a {
   display: grid;
 }
 
+#grid .mdl-card__supporting-text {
+  width: auto;
+}
+
+#about-me p {
+  margin-bottom: 0;
+}
+
 #objectives, #education, #contact {
   width: 100%;
 }
 
-#objectives, #education {
-  margin-bottom: 1em;
+#objectives .mdl-card__supporting-text p, #education .mdl-card__supporting-text p {
+  margin-bottom: 0;
 }
 
-#contact {
-  margin-bottom: 0;
+#objectives, #education {
+  margin-bottom: 1em;
 }
 
 .mdl-list__item--three-line .mdl-list__item-text-body {
@@ -163,14 +172,12 @@ tech-item a {
 .employment-card {
   font-size: small;
   margin-bottom: 0;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .employment-card:last-child {
   margin-bottom: 8px;
-}
-
-.employment-card ul {
-  margin: 0;
 }
 
 .employment-card .mdl-card__title {
@@ -193,13 +200,10 @@ tech-item a {
 
 .employment-card .footer {
   padding: 1em;
+  align-self: flex-end;
 }
 
 @media (max-width: 839px) {
-  .mdl-cell--12-col.mdl-card__supporting-text {
-    padding: 16px 16px 16px 8px;
-  }
-
   .mdl-button.up-button {
     display: block;
   }
@@ -211,7 +215,15 @@ tech-item a {
 
 @media (min-width: 2500px) {
   .employment-card:not(:first-child) {
-    width: calc(50% - 16px);
+    width: calc(50% - 12px);
+  }
+
+  .employment-card:nth-child(even) {
+    margin-right: 4px;
+  }
+
+  .employment-card:not(:first-child):nth-child(odd) {
+    margin-left: 4px;
   }
 
   .employment-card:nth-last-child(-n+2) {
