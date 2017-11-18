@@ -130,6 +130,14 @@ tech-item a {
 
 #grid .mdl-card__supporting-text {
   width: auto;
+  height: calc(100% - 92px);
+  position: relative;
+}
+
+.contact-links {
+  position: absolute;
+  padding: 1em 0;
+  bottom: 0;
 }
 
 #about-me p {
@@ -146,6 +154,10 @@ tech-item a {
 
 #objectives, #education {
   margin-bottom: 1em;
+}
+
+#contact p {
+  margin-bottom: 3em;
 }
 
 .mdl-list__item--three-line .mdl-list__item-text-body {
@@ -213,7 +225,7 @@ tech-item a {
   }
 }
 
-@media (min-width: 2500px) {
+@media (min-width: 2200px) {
   .employment-card:not(:first-child) {
     width: calc(50% - 12px);
   }
