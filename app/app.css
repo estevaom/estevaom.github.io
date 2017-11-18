@@ -1,9 +1,11 @@
 body {
   background-color: #ddd;
 }
+
 tech-item a {
   text-decoration: none;
 }
+
 .mdl-button.up-button {
   display: none;
   position: fixed;
@@ -12,81 +14,101 @@ tech-item a {
   z-index: 1000;
   background: #222;
 }
+
 .mdl-button.up-button.mdl-button--colored:hover {
   background: #222;
 }
+
 .mdl-button.up-button.mdl-button--colored {
   background: rgb(158, 158, 158);
 }
+
 .mdl-chip {
   height: 24px;
   line-height: 24px;
   margin-top: 10px;
   font-weight: 400;
 }
+
 .mdl-chip:hover {
   background: #222;
   color: orange;
   transition: all .5s ease-in-out;
 }
+
 .mdl-layout__title {
   font-size: 35px;
   font-weight: 300;
 }
+
 .material-icons {
   cursor: default;
 }
+
 .mdl-card__title .material-icons {
   color: orange;
   transition: all 1s ease-in-out;
 }
+
 .mdl-card__title .material-icons:hover {
   transform: scale(2);
 }
+
 .mdl-layout__header {
   background-image: url('../img/header.png');
   color: white;
   height: 8em;
   padding-top: 1.5em;
 }
+
 .mdl-list__item-avatar, .mdl-list__item-avatar.material-icons {
   height: 30px;
   width: 30px;
   font-size: 30px;
 }
+
 .mdl-layout__drawer-button {
   top: .8em;
 }
+
 .mdl-card__title {
   background-color: #222;
   color: white;
 }
+
 .mdl-card__title-text {
   margin-left: .4em;
   font-weight: 100;
 }
+
 .mdl-list__item--three-line {
   height: auto;
 }
+
 .mdl-card__supporting-text.mdl-cell--12-col.items-list {
   padding-left: 0;
 }
+
 .mdl-list {
   padding-top: 0;
   margin-top: 0;
 }
+
 .mdl-card {
   min-height: auto;
 }
+
 .experience-list .mdl-list__item {
   padding-top: 0;
   padding-bottom: 0;
   min-height: 2em;
 }
+
 .experience-list .mdl-list__item:hover {
   color: orange;
   transition: all .3s ease-in-out;
 }
+
 .mdl-layout__header-row .mdl-navigation__link {
   cursor: default;
   color: orange;
@@ -94,30 +116,38 @@ tech-item a {
   font-size: 16px;
   padding: 0 15px;
 }
+
 .mdl-layout__header-row .mdl-navigation__link:hover {
   cursor: default;
   transition: color 1s ease-in-out;
   color: rgba(255,165,0,0.25);
 }
+
 #grid {
   display: grid;
 }
+
 #objectives, #education, #contact {
   width: 100%;
 }
+
 #objectives, #education {
   margin-bottom: 1em;
 }
+
 #contact {
   margin-bottom: 0;
 }
+
 .mdl-list__item--three-line .mdl-list__item-text-body {
   height: auto;
   margin-left: 1.6em;
 }
+
 .mdl-list__item--three-line .mdl-list__item-primary-content {
   height: auto;
 }
+
 .skills {
   font-family: "Roboto","Helvetica","Arial",sans-serif;
   font-size: 16px;
@@ -129,36 +159,62 @@ tech-item a {
   color: rgba(0,0,0,.87);
   overflow: hidden;
 }
+
 .employment-card {
   font-size: small;
+  margin-bottom: 0;
 }
+
+.employment-card:last-child {
+  margin-bottom: 8px;
+}
+
 .employment-card ul {
   margin: 0;
 }
+
 .employment-card .mdl-card__title {
   background-color: #FFF;
   color: #000;
 }
+
 .employment-card .mdl-card__title-text {
   font-size: 1.5em;
   position: relative;
   font-weight: 300;
 }
+
 #employment .mdl-card__supporting-text {
   padding: 0;
-  width: 100%
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .employment-card .footer {
   padding: 1em;
 }
+
 @media (max-width: 839px) {
   .mdl-cell--12-col.mdl-card__supporting-text {
     padding: 16px 16px 16px 8px;
   }
+
   .mdl-button.up-button {
     display: block;
   }
+
   .mdl-cell--6-col {
       width: calc(100% - 16px);
+  }
+}
+
+@media (min-width: 2500px) {
+  .employment-card:not(:first-child) {
+    width: calc(50% - 16px);
+  }
+
+  .employment-card:nth-last-child(-n+2) {
+    margin-bottom: 8px;
   }
 }
