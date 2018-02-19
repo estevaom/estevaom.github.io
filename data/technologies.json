@@ -16,6 +16,7 @@
     { "handler": "elasticsearch", "name": "Elasticsearch", "url": "https://www.elastic.co/products/elasticsearch" },
     { "handler": "git", "name": "Git" },
     { "handler": "google-material", "name": "Google Material", "url": "https://getmdl.io/" },
+    { "handler": "google-cloud-datastore", "name": "Google Cloud Datastore", "url": "https://cloud.google.com/datastore/"},
     { "handler": "html5", "name": "HTML5", "url": "https://www.w3.org/TR/html5/" },
     { "handler": "javascript", "name": "Javascript", "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
     { "handler": "jasmine", "name": "Jasmine" },

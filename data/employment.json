@@ -4,8 +4,10 @@
     "title": "Senior Web Developer @ Reinteractive ~ Sydney (remote)",
     "url": "https://www.reinteractive.net/",
     "description": [
+      "Currently working on auditing and consulting products for PwC"
     ],
     "technologies": [
+      "ruby-on-rails", "angularjs", "css", "google-cloud-datastore"
     ]
   },
   {
