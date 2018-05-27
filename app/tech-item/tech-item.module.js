@@ -1,1 +1,7 @@
-angular.module('tech-item', []);
+/* global angular */
+
+(function(angular) {
+    'use strict';
+
+    angular.module('tech-item', []);
+})(angular);

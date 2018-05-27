@@ -1,1 +1,7 @@
-angular.module('resume', []);
+/* global angular */
+
+(function(angular) {
+    'use strict';
+
+    angular.module('resume', []);
+})(angular);

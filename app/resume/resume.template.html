@@ -1,113 +1,113 @@
 <div class="mdl-layout__content">
-  <span id="top"></span>
-  <div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp" id="about-me">
-      <div class="mdl-card__title">
-        <i class="material-icons">person</i>
-        <h2 class="mdl-card__title-text">About Me</h2>
-      </div>
-      <div class="mdl-card__supporting-text">
-        <p>
-          I'm a full stack web developer who likes to write clean and organized code that will be easily read by other people and myself in the future.<br>
-          I read a lot of "Best Practices", "Patterns" and "Refactoring" articles and books.<br>
-          I have designed, built and tested many high traffic e-commerces, real time auction, advertisement platforms, e-learning schools, dating apps, social networks, news crawlers, marketplaces, dashboards, admins...<br>
-          I care about unit and integration testing, continuous integration, continous deployment and performance measurement.<br>
-          When I'm not working, I can usually be found practicing the piano or playing old arcade games :)
-        </p>
-      </div>
+    <span id="top"></span>
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp" id="about-me">
+            <div class="mdl-card__title">
+                <i class="material-icons">person</i>
+                <h2 class="mdl-card__title-text">About Me</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+                <p>
+                    I'm a full stack web developer who likes to write clean and organized code that will be easily read by other people and myself in the future.<br>
+                    I read a lot of "Best Practices", "Patterns" and "Refactoring" articles and books.<br>
+                    I have designed, built and tested many high traffic e-commerces, real time auction, advertisement platforms, e-learning schools, dating apps, social networks, news crawlers, marketplaces, dashboards, admins...<br>
+                    I care about unit and integration testing, continuous integration, continous deployment and performance measurement.<br>
+                    When I'm not working, I can usually be found practicing the piano or playing old arcade games :)
+                </p>
+            </div>
+        </div>
+
+        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp" id="employment">
+            <div class="mdl-card__title">
+                <i class="material-icons">work</i>
+                <h2 class="mdl-card__title-text">Employment</h2>
+            </div>
+            <div class="mdl-card__supporting-text mdl-cell--12-col">
+                <div class="mdl-cell mdl-cell--12-col mdl-card employment-card mdl-shadow--2dp" ng-repeat="job in $ctrl.employment">
+                    <div class="mdl-card__title">
+                        <i class="material-icons">star</i>
+                        <h3 class="mdl-card__title-text">{{job.title}}</h3>
+                    </div>
+                    <div class="mdl-card__supporting-text mdl-cell--12-col" ng-show="job.description[0]">
+                        <ul>
+                            <li ng-repeat="desc in job.description">{{desc}}</li>
+                        </ul>
+                    </div>
+                    <div class="footer" ng-show="job.technologies[0]">
+                        <span ng-repeat="tech in job.technologies">
+                            <tech-item handler="{{tech}}"></tech-item>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <span ng-repeat="job in $ctrl.employment">
+                    <a href="{{job.url}}" target="blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">{{job.name}}</a>
+                </span>
+            </div>
+        </div>
+
+        <div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp" id="technologies">
+            <div class="mdl-card__title">
+                <i class="material-icons">laptop_mac</i>
+                <h2 class="mdl-card__title-text">Technologies</h2>
+            </div>
+            <div class="mdl-card__supporting-text mdl-cell--12-col items-list">
+                <div class="skills" ng-repeat="tech in $ctrl.technologies">
+                    <div>{{tech.type}}:</div>
+                    <span ng-repeat="handler in tech.handlers">
+                        <tech-item handler="{{handler}}"></tech-item>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mdl-cell mdl-cell--6-col" id="grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell--12-col" id="objectives">
+                <div class="mdl-card__title">
+                    <i class="material-icons">done</i>
+                    <h2 class="mdl-card__title-text">Objectives</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <p>
+                        Developing and maintaining web apps using Ruby on Rails and other technologies.<br>
+                        Being challenged to find solutions to hard problems.<br>
+                        Working with other talented and skilled people.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mdl-card mdl-shadow--4dp mdl-cell--12-col" id="education">
+                <div class="mdl-card__title">
+                    <i class="material-icons">school</i>
+                    <h2 class="mdl-card__title-text">Education</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <p>
+                        B.A., Computer Science &amp; Project Management - 2009<br>
+                        Universidade Gama Filho, Rio de Janeiro, RJ
+                    </p>
+                </div>
+            </div>
+
+            <div class="mdl-card mdl-shadow--4dp mdl-cell--12-col" id="contact">
+                <div class="mdl-card__title">
+                    <i class="material-icons">email</i>
+                    <h2 class="mdl-card__title-text">Contact</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <p>
+                        Estevão de Abreu Machado, 34<br>
+                        Rio de Janeiro, Brazil<br>
+                        estevaom [at] gmail.com
+                    </p>
+                    <div class="contact-links">
+                        <a target="blank" href="http://www.github.com/estevaom"><span class="mdl-chip"><span class="mdl-chip__text">Github</span></span></a>
+                        <a target="blank" href="http://www.linkedin.com/in/estevaom"><span class="mdl-chip"><span class="mdl-chip__text">LinkedIn</span></span></a>
+                        <a target="blank" href="http://www.instagram.com/amestevao"><span class="mdl-chip"><span class="mdl-chip__text">Instagram</span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp" id="employment">
-      <div class="mdl-card__title">
-        <i class="material-icons">work</i>
-        <h2 class="mdl-card__title-text">Employment</h2>
-      </div>
-      <div class="mdl-card__supporting-text mdl-cell--12-col">
-        <div class="mdl-cell mdl-cell--12-col mdl-card employment-card mdl-shadow--2dp" ng-repeat="job in $ctrl.employment">
-          <div class="mdl-card__title">
-            <i class="material-icons">star</i>
-            <h3 class="mdl-card__title-text">{{job.title}}</h3>
-          </div>
-          <div class="mdl-card__supporting-text mdl-cell--12-col" ng-show="job.description[0]">
-            <ul>
-              <li ng-repeat="desc in job.description">{{desc}}</li>
-            </ul>
-          </div>
-          <div class="footer" ng-show="job.technologies[0]">
-            <span ng-repeat="tech in job.technologies">
-              <tech-item handler="{{tech}}"></tech-item>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="mdl-card__actions mdl-card--border">
-        <span ng-repeat="job in $ctrl.employment">
-          <a href="{{job.url}}" target="blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">{{job.name}}</a>
-        </span>
-      </div>
-    </div>
-
-    <div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp" id="technologies">
-      <div class="mdl-card__title">
-        <i class="material-icons">laptop_mac</i>
-        <h2 class="mdl-card__title-text">Technologies</h2>
-      </div>
-      <div class="mdl-card__supporting-text mdl-cell--12-col items-list">
-        <div class="skills" ng-repeat="tech in $ctrl.technologies">
-          <div>{{tech.type}}:</div>
-          <span ng-repeat="handler in tech.handlers">
-            <tech-item handler="{{handler}}"></tech-item>
-          </span>
-        </div>
-      </div>
-    </div>
-
-    <div class="mdl-cell mdl-cell--6-col" id="grid">
-      <div class="mdl-card mdl-shadow--4dp mdl-cell--12-col" id="objectives">
-        <div class="mdl-card__title">
-          <i class="material-icons">done</i>
-          <h2 class="mdl-card__title-text">Objectives</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <p>
-            Developing and maintaining web apps using Ruby on Rails and other technologies.<br>
-            Being challenged to find solutions to hard problems.<br>
-            Working with other talented and skilled people.
-          </p>
-        </div>
-      </div>
-
-      <div class="mdl-card mdl-shadow--4dp mdl-cell--12-col" id="education">
-        <div class="mdl-card__title">
-          <i class="material-icons">school</i>
-          <h2 class="mdl-card__title-text">Education</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <p>
-            B.A., Computer Science &amp; Project Management - 2009<br>
-            Universidade Gama Filho, Rio de Janeiro, RJ
-          </p>
-        </div>
-      </div>
-
-      <div class="mdl-card mdl-shadow--4dp mdl-cell--12-col" id="contact">
-        <div class="mdl-card__title">
-          <i class="material-icons">email</i>
-          <h2 class="mdl-card__title-text">Contact</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <p>
-            Estevão de Abreu Machado, 34<br>
-            Rio de Janeiro, Brazil<br>
-            estevaom [at] gmail.com
-          </p>
-          <div class="contact-links">
-            <a target="blank" href="http://www.github.com/estevaom"><span class="mdl-chip"><span class="mdl-chip__text">Github</span></span></a>
-            <a target="blank" href="http://www.linkedin.com/in/estevaom"><span class="mdl-chip"><span class="mdl-chip__text">LinkedIn</span></span></a>
-            <a target="blank" href="http://www.instagram.com/amestevao"><span class="mdl-chip"><span class="mdl-chip__text">Instagram</span></span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
