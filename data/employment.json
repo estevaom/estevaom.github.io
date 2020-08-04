@@ -1,13 +1,13 @@
 [
   {
     "name": "Reinteractive (2017 ~ Present)",
-    "title": "Senior Web Developer @ Reinteractive ~ Sydney (remote)",
+    "title": "Senior Web Developer @ Reinteractive ~ Brisbane",
     "url": "https://www.reinteractive.net/",
     "description": [
-      "Currently working on auditing and consulting products for PwC"
+      "Currently working on auditing and consulting products for PwC and other clients"
     ],
     "technologies": [
-      "ruby-on-rails", "angularjs", "css", "google-cloud-datastore"
+      "ruby-on-rails", "angularjs", "css", "google-cloud-datastore", "elasticsearch"
     ]
   },
   {
