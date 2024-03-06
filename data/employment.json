@@ -1,10 +1,21 @@
 [
   {
-    "name": "Reinteractive (2017 ~ Present)",
+    "name": "Readytech (2023 ~ Present)",
+    "title": "Senior Software Engineer @ Readytech ~ Brisbane",
+    "url": "https://www.readytech.com.au/",
+    "description": [
+      "Mostly Ruby on Rails"
+    ],
+    "technologies": [
+      "ruby-on-rails", "jquery", "css", "mysql", "hotwire", "github-copilot"
+    ]
+  },
+  {
+    "name": "Reinteractive (2017 ~ 2022)",
     "title": "Senior Web Developer @ Reinteractive ~ Brisbane",
     "url": "https://www.reinteractive.net/",
     "description": [
-      "Currently working on auditing and consulting products for PwC and other clients"
+      "Worked on auditing and consulting products for PwC, nib and other clients"
     ],
     "technologies": [
       "ruby-on-rails", "angularjs", "css", "google-cloud-datastore", "elasticsearch"
