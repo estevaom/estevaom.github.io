@@ -236,7 +236,7 @@ tech-item a {
 }
 
 @media (min-width: 2200px) {
-  .employment-card:not(:first-child) {
+  .employment-card {
     width: calc(50% - 12px);
   }
 
@@ -244,7 +244,7 @@ tech-item a {
     margin-right: 4px;
   }
 
-  .employment-card:not(:first-child):nth-child(odd) {
+  .employment-card:nth-child(odd) {
     margin-left: 4px;
   }
 
