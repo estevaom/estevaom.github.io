@@ -3,12 +3,12 @@
         "title": "Sublime Text with GitHub Copilot",
         "imageUrl": "https://www.sublimetext.com/images/og.png",
         "descriptions": {
-            "userInterface": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "autocomplete": "Not good enough. Only offers autocomplete. While it's decent for writing tests, the autocomplete is not very good in large files.",
-            "integrationWithSonnet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "integrationWithOtherModels": "Only offers GitHub Copilot integration.",
-            "uniqueFeatures": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "price": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "userInterface": "Less cluttered than VS Code and fastest editor in this list",
+            "autocomplete": "Good for writing tests and within file context. Can be improved with descriptive method names",
+            "integrationWithSonnet": "No Sonnet integration available",
+            "integrationWithOtherModels": "No model selection available, unclear which model is being used",
+            "uniqueFeatures": "Fastest editor performance, no special AI features",
+            "price": "Not worth the investment for AI capabilities at this point"
         },
         "rating": 2
     },
@@ -16,11 +16,11 @@
         "title": "Windsurf Editor",
         "imageUrl": "placeholder-image-url",
         "descriptions": {
-            "userInterface": "Great UI organization, best organised answers from the AI",
-            "autocomplete": "Mind blowing on first try",
-            "integrationWithSonnet": "Only Sonnet is good enough",
-            "integrationWithOtherModels": "Has multiple models to use",
-            "uniqueFeatures": "Best organized AI responses among editors",
+            "userInterface": "Prettiest out-of-the-box interface, best presented AI answers, very impressive",
+            "autocomplete": "Not thoroughly tested",
+            "integrationWithSonnet": "One of the best Sonnet experiences available",
+            "integrationWithOtherModels": "Other models not performing as well",
+            "uniqueFeatures": "Cascade feature almost as good as Cline, excellent answer presentation",
             "price": "Paid software"
         },
         "rating": 4
@@ -30,9 +30,9 @@
         "imageUrl": "placeholder-image-url",
         "descriptions": {
             "userInterface": "Best looking of all editors in this list",
-            "autocomplete": "Similar suggestions to Windsurf",
-            "integrationWithSonnet": "Similar suggestions to Windsurf when using Sonnet",
-            "integrationWithOtherModels": "Only software where you can use Sonnet for FREE",
+            "autocomplete": "Not thoroughly tested",
+            "integrationWithSonnet": "One of the best Sonnet experiences, with similar quality to Windsurf",
+            "integrationWithOtherModels": "Not as good as Sonnet integration",
             "uniqueFeatures": "Free Sonnet integration",
             "price": "Free"
         },
@@ -42,11 +42,11 @@
         "title": "Cursor Editor",
         "imageUrl": "placeholder-image-url",
         "descriptions": {
-            "userInterface": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "autocomplete": "Almost the same experience as Windsurf",
-            "integrationWithSonnet": "Sonnet suggestions were worse than Windsurf",
-            "integrationWithOtherModels": "Multiple models available",
-            "uniqueFeatures": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "userInterface": "On par with VS Code, not as good as Windsurf or Trae",
+            "autocomplete": "Best autocomplete feature among all tested editors",
+            "integrationWithSonnet": "One of the best Sonnet experiences available",
+            "integrationWithOtherModels": "Not as good as Sonnet integration",
+            "uniqueFeatures": "Superior autocomplete functionality",
             "price": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         },
         "rating": 3
@@ -56,10 +56,10 @@
         "imageUrl": "placeholder-image-url",
         "descriptions": {
             "userInterface": "Standard VS Code interface",
-            "autocomplete": "Much worse experience no matter the model used",
-            "integrationWithSonnet": "Sonnet is still the best but suggestions are worse than Cursor",
-            "integrationWithOtherModels": "Limited model support",
-            "uniqueFeatures": "Integration with VS Code ecosystem",
+            "autocomplete": "Not very good completion suggestions",
+            "integrationWithSonnet": "Limited Sonnet capabilities but better than GPT-4",
+            "integrationWithOtherModels": "Poor performance, GPT-4 is unusable",
+            "uniqueFeatures": "Better than Sublime only due to extensions support",
             "price": "Requires GitHub Copilot subscription"
         },
         "rating": 2
@@ -68,22 +68,22 @@
         "title": "VS Code with Roo Code",
         "imageUrl": "placeholder-image-url",
         "descriptions": {
-            "userInterface": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "autocomplete": "Beats Windsurf, can use copilot's models",
-            "integrationWithSonnet": "Very good Sonnet suggestions but slow",
-            "integrationWithOtherModels": "Compatible with Copilot models",
+            "userInterface": "Multiple AI personalities with pre-configured contexts for different tasks",
+            "autocomplete": "Limited by Copilot integration, not very good",
+            "integrationWithSonnet": "One of the best Sonnet experiences, though slow",
+            "integrationWithOtherModels": "Supports all available models including Copilot models",
             "uniqueFeatures": "Over-engineered, trips on its own legs sometimes, consumes many tokens",
             "price": "High token consumption, faced throttling"
         },
-        "rating": 3
+        "rating": 4
     },
     {
         "title": "VS Code with Cline",
         "imageUrl": "placeholder-image-url",
         "descriptions": {
-            "userInterface": "Less confusing with two profiles that can see each other",
-            "autocomplete": "Best so far, uses less tokens than Roo Code",
-            "integrationWithSonnet": "Gets even better results with Sonnet",
+            "userInterface": "Less cluttered with only two personalities - one for chatting, one for coding",
+            "autocomplete": "Limited by Copilot integration, not very good",
+            "integrationWithSonnet": "The absolute best Sonnet integration among all editors",
             "integrationWithOtherModels": "Much faster than Roo Code",
             "uniqueFeatures": "Only solution that 1-shot all problems, has breakpoints to return to previous state",
             "price": "Efficient token consumption"
