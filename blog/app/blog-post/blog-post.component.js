@@ -15,12 +15,22 @@
 
     function BlogPostController() {
         var self = this;
+        var starsCache = null;
+
+        self.$onChanges = function(changes) {
+            if (changes.post) {
+                starsCache = null;
+            }
+        };
 
         self.getStars = function() {
-            var stars = '★'.repeat(self.post.rating) + '☆'.repeat(5 - self.post.rating);
-            return stars.split('').map(function(star) {
-                return {text: star};
-            });
+            if (!starsCache) {
+                var stars = '★'.repeat(self.post.rating) + '☆'.repeat(5 - self.post.rating);
+                starsCache = stars.split('').map(function(star) {
+                    return {text: star};
+                });
+            }
+            return starsCache;
         };
     }
 })(angular);
