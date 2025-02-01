@@ -1,31 +1,5 @@
 [
     {
-        "title": "Sublime Text with GitHub Copilot",
-        "images": ["images/editors/sublime-copilot.png"],
-        "descriptions": {
-            "userInterface": "Less cluttered than VS Code and fastest editor in this list",
-            "autocomplete": "Good for writing tests and within file context. Can be improved with descriptive method names",
-            "integrationWithSonnet": "No Sonnet integration available",
-            "integrationWithOtherModels": "No model selection available, unclear which model is being used",
-            "uniqueFeatures": "Fastest editor performance, no special AI features",
-            "price": "Not worth the investment for AI capabilities at this point"
-        },
-        "rating": 2
-    },
-    {
-        "title": "Windsurf Editor",
-        "images": ["images/editors/windsurf-editor.png", "images/editors/windsurf-editor-2.png"],
-        "descriptions": {
-            "userInterface": "Prettiest out-of-the-box interface, best presented AI answers, very impressive",
-            "autocomplete": "Not thoroughly tested",
-            "integrationWithSonnet": "One of the best Sonnet experiences available, on par with Cline and Roo",
-            "integrationWithOtherModels": "Other models not performing as well",
-            "uniqueFeatures": "Cascade feature matches Cline's capabilities with superior answer presentation compared to both Cline and Roo",
-            "price": "Paid software, worth the investment"
-        },
-        "rating": 5
-    },
-    {
         "title": "Trae Editor",
         "images": ["images/editors/trae-editor.png", "images/editors/trae-editor-2.png"],
         "descriptions": {
@@ -50,6 +24,19 @@
             "price": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         },
         "rating": 3
+    },
+    {
+        "title": "Sublime Text with GitHub Copilot",
+        "images": ["images/editors/sublime-copilot.png"],
+        "descriptions": {
+            "userInterface": "Less cluttered than VS Code and fastest editor in this list",
+            "autocomplete": "Good for writing tests and within file context. Can be improved with descriptive method names",
+            "integrationWithSonnet": "No Sonnet integration available",
+            "integrationWithOtherModels": "No model selection available, unclear which model is being used",
+            "uniqueFeatures": "Fastest editor performance, no special AI features",
+            "price": "Not worth the investment for AI capabilities at this point"
+        },
+        "rating": 2
     },
     {
         "title": "VS Code with GitHub Copilot",
@@ -89,5 +76,18 @@
             "price": "Efficient token consumption"
         },
         "rating": 5
+    },
+    {
+        "title": "Windsurf Editor",
+        "images": ["images/editors/windsurf-editor.png", "images/editors/windsurf-editor-2.png"],
+        "descriptions": {
+            "userInterface": "Prettiest out-of-the-box interface, best presented AI answers, very impressive",
+            "autocomplete": "Not thoroughly tested",
+            "integrationWithSonnet": "One of the best Sonnet experiences available, on par with Cline and Roo",
+            "integrationWithOtherModels": "Other models not performing as well",
+            "uniqueFeatures": "Cascade feature matches Cline's capabilities with superior answer presentation compared to both Cline and Roo",
+            "price": "Paid software, worth the investment"
+        },
+        "rating": 6
     }
 ]

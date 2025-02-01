@@ -91,7 +91,9 @@
 
         self.getStars = function() {
             if (!starsCache) {
-                var stars = '★'.repeat(self.post.rating) + '☆'.repeat(5 - self.post.rating);
+                var maxStars = self.post.rating > 5 ? 6 : 5;
+                var rating = Math.min(self.post.rating, maxStars);
+                var stars = '★'.repeat(rating) + '☆'.repeat(maxStars - rating);
                 starsCache = stars.split('').map(function(star) {
                     return {text: star};
                 });

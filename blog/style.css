@@ -1,11 +1,22 @@
+:root {
+    --gold-color: #FFA500;
+    --dark-gold-color: #DAA520;
+    --red-gold-color: #FF4500;
+}
+
 @keyframes goldTextPulse {
-    0%, 100% { text-shadow: 0 0 4px #D4AF37, 0 0 11px #D4AF37, 0 0 19px #D4AF37; }
-    50% { text-shadow: 0 0 4px #D4AF37, 0 0 11px #D4AF37; }
+    0%, 100% { text-shadow: 0 0 4px var(--gold-color), 0 0 11px var(--gold-color), 0 0 19px var(--gold-color); }
+    50% { text-shadow: 0 0 4px var(--gold-color), 0 0 11px var(--gold-color); }
 }
 
 @keyframes goldPulse {
-    0%, 100% { box-shadow: 0rem 0rem 0rem #D4AF37, 0 0 50rem #D4AF37, 0 0 100rem #D4AF37; }
-    50% { box-shadow: 0 0 100rem #D4AF37, 0 0 0rem #D4AF37; }
+    0%, 100% { box-shadow: 0rem 0rem 0rem var(--gold-color), 0 0 50rem var(--gold-color), 0 0 100rem var(--gold-color); }
+    50% { box-shadow: 0 0 100rem var(--gold-color), 0 0 0rem var(--gold-color); }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 @keyframes spinFast {
@@ -25,7 +36,7 @@
 }
 
 .neon-title {
-    color: #D4AF37;
+    color: var(--dark-gold-color);
     animation: goldTextPulse 2s infinite;
 }
 
@@ -38,8 +49,20 @@
 }
 
 .posts-list > :last-child .rating {
-    color: #D4AF37;
+    color: var(--red-gold-color);
+    font-size: 1.875rem;
+    text-shadow: 0 0 10px var(--red-gold-color);
 }
+
+.posts-list > :last-child .star {
+    animation: spin 2s linear infinite;
+}
+
+.posts-list > :last-child .star:nth-child(2) { animation-delay: 0.33s; }
+.posts-list > :last-child .star:nth-child(3) { animation-delay: 0.66s; }
+.posts-list > :last-child .star:nth-child(4) { animation-delay: 1s; }
+.posts-list > :last-child .star:nth-child(5) { animation-delay: 1.33s; }
+.posts-list > :last-child .star:nth-child(6) { animation-delay: 1.66s; }
 
 .rating {
     color: #f92aad;
@@ -83,7 +106,7 @@
 
 .star {
     display: inline-block;
-    margin: 0 1px;
+    margin: 0px 0.3rem;
     transform-origin: center;
 }
 
