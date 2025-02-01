@@ -1,13 +1,18 @@
 [
   {
     "name": "Readytech (2023 ~ Present)",
-    "title": "Senior Software Engineer @ Readytech ~ Brisbane",
+    "title": "Engineering Manager @ Readytech ~ Brisbane",
     "url": "https://www.readytech.com.au/",
     "description": [
-      "Mostly Ruby on Rails"
+      "Lead and manage engineering team development efforts",
+      "Estimate and plan new feature implementations",
+      "Develop and test Ruby on Rails applications",
+      "Deliver technical presentations at company retreats",
+      "Drive innovation through extensive use of AI tools and technologies",
+      "Architect and execute large-scale refactoring of legacy applications to modern standards"
     ],
     "technologies": [
-      "ruby-on-rails", "jquery", "css", "mysql", "hotwire", "github-copilot"
+      "ruby-on-rails", "jquery", "css", "mysql", "hotwire", "github-copilot", "cline", "claude-3"
     ]
   },
   {
