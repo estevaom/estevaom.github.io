@@ -1,7 +1,7 @@
 [
     {
         "title": "Sublime Text with GitHub Copilot",
-        "imageUrl": "images/editors/sublime-copilot.png",
+        "images": ["images/editors/sublime-copilot.png"],
         "descriptions": {
             "userInterface": "Less cluttered than VS Code and fastest editor in this list",
             "autocomplete": "Good for writing tests and within file context. Can be improved with descriptive method names",
@@ -14,7 +14,7 @@
     },
     {
         "title": "Windsurf Editor",
-        "imageUrl": "images/editors/windsurf-editor.png",
+        "images": ["images/editors/windsurf-editor.png", "images/editors/windsurf-editor-2.png"],
         "descriptions": {
             "userInterface": "Prettiest out-of-the-box interface, best presented AI answers, very impressive",
             "autocomplete": "Not thoroughly tested",
@@ -27,9 +27,9 @@
     },
     {
         "title": "Trae Editor",
-        "imageUrl": "images/editors/trae-editor.png",
+        "images": ["images/editors/trae-editor.png", "images/editors/trae-editor-2.png"],
         "descriptions": {
-            "userInterface": "Best looking of all editors in this list",
+            "userInterface": "Most unique and innovative UI design, with a fresh take on editor aesthetics",
             "autocomplete": "Not thoroughly tested",
             "integrationWithSonnet": "Basic Sonnet integration, significantly behind Windsurf, Cline and Roo",
             "integrationWithOtherModels": "Not as good as Sonnet integration",
@@ -40,7 +40,7 @@
     },
     {
         "title": "Cursor Editor",
-        "imageUrl": "images/editors/cursor-editor.png",
+        "images": ["images/editors/cursor-editor.png"],
         "descriptions": {
             "userInterface": "On par with VS Code, not as good as Windsurf or Trae",
             "autocomplete": "Not thoroughly tested",
@@ -53,7 +53,7 @@
     },
     {
         "title": "VS Code with GitHub Copilot",
-        "imageUrl": "images/editors/vscode-copilot.png",
+        "images": ["images/editors/vscode-copilot.png"],
         "descriptions": {
             "userInterface": "Standard VS Code interface",
             "autocomplete": "Not very good completion suggestions",
@@ -66,7 +66,7 @@
     },
     {
         "title": "VS Code with Roo Code",
-        "imageUrl": "images/editors/vscode-roo.png",
+        "images": ["images/editors/vscode-roo.png"],
         "descriptions": {
             "userInterface": "Multiple AI personalities with pre-configured contexts for different tasks",
             "autocomplete": "Limited by Copilot integration, not very good",
@@ -79,7 +79,7 @@
     },
     {
         "title": "VS Code with Cline",
-        "imageUrl": "images/editors/vscode-cline.png",
+        "images": ["images/editors/vscode-cline.png"],
         "descriptions": {
             "userInterface": "Less cluttered with only two personalities - one for chatting, one for coding",
             "autocomplete": "Limited by Copilot integration, not very good",
