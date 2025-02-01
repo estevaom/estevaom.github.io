@@ -1,6 +1,11 @@
-@keyframes neonPulse {
-    0%, 100% { text-shadow: 0 0 4px #ff7edb, 0 0 11px #ff7edb, 0 0 19px #ff7edb; }
-    50% { text-shadow: 0 0 4px #ff7edb, 0 0 11px #ff7edb; }
+@keyframes goldTextPulse {
+    0%, 100% { text-shadow: 0 0 4px #D4AF37, 0 0 11px #D4AF37, 0 0 19px #D4AF37; }
+    50% { text-shadow: 0 0 4px #D4AF37, 0 0 11px #D4AF37; }
+}
+
+@keyframes goldPulse {
+    0%, 100% { box-shadow: 0rem 0rem 0rem #D4AF37, 0 0 50rem #D4AF37, 0 0 100rem #D4AF37; }
+    50% { box-shadow: 0 0 100rem #D4AF37, 0 0 0rem #D4AF37; }
 }
 
 @keyframes spinFast {
@@ -20,8 +25,8 @@
 }
 
 .neon-title {
-    color: #ff7edb;
-    animation: neonPulse 2s infinite;
+    color: #D4AF37;
+    animation: goldTextPulse 2s infinite;
 }
 
 .neon-border {
@@ -29,7 +34,7 @@
 }
 
 .posts-list > :last-child .neon-border {
-    box-shadow: 0 0 5px #D4AF37, 0 0 10px #D4AF37;
+    animation: goldPulse 2s infinite;
 }
 
 .posts-list > :last-child .rating {
@@ -72,8 +77,18 @@
     background: #f92aad;
 }
 
+body {
+    background-image: url('images/wallpaper.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
 .posts-list {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    padding: 2em;
 }
