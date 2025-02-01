@@ -35,6 +35,8 @@
     </div>
 
     <footer class="mt-10 pt-6 border-t border-[#34294f]">
-        <div class="rating text-3xl">{{$ctrl.getStars()}}</div>
+        <div class="rating text-3xl">
+            <span class="star" ng-repeat="star in $ctrl.getStars()">{{star.text}}</span>
+        </div>
     </footer>
 </article>

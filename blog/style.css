@@ -3,6 +3,22 @@
     50% { text-shadow: 0 0 4px #ff7edb, 0 0 11px #ff7edb; }
 }
 
+@keyframes spinFast {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes spinSlowDown {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(90deg); }
+    25% { transform: rotate(180deg); }
+    45% { transform: rotate(270deg); }
+    70% { transform: rotate(330deg); }
+    85% { transform: rotate(350deg); }
+    95% { transform: rotate(358deg); }
+    100% { transform: rotate(360deg); }
+}
+
 .neon-title {
     color: #ff7edb;
     animation: neonPulse 2s infinite;
@@ -15,6 +31,20 @@
 .rating {
     color: #f92aad;
     text-shadow: 0 0 5px #f92aad;
+}
+
+.star {
+    display: inline-block;
+    margin: 0 1px;
+    transform-origin: center;
+}
+
+.star:hover {
+    animation: spinFast 0.5s linear infinite;
+}
+
+.star:not(:hover) {
+    animation: spinSlowDown 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 ::-webkit-scrollbar {

@@ -17,7 +17,10 @@
         var self = this;
 
         self.getStars = function() {
-            return '★'.repeat(self.post.rating) + '☆'.repeat(5 - self.post.rating);
+            var stars = '★'.repeat(self.post.rating) + '☆'.repeat(5 - self.post.rating);
+            return stars.split('').map(function(star) {
+                return {text: star};
+            });
         };
     }
 })(angular);
