@@ -1,28 +1,93 @@
 [
     {
-        "title": "Visual Studio Code: A Modern Code Editor",
-        "imageUrl": "https://code.visualstudio.com/assets/home/home-screenshot-win.png",
+        "title": "Sublime Text with GitHub Copilot",
+        "imageUrl": "https://www.sublimetext.com/images/og.png",
         "descriptions": {
-            "userInterface": "VS Code offers a clean, modern interface with customizable layout and color themes. The sidebar organization with file explorer, search, and source control is intuitive. The ability to split editors and arrange panels makes multitasking efficient.",
-            "autocomplete": "IntelliSense provides context-aware code completion, parameter info, and quick hints. It works exceptionally well with JavaScript, TypeScript, and Python, offering smart suggestions based on imported modules and available methods.",
-            "integrationWithSonnet": "Through extensions, VS Code seamlessly integrates with Sonnet, providing syntax highlighting and code validation. The integration enables real-time feedback and error checking while writing Sonnet code.",
-            "integrationWithOtherModels": "VS Code supports numerous language models and AI assistants through its extension marketplace. Popular models like Copilot and Tabnine are well-integrated, offering inline suggestions and code generation capabilities.",
-            "uniqueFeatures": "The integrated terminal, live share for real-time collaboration, and remote development capabilities stand out. The debugger integration and customizable task runners make it a complete development environment.",
-            "price": "VS Code is completely free and open-source, which is remarkable given its professional-grade features. Premium features come through paid extensions, but the core functionality is free."
+            "userInterface": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "autocomplete": "Not good enough. Only offers autocomplete. While it's decent for writing tests, the autocomplete is not very good in large files.",
+            "integrationWithSonnet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "integrationWithOtherModels": "Only offers GitHub Copilot integration.",
+            "uniqueFeatures": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "price": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         },
-        "rating": 5
+        "rating": 2
     },
     {
-        "title": "Docker: Containerization Made Simple",
-        "imageUrl": "https://www.docker.com/wp-content/uploads/2021/09/docker_logo_og.png",
+        "title": "Windsurf Editor",
+        "imageUrl": "placeholder-image-url",
         "descriptions": {
-            "userInterface": "Docker Desktop provides a graphical interface for container management, though many users prefer the CLI. The dashboard shows running containers, images, and volumes with basic controls for management.",
-            "autocomplete": "Docker CLI offers command completion in terminals, helping with complex command structures. The Dockerfile syntax highlighting and validation in most IDEs aids in container configuration.",
-            "integrationWithSonnet": "Docker can be used to containerize Sonnet applications, ensuring consistent runtime environments. Multi-stage builds help optimize Sonnet application containers for production deployment.",
-            "integrationWithOtherModels": "Docker images are available for most AI/ML models and frameworks. The container ecosystem makes it easy to run multiple model versions in isolated environments without conflicts.",
-            "uniqueFeatures": "Docker Compose for multi-container applications, layer caching for faster builds, and volume mounting for development workflows are standout features. The container networking capabilities enable complex microservice architectures.",
-            "price": "Docker offers both free and paid tiers. Personal use and small teams can use Docker Desktop for free, while enterprise features require a paid subscription. The pricing model has evolved to focus on commercial use."
+            "userInterface": "Great UI organization, best organised answers from the AI",
+            "autocomplete": "Mind blowing on first try",
+            "integrationWithSonnet": "Only Sonnet is good enough",
+            "integrationWithOtherModels": "Has multiple models to use",
+            "uniqueFeatures": "Best organized AI responses among editors",
+            "price": "Paid software"
         },
         "rating": 4
+    },
+    {
+        "title": "Trae Editor",
+        "imageUrl": "placeholder-image-url",
+        "descriptions": {
+            "userInterface": "Best looking of all editors in this list",
+            "autocomplete": "Similar suggestions to Windsurf",
+            "integrationWithSonnet": "Similar suggestions to Windsurf when using Sonnet",
+            "integrationWithOtherModels": "Only software where you can use Sonnet for FREE",
+            "uniqueFeatures": "Free Sonnet integration",
+            "price": "Free"
+        },
+        "rating": 4
+    },
+    {
+        "title": "Cursor Editor",
+        "imageUrl": "placeholder-image-url",
+        "descriptions": {
+            "userInterface": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "autocomplete": "Almost the same experience as Windsurf",
+            "integrationWithSonnet": "Sonnet suggestions were worse than Windsurf",
+            "integrationWithOtherModels": "Multiple models available",
+            "uniqueFeatures": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "price": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        "rating": 3
+    },
+    {
+        "title": "VS Code with GitHub Copilot",
+        "imageUrl": "placeholder-image-url",
+        "descriptions": {
+            "userInterface": "Standard VS Code interface",
+            "autocomplete": "Much worse experience no matter the model used",
+            "integrationWithSonnet": "Sonnet is still the best but suggestions are worse than Cursor",
+            "integrationWithOtherModels": "Limited model support",
+            "uniqueFeatures": "Integration with VS Code ecosystem",
+            "price": "Requires GitHub Copilot subscription"
+        },
+        "rating": 2
+    },
+    {
+        "title": "VS Code with Roo Code",
+        "imageUrl": "placeholder-image-url",
+        "descriptions": {
+            "userInterface": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "autocomplete": "Beats Windsurf, can use copilot's models",
+            "integrationWithSonnet": "Very good Sonnet suggestions but slow",
+            "integrationWithOtherModels": "Compatible with Copilot models",
+            "uniqueFeatures": "Over-engineered, trips on its own legs sometimes, consumes many tokens",
+            "price": "High token consumption, faced throttling"
+        },
+        "rating": 3
+    },
+    {
+        "title": "VS Code with Cline",
+        "imageUrl": "placeholder-image-url",
+        "descriptions": {
+            "userInterface": "Less confusing with two profiles that can see each other",
+            "autocomplete": "Best so far, uses less tokens than Roo Code",
+            "integrationWithSonnet": "Gets even better results with Sonnet",
+            "integrationWithOtherModels": "Much faster than Roo Code",
+            "uniqueFeatures": "Only solution that 1-shot all problems, has breakpoints to return to previous state",
+            "price": "Efficient token consumption"
+        },
+        "rating": 5
     }
 ]
