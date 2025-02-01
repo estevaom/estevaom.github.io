@@ -33,3 +33,9 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #f92aad;
 }
+
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}

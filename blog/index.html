@@ -1,98 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-[#241b2f] text-gray-100">
+<html lang="en" class="bg-[#241b2f] text-gray-100" ng-app="blogApp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software Experience Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <!-- App Modules -->
+    <script src="app/app.module.js"></script>
+    <script src="app/blog-header/blog-header.module.js"></script>
+    <script src="app/blog-header/blog-header.component.js"></script>
+    <script src="app/blog-post/blog-post.module.js"></script>
+    <script src="app/blog-post/blog-post.component.js"></script>
+    <script src="app/posts-container/posts-container.module.js"></script>
+    <script src="app/posts-container/posts-container.component.js"></script>
 </head>
 <body class="min-h-screen px-6 py-12">
     <div class="max-w-6xl mx-auto">
-        <header class="text-center mb-20">
-            <h1 class="text-6xl font-bold mb-6 neon-title">Software Experience Blog</h1>
-            <p class="text-[#2ee2fa] text-xl">Sharing my experiences with different software tools</p>
-        </header>
-
-        <main class="space-y-20">
-            <article class="bg-[#2b213a] rounded-xl p-10 neon-border transition-all duration-300 hover:scale-[1.02]">
-                <h2 class="text-4xl font-bold mb-8 text-[#ff7edb]">Visual Studio Code: A Modern Code Editor</h2>
-                <img src="https://code.visualstudio.com/assets/home/home-screenshot-win.png" alt="VS Code Interface" class="w-full rounded-lg mb-10 border border-[#34294f]">
-                <div class="space-y-10">
-                    <section>
-                        <h3 class="text-2xl font-semibold mb-4 text-[#2ee2fa]">User Interface</h3>
-                        <p class="leading-relaxed text-lg">VS Code offers a clean, modern interface with customizable layout and color themes. The sidebar organization with file explorer, search, and source control is intuitive. The ability to split editors and arrange panels makes multitasking efficient.</p>
-                    </section>
-
-                    <section>
-                        <h3 class="text-2xl font-semibold mb-4 text-[#2ee2fa]">Autocomplete</h3>
-                        <p class="leading-relaxed text-lg">IntelliSense provides context-aware code completion, parameter info, and quick hints. It works exceptionally well with JavaScript, TypeScript, and Python, offering smart suggestions based on imported modules and available methods.</p>
-                    </section>
-
-                    <section>
-                        <h3 class="text-2xl font-semibold mb-4 text-[#2ee2fa]">Integration with Sonnet</h3>
-                        <p class="leading-relaxed text-lg">Through extensions, VS Code seamlessly integrates with Sonnet, providing syntax highlighting and code validation. The integration enables real-time feedback and error checking while writing Sonnet code.</p>
-                    </section>
-
-                    <section>
-                        <h3 class="text-2xl font-semibold mb-4 text-[#2ee2fa]">Integration with Other Models</h3>
-                        <p class="leading-relaxed text-lg">VS Code supports numerous language models and AI assistants through its extension marketplace. Popular models like Copilot and Tabnine are well-integrated, offering inline suggestions and code generation capabilities.</p>
-                    </section>
-
-                    <section>
-                        <h3 class="text-2xl font-semibold mb-4 text-[#2ee2fa]">Unique Features</h3>
-                        <p class="leading-relaxed text-lg">The integrated terminal, live share for real-time collaboration, and remote development capabilities stand out. The debugger integration and customizable task runners make it a complete development environment.</p>
-                    </section>
-
-                    <section>
-                        <h3 class="text-2xl font-semibold mb-4 text-[#2ee2fa]">Price</h3>
-                        <p class="leading-relaxed text-lg">VS Code is completely free and open-source, which is remarkable given its professional-grade features. Premium features come through paid extensions, but the core functionality is free.</p>
-                    </section>
-                </div>
-                <footer class="mt-10 pt-6 border-t border-[#34294f]">
-                    <div class="rating text-3xl">★★★★★</div>
-                </footer>
-            </article>
-
-            <article class="bg-[#2b213a] rounded-xl p-10 neon-border transition-all duration-300 hover:scale-[1.02]">
-                <h2 class="text-4xl font-bold mb-8 text-[#ff7edb]">Docker: Containerization Made Simple</h2>
-                <img src="https://www.docker.com/wp-content/uploads/2021/09/docker_logo_og.png" alt="Docker Logo" class="w-full rounded-lg mb-10 border border-[#34294f]">
-                <div class="space-y-10">
-                    <section>
-                        <h3 class="text-2xl font-semibold mb-4 text-[#2ee2fa]">User Interface</h3>
-                        <p class="leading-relaxed text-lg">Docker Desktop provides a graphical interface for container management, though many users prefer the CLI. The dashboard shows running containers, images, and volumes with basic controls for management.</p>
-                    </section>
-
-                    <section>
-                        <h3 class="text-2xl font-semibold mb-4 text-[#2ee2fa]">Autocomplete</h3>
-                        <p class="leading-relaxed text-lg">Docker CLI offers command completion in terminals, helping with complex command structures. The Dockerfile syntax highlighting and validation in most IDEs aids in container configuration.</p>
-                    </section>
-
-                    <section>
-                        <h3 class="text-2xl font-semibold mb-4 text-[#2ee2fa]">Integration with Sonnet</h3>
-                        <p class="leading-relaxed text-lg">Docker can be used to containerize Sonnet applications, ensuring consistent runtime environments. Multi-stage builds help optimize Sonnet application containers for production deployment.</p>
-                    </section>
-
-                    <section>
-                        <h3 class="text-2xl font-semibold mb-4 text-[#2ee2fa]">Integration with Other Models</h3>
-                        <p class="leading-relaxed text-lg">Docker images are available for most AI/ML models and frameworks. The container ecosystem makes it easy to run multiple model versions in isolated environments without conflicts.</p>
-                    </section>
-
-                    <section>
-                        <h3 class="text-2xl font-semibold mb-4 text-[#2ee2fa]">Unique Features</h3>
-                        <p class="leading-relaxed text-lg">Docker Compose for multi-container applications, layer caching for faster builds, and volume mounting for development workflows are standout features. The container networking capabilities enable complex microservice architectures.</p>
-                    </section>
-
-                    <section>
-                        <h3 class="text-2xl font-semibold mb-4 text-[#2ee2fa]">Price</h3>
-                        <p class="leading-relaxed text-lg">Docker offers both free and paid tiers. Personal use and small teams can use Docker Desktop for free, while enterprise features require a paid subscription. The pricing model has evolved to focus on commercial use.</p>
-                    </section>
-                </div>
-                <footer class="mt-10 pt-6 border-t border-[#34294f]">
-                    <div class="rating text-3xl">★★★★☆</div>
-                </footer>
-            </article>
-        </main>
+        <blog-header></blog-header>
+        <posts-container></posts-container>
     </div>
 </body>
 </html>

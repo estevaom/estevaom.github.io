@@ -1,0 +1,28 @@
+[
+    {
+        "title": "Visual Studio Code: A Modern Code Editor",
+        "imageUrl": "https://code.visualstudio.com/assets/home/home-screenshot-win.png",
+        "descriptions": {
+            "userInterface": "VS Code offers a clean, modern interface with customizable layout and color themes. The sidebar organization with file explorer, search, and source control is intuitive. The ability to split editors and arrange panels makes multitasking efficient.",
+            "autocomplete": "IntelliSense provides context-aware code completion, parameter info, and quick hints. It works exceptionally well with JavaScript, TypeScript, and Python, offering smart suggestions based on imported modules and available methods.",
+            "integrationWithSonnet": "Through extensions, VS Code seamlessly integrates with Sonnet, providing syntax highlighting and code validation. The integration enables real-time feedback and error checking while writing Sonnet code.",
+            "integrationWithOtherModels": "VS Code supports numerous language models and AI assistants through its extension marketplace. Popular models like Copilot and Tabnine are well-integrated, offering inline suggestions and code generation capabilities.",
+            "uniqueFeatures": "The integrated terminal, live share for real-time collaboration, and remote development capabilities stand out. The debugger integration and customizable task runners make it a complete development environment.",
+            "price": "VS Code is completely free and open-source, which is remarkable given its professional-grade features. Premium features come through paid extensions, but the core functionality is free."
+        },
+        "rating": 5
+    },
+    {
+        "title": "Docker: Containerization Made Simple",
+        "imageUrl": "https://www.docker.com/wp-content/uploads/2021/09/docker_logo_og.png",
+        "descriptions": {
+            "userInterface": "Docker Desktop provides a graphical interface for container management, though many users prefer the CLI. The dashboard shows running containers, images, and volumes with basic controls for management.",
+            "autocomplete": "Docker CLI offers command completion in terminals, helping with complex command structures. The Dockerfile syntax highlighting and validation in most IDEs aids in container configuration.",
+            "integrationWithSonnet": "Docker can be used to containerize Sonnet applications, ensuring consistent runtime environments. Multi-stage builds help optimize Sonnet application containers for production deployment.",
+            "integrationWithOtherModels": "Docker images are available for most AI/ML models and frameworks. The container ecosystem makes it easy to run multiple model versions in isolated environments without conflicts.",
+            "uniqueFeatures": "Docker Compose for multi-container applications, layer caching for faster builds, and volume mounting for development workflows are standout features. The container networking capabilities enable complex microservice architectures.",
+            "price": "Docker offers both free and paid tiers. Personal use and small teams can use Docker Desktop for free, while enterprise features require a paid subscription. The pricing model has evolved to focus on commercial use."
+        },
+        "rating": 4
+    }
+]

@@ -1,0 +1,40 @@
+<article class="bg-[#2b213a] rounded-xl p-10 neon-border transition-all duration-300 hover:scale-[1.02]">
+    <h2 class="text-4xl font-bold mb-8 text-[#ff7edb]">{{$ctrl.post.title}}</h2>
+    <img ng-src="{{$ctrl.post.imageUrl}}" alt="{{$ctrl.post.title}}" class="w-full rounded-lg mb-10 border border-[#34294f]">
+    
+    <div class="space-y-10">
+        <section>
+            <h3 class="text-2xl font-semibold mb-4 text-[#2ee2fa]">User Interface</h3>
+            <p class="leading-relaxed text-lg">{{$ctrl.post.descriptions.userInterface}}</p>
+        </section>
+
+        <section>
+            <h3 class="text-2xl font-semibold mb-4 text-[#2ee2fa]">Autocomplete</h3>
+            <p class="leading-relaxed text-lg">{{$ctrl.post.descriptions.autocomplete}}</p>
+        </section>
+
+        <section>
+            <h3 class="text-2xl font-semibold mb-4 text-[#2ee2fa]">Integration with Sonnet</h3>
+            <p class="leading-relaxed text-lg">{{$ctrl.post.descriptions.integrationWithSonnet}}</p>
+        </section>
+
+        <section>
+            <h3 class="text-2xl font-semibold mb-4 text-[#2ee2fa]">Integration with Other Models</h3>
+            <p class="leading-relaxed text-lg">{{$ctrl.post.descriptions.integrationWithOtherModels}}</p>
+        </section>
+
+        <section>
+            <h3 class="text-2xl font-semibold mb-4 text-[#2ee2fa]">Unique Features</h3>
+            <p class="leading-relaxed text-lg">{{$ctrl.post.descriptions.uniqueFeatures}}</p>
+        </section>
+
+        <section>
+            <h3 class="text-2xl font-semibold mb-4 text-[#2ee2fa]">Price</h3>
+            <p class="leading-relaxed text-lg">{{$ctrl.post.descriptions.price}}</p>
+        </section>
+    </div>
+
+    <footer class="mt-10 pt-6 border-t border-[#34294f]">
+        <div class="rating text-3xl">{{$ctrl.getStars()}}</div>
+    </footer>
+</article>
