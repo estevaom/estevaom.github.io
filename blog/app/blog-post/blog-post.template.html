@@ -6,12 +6,14 @@
     
     <div class="lightbox" ng-class="{'active': $ctrl.showLightbox}" ng-click="$ctrl.handleLightboxClick($event)">
         <div class="relative inline-block">
-            <img ng-src="{{$ctrl.currentImage}}" alt="{{$ctrl.post.title}}" class="max-h-[90vh] max-w-[90vw]">
+            <div class="image-container">
+                <img ng-src="{{$ctrl.currentImage}}" alt="{{$ctrl.post.title}}" class="lightbox-image">
+            </div>
             
-            <button ng-if="$ctrl.post.images.length > 1" ng-click="$ctrl.prevImage($event)" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-[#34294f] text-white p-3 rounded-full hover:bg-[#ff7edb] transition-all hover:scale-110 text-xl font-bold shadow-lg hover:shadow-xl">
+            <button ng-if="$ctrl.post.images.length > 1" ng-click="$ctrl.prevImage($event)" class="nav-button prev-button">
                 &#8592;
             </button>
-            <button ng-if="$ctrl.post.images.length > 1" ng-click="$ctrl.nextImage($event)" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-[#34294f] text-white p-3 rounded-full hover:bg-[#ff7edb] transition-all hover:scale-110 text-xl font-bold shadow-lg hover:shadow-xl">
+            <button ng-if="$ctrl.post.images.length > 1" ng-click="$ctrl.nextImage($event)" class="nav-button next-button">
                 &#8594;
             </button>
 

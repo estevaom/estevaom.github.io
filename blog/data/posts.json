@@ -65,19 +65,6 @@
         "rating": 4
     },
     {
-        "title": "VS Code with Cline",
-        "images": ["images/editors/vscode-cline.png"],
-        "descriptions": {
-            "userInterface": "Less cluttered with only two personalities - one for chatting, one for coding",
-            "autocomplete": "Limited by Copilot integration, not very good",
-            "integrationWithSonnet": "The absolute best Sonnet integration among all editors",
-            "integrationWithOtherModels": "Much faster than Roo Code",
-            "uniqueFeatures": "Only solution that 1-shot all problems, has breakpoints to return to previous state",
-            "price": "Efficient token consumption"
-        },
-        "rating": 5
-    },
-    {
         "title": "Windsurf Editor",
         "images": ["images/editors/windsurf-editor.png", "images/editors/windsurf-editor-2.png"],
         "descriptions": {
@@ -87,6 +74,19 @@
             "integrationWithOtherModels": "Other models not performing as well",
             "uniqueFeatures": "Cascade feature matches Cline's capabilities with superior answer presentation compared to both Cline and Roo",
             "price": "Paid software, worth the investment"
+        },
+        "rating": 5
+    },
+    {
+        "title": "VS Code with Cline",
+        "images": ["images/editors/vscode-cline.png"],
+        "descriptions": {
+            "userInterface": "Sleek and efficient interface that makes Windsurf look like Windows 95",
+            "autocomplete": "Who needs autocomplete when you have Cline doing backflips for you?",
+            "integrationWithSonnet": "Makes Windsurf's Sonnet integration look like a typewriter - absolutely blazing fast",
+            "integrationWithOtherModels": "Faster than Roo, smoother than Windsurf, it's like comparing a Tesla to a horse and carriage",
+            "uniqueFeatures": "Not only 1-shots problems but does it with style. Has breakpoints that actually work (looking at you, Windsurf's Cascade)",
+            "price": "So efficient with tokens, it makes Windsurf's pricing look like a luxury yacht subscription"
         },
         "rating": 6
     }
