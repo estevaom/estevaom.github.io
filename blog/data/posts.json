@@ -18,12 +18,12 @@
         "descriptions": {
             "userInterface": "Prettiest out-of-the-box interface, best presented AI answers, very impressive",
             "autocomplete": "Not thoroughly tested",
-            "integrationWithSonnet": "One of the best Sonnet experiences available",
+            "integrationWithSonnet": "One of the best Sonnet experiences available, on par with Cline and Roo",
             "integrationWithOtherModels": "Other models not performing as well",
-            "uniqueFeatures": "Cascade feature almost as good as Cline, excellent answer presentation",
-            "price": "Paid software"
+            "uniqueFeatures": "Cascade feature matches Cline's capabilities with superior answer presentation compared to both Cline and Roo",
+            "price": "Paid software, worth the investment"
         },
-        "rating": 4
+        "rating": 5
     },
     {
         "title": "Trae Editor",
@@ -31,22 +31,22 @@
         "descriptions": {
             "userInterface": "Best looking of all editors in this list",
             "autocomplete": "Not thoroughly tested",
-            "integrationWithSonnet": "One of the best Sonnet experiences, with similar quality to Windsurf",
+            "integrationWithSonnet": "Basic Sonnet integration, significantly behind Windsurf, Cline and Roo",
             "integrationWithOtherModels": "Not as good as Sonnet integration",
             "uniqueFeatures": "Free Sonnet integration",
             "price": "Free"
         },
-        "rating": 4
+        "rating": 3
     },
     {
         "title": "Cursor Editor",
         "imageUrl": "images/editors/cursor-editor.png",
         "descriptions": {
             "userInterface": "On par with VS Code, not as good as Windsurf or Trae",
-            "autocomplete": "Best autocomplete feature among all tested editors",
-            "integrationWithSonnet": "One of the best Sonnet experiences available",
+            "autocomplete": "Not thoroughly tested",
+            "integrationWithSonnet": "Basic Sonnet integration, significantly behind Windsurf",
             "integrationWithOtherModels": "Not as good as Sonnet integration",
-            "uniqueFeatures": "Superior autocomplete functionality",
+            "uniqueFeatures": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "price": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         },
         "rating": 3
