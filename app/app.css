@@ -61,6 +61,21 @@ tech-item a {
   padding-top: 1.5em;
 }
 
+.mdl-layout__header-row {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+resume {
+  display: block;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
 .mdl-list__item-avatar, .mdl-list__item-avatar.material-icons {
   height: 30px;
   width: 30px;
@@ -143,6 +158,9 @@ tech-item a {
 #about-me p {
   margin-bottom: 0;
 }
+#about-me .mdl-card__supporting-text {
+  width: 100%;
+}
 
 #objectives, #education, #contact {
   width: 100%;
@@ -205,7 +223,7 @@ tech-item a {
 }
 
 #employment .mdl-card__supporting-text {
-  padding: 0;
+  padding: 0 1em 0 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -216,26 +234,9 @@ tech-item a {
   align-self: flex-end;
 }
 
-@media (max-width: 839px) {
-  .mdl-button.up-button {
-    display: block;
-  }
 
-  .mdl-cell--6-col {
-    width: calc(100% - 16px);
-  }
 
-  .employment-card .mdl-card__title-text {
-    font-size: 1.3rem;
-    top: 12px;
-  }
-
-  .employment-card ul {
-    padding: 0 20px 0 30px;
-  }
-}
-
-@media (min-width: 2200px) {
+@media (min-width: 1400px) {
   .employment-card {
     width: calc(50% - 12px);
   }
