@@ -79,7 +79,7 @@
     },
     {
         "title": "VS Code with Cline",
-        "images": ["images/editors/vscode-cline.png"],
+        "images": ["images/editors/vscode-cline.png", "images/editors/vscode-cline-2.png"],
         "descriptions": {
             "userInterface": "Sleek and efficient interface that makes Windsurf look like Windows 95",
             "autocomplete": "Who needs autocomplete when you have Cline doing backflips for you?",
