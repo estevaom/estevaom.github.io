@@ -44,7 +44,7 @@
     box-shadow: 0 0 5px #2ee2fa, 0 0 10px #2ee2fa;
 }
 
-.posts-list > :last-child .neon-border {
+.posts-list > :last-child.neon-border {
     animation: goldPulse 2s infinite;
 }
 

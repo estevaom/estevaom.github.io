@@ -8,11 +8,13 @@ async function loadTemplate(url) {
     }
 }
 
-Promise.all([
-    loadTemplate('app/blog-header/blog-header.template.html'),
-    loadTemplate('app/blog-post/blog-post.template.html'),
-    loadTemplate('app/posts-container/posts-container.template.html')
-]).then(([headerTemplate, postTemplate, containerTemplate]) => {
+async function initApp() {
+    const [headerTemplate, postTemplate, containerTemplate] = await Promise.all([
+        loadTemplate('app/blog-header/blog-header.template.html'),
+        loadTemplate('app/blog-post/blog-post.template.html'),
+        loadTemplate('app/posts-container/posts-container.template.html')
+    ]);
+
     BlogHeader.template = headerTemplate;
     BlogPost.template = postTemplate;
     PostsContainer.template = containerTemplate;
@@ -22,4 +24,6 @@ Promise.all([
     app.component('blog-post', BlogPost);
     app.component('posts-container', PostsContainer);
     app.mount('#app');
-});
+}
+
+initApp().catch(console.error);
