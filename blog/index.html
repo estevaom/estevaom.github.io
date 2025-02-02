@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#241b2f] text-gray-100" ng-app="blogApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Experience Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <!-- App Modules -->
+    <script src="app/app.module.js"></script>
+    <script src="app/blog-header/blog-header.module.js"></script>
+    <script src="app/blog-header/blog-header.component.js"></script>
+    <script src="app/blog-post/blog-post.module.js"></script>
+    <script src="app/blog-post/blog-post.component.js"></script>
+    <script src="app/posts-container/posts-container.module.js"></script>
+    <script src="app/posts-container/posts-container.component.js"></script>
+</head>
+<body class="min-h-screen px-6 py-12">
+    <div class="max-w-6xl mx-auto">
+        <blog-header></blog-header>
+        <posts-container></posts-container>
+    </div>
+</body>
+</html>

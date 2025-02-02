@@ -1,0 +1,93 @@
+[
+    {
+        "title": "Trae Editor",
+        "images": ["images/editors/trae-editor.png", "images/editors/trae-editor-2.png"],
+        "descriptions": {
+            "userInterface": "Most unique and innovative UI design, with a fresh take on editor aesthetics",
+            "autocomplete": "Not thoroughly tested",
+            "integrationWithSonnet": "Basic Sonnet integration, significantly behind Windsurf, Cline and Roo",
+            "integrationWithOtherModels": "Not as good as Sonnet integration",
+            "uniqueFeatures": "Free Sonnet integration",
+            "price": "Free"
+        },
+        "rating": 3
+    },
+    {
+        "title": "Cursor Editor",
+        "images": ["images/editors/cursor-editor.png"],
+        "descriptions": {
+            "userInterface": "On par with VS Code, not as good as Windsurf or Trae",
+            "autocomplete": "Not thoroughly tested",
+            "integrationWithSonnet": "Basic Sonnet integration, significantly behind Windsurf",
+            "integrationWithOtherModels": "Not as good as Sonnet integration",
+            "uniqueFeatures": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "price": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        "rating": 3
+    },
+    {
+        "title": "Sublime Text with GitHub Copilot",
+        "images": ["images/editors/sublime-copilot.png"],
+        "descriptions": {
+            "userInterface": "Less cluttered than VS Code and fastest editor in this list",
+            "autocomplete": "Good for writing tests and within file context. Can be improved with descriptive method names",
+            "integrationWithSonnet": "No Sonnet integration available",
+            "integrationWithOtherModels": "No model selection available, unclear which model is being used",
+            "uniqueFeatures": "Fastest editor performance, no special AI features",
+            "price": "Not worth the investment for AI capabilities at this point"
+        },
+        "rating": 2
+    },
+    {
+        "title": "VS Code with GitHub Copilot",
+        "images": ["images/editors/vscode-copilot.png"],
+        "descriptions": {
+            "userInterface": "Standard VS Code interface",
+            "autocomplete": "Not very good completion suggestions",
+            "integrationWithSonnet": "Limited Sonnet capabilities but better than GPT-4",
+            "integrationWithOtherModels": "Poor performance, GPT-4 is unusable",
+            "uniqueFeatures": "Better than Sublime only due to extensions support",
+            "price": "Requires GitHub Copilot subscription"
+        },
+        "rating": 2
+    },
+    {
+        "title": "VS Code with Roo Code",
+        "images": ["images/editors/vscode-roo.png"],
+        "descriptions": {
+            "userInterface": "Multiple AI personalities with pre-configured contexts for different tasks",
+            "autocomplete": "Limited by Copilot integration, not very good",
+            "integrationWithSonnet": "One of the best Sonnet experiences, though slow",
+            "integrationWithOtherModels": "Supports all available models including Copilot models",
+            "uniqueFeatures": "Over-engineered, trips on its own legs sometimes, consumes many tokens",
+            "price": "High token consumption, faced throttling"
+        },
+        "rating": 4
+    },
+    {
+        "title": "Windsurf Editor",
+        "images": ["images/editors/windsurf-editor.png", "images/editors/windsurf-editor-2.png"],
+        "descriptions": {
+            "userInterface": "Prettiest out-of-the-box interface, best presented AI answers, very impressive",
+            "autocomplete": "Not thoroughly tested",
+            "integrationWithSonnet": "One of the best Sonnet experiences available, on par with Cline and Roo",
+            "integrationWithOtherModels": "Other models not performing as well",
+            "uniqueFeatures": "Cascade feature matches Cline's capabilities with superior answer presentation compared to both Cline and Roo",
+            "price": "Paid software, worth the investment"
+        },
+        "rating": 5
+    },
+    {
+        "title": "VS Code with Cline",
+        "images": ["images/editors/vscode-cline.png"],
+        "descriptions": {
+            "userInterface": "Sleek and efficient interface that makes Windsurf look like Windows 95",
+            "autocomplete": "Who needs autocomplete when you have Cline doing backflips for you?",
+            "integrationWithSonnet": "Makes Windsurf's Sonnet integration look like a typewriter - absolutely blazing fast",
+            "integrationWithOtherModels": "Faster than Roo, smoother than Windsurf, it's like comparing a Tesla to a horse and carriage",
+            "uniqueFeatures": "Not only 1-shots problems but does it with style. Has breakpoints that actually work (looking at you, Windsurf's Cascade)",
+            "price": "So efficient with tokens, it makes Windsurf's pricing look like a luxury yacht subscription"
+        },
+        "rating": 6
+    }
+]
