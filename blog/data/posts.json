@@ -17,13 +17,13 @@
         "images": ["images/editors/cursor-editor.png"],
         "descriptions": {
             "userInterface": "On par with VS Code, not as good as Windsurf or Trae",
-            "autocomplete": "Not thoroughly tested",
+            "autocomplete": "The best autocomplete among all editors, thanks to efficient file indexing.",
             "integrationWithSonnet": "Basic Sonnet integration, significantly behind Windsurf",
             "integrationWithOtherModels": "Not as good as Sonnet integration",
-            "uniqueFeatures": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "price": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "uniqueFeatures": "Offers excellent git integration and is packed with the most features among the editors.",
+            "price": "$20"
         },
-        "rating": 3
+        "rating": 5
     },
     {
         "title": "Sublime Text with GitHub Copilot",
