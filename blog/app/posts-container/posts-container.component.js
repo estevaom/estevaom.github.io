@@ -1,12 +1,5 @@
 const PostsContainer = {
-    template: `
-        <main class="posts-list">
-            <blog-post v-for="post in posts" 
-                      :key="post.title" 
-                      :post="post">
-            </blog-post>
-        </main>
-    `,
+    template: '', // Will be set by app.js
     data() {
         return {
             posts: []

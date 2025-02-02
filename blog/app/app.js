@@ -1,9 +1,25 @@
-const app = Vue.createApp({});
+async function loadTemplate(url) {
+    try {
+        const response = await fetch(url);
+        return await response.text();
+    } catch (error) {
+        console.error('Error loading template:', error);
+        return '';
+    }
+}
 
-// Register components
-app.component('blog-header', BlogHeader);
-app.component('blog-post', BlogPost);
-app.component('posts-container', PostsContainer);
+Promise.all([
+    loadTemplate('app/blog-header/blog-header.template.html'),
+    loadTemplate('app/blog-post/blog-post.template.html'),
+    loadTemplate('app/posts-container/posts-container.template.html')
+]).then(([headerTemplate, postTemplate, containerTemplate]) => {
+    BlogHeader.template = headerTemplate;
+    BlogPost.template = postTemplate;
+    PostsContainer.template = containerTemplate;
 
-// Mount the app
-app.mount('#app');
+    const app = Vue.createApp({});
+    app.component('blog-header', BlogHeader);
+    app.component('blog-post', BlogPost);
+    app.component('posts-container', PostsContainer);
+    app.mount('#app');
+});

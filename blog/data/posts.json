@@ -14,7 +14,7 @@
     },
     {
         "title": "Cursor Editor",
-        "images": ["images/editors/cursor-editor.png"],
+        "images": ["images/editors/cursor-editor.png", "images/editors/cursor-editor-2.png"],
         "descriptions": {
             "userInterface": "On par with VS Code, not as good as Windsurf or Trae",
             "autocomplete": "The best autocomplete among all editors, thanks to efficient file indexing.",
@@ -23,11 +23,11 @@
             "uniqueFeatures": "Offers excellent git integration and is packed with the most features among the editors.",
             "price": "$20"
         },
-        "rating": 5
+        "rating": 4
     },
     {
         "title": "Sublime Text with GitHub Copilot",
-        "images": ["images/editors/sublime-copilot.png"],
+        "images": [],
         "descriptions": {
             "userInterface": "Less cluttered than VS Code and fastest editor in this list",
             "autocomplete": "Good for writing tests and within file context. Can be improved with descriptive method names",
