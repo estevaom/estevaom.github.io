@@ -20,13 +20,12 @@
         });
 
         self.technologies = [
+            { type: 'AI Developer Tools', handlers: ['github-copilot', 'cursor-ide', 'windsurf-ide', 'claude-3', 'ai-agents', 'cline', 'roo-code'] },
             { type: 'Backend', handlers: ['ruby-on-rails', 'node-js'] },
             { type: 'Frontend', handlers: ['angularjs', 'angular-4', 'bootstrap', 'css', 'google-material', 'html5', 'hotwire', 'javascript', 'jquery'] },
-            { type: 'Database', handlers: ['mysql', 'postgresql', 'amazon-dynamodb', 'amazon-redshift', 'treasure-data', 'google-cloud-datastore'] },
-            { type: 'Cache Storage', handlers: ['elasticsearch', 'memcached', 'redis'] },
+            { type: 'Database / Cache Storage', handlers: ['mysql', 'postgresql', 'amazon-dynamodb', 'amazon-redshift', 'treasure-data', 'google-cloud-datastore', 'elasticsearch', 'memcached', 'redis'] },
             { type: 'Test', handlers: ['capybara', 'jasmine', 'karma', 'minitest', 'mocha', 'protractor', 'rspec'] },
-            { type: 'CI/CD', handlers: ['jenkins', 'semaphore', 'wercker'] },
-            { type: 'Other', handlers: ['amazon-s3', 'capistrano', 'datamapper', 'git', 'github-copilot', 'new-relic', 'sidekiq', 'typescript', 'vagrant', 'webpack'] }
+            { type: 'Other', handlers: ['amazon-s3', 'capistrano', 'datamapper', 'git', 'jenkins', 'new-relic', 'semaphore', 'sidekiq', 'typescript', 'vagrant', 'webpack', 'wercker'] }
         ];
     }
 })(angular);
