@@ -12,23 +12,3 @@
         </nav>
     </div>
 </header>
-
-<!-- Drawer for mobile navigation -->
-<div class="mdl-layout__drawer">
-    <span class="mdl-layout__title">Menu</span>
-    <nav class="mdl-navigation">
-        <a ng-repeat="link in $ctrl.navigation_links" class="mdl-navigation__link" href="{{link.url}}">
-            <i class="material-icons" ng-if="link.title === 'About Me'">person</i>
-            <i class="material-icons" ng-if="link.title === 'Employment'">work</i>
-            <i class="material-icons" ng-if="link.title === 'Technologies'">laptop_mac</i>
-            <i class="material-icons" ng-if="link.title === 'Objectives'">done</i>
-            <i class="material-icons" ng-if="link.title === 'Education'">school</i>
-            <i class="material-icons" ng-if="link.title === 'Contact'">email</i>
-            {{link.title}}
-        </a>
-        <button class="theme-toggle" ng-click="$ctrl.toggleTheme()">
-            <i class="material-icons" ng-repeat="theme in $ctrl.themes" ng-if="$ctrl.currentTheme === theme.id">{{theme.icon}}</i>
-            <span style="margin-left: 8px;" ng-repeat="theme in $ctrl.themes" ng-if="$ctrl.currentTheme === theme.id">{{theme.label}} Theme</span>
-        </button>
-    </nav>
-</div>

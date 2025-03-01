@@ -70,8 +70,18 @@ tech-item a {
     padding: 0 16px;
   }
   
+  /* Show navigation even on small screens */
   .mdl-layout__header-row .mdl-navigation {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 8px;
+  }
+  
+  .mdl-layout__header-row .mdl-navigation .mdl-navigation__link {
+    padding: 8px;
+    font-size: 14px;
   }
   
   /* Fix for section headers at small screen sizes */
@@ -94,10 +104,6 @@ tech-item a {
   .mdl-layout__header-row {
     height: auto;
     padding: 16px;
-  }
-  
-  .mdl-layout__drawer-button {
-    display: none;
   }
 }
 
@@ -184,6 +190,53 @@ resume {
 }
 #about-me .mdl-card__supporting-text {
   width: 100%;
+  overflow: visible;
+  padding: 16px 24px;
+  box-sizing: border-box;
+}
+
+#about-me .about-me-details {
+  margin-top: 15px;
+}
+
+#about-me .about-me-intro {
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+#about-me p {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+#about-me .about-me-projects {
+  display: inline-block;
+  line-height: 1.6;
+}
+
+#about-me .about-me-project {
+  display: inline-block;
+}
+
+#about-me .about-me-projects-list {
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-left: 24px;
+}
+
+#about-me .about-me-projects-list li {
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+@media (max-width: 839px) {
+  #about-me .mdl-card__supporting-text {
+    padding: 16px;
+  }
+  
+  #about-me p {
+    word-wrap: break-word;
+  }
 }
 
 #objectives, #education, #contact {
@@ -285,7 +338,6 @@ resume {
   }
 }
 
-
 /* Company date footers */
 resume > div:last-child {
   margin-top: 0;
@@ -293,16 +345,6 @@ resume > div:last-child {
   clear: both;
   position: relative;
   z-index: 1;
-}
-
-/* Make sure the drawer navigation has the same links as the header */
-.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
-  padding: 16px;
-  color: rgba(0, 0, 0, 0.87);
-}
-
-.mdl-layout__drawer .theme-toggle {
-  margin: 16px;
 }
 
 /* Fix for MDL card titles to ensure headers always appear */
@@ -323,201 +365,19 @@ resume > div:last-child {
   min-height: auto;
 }
 
-/* Ensure drawer navigation icons align properly */
-.mdl-layout__drawer .mdl-navigation__link i.material-icons {
-  margin-right: 16px;
-  vertical-align: middle;
-}
-
-/* Fix for employment cards on small screens */
+/* Fix for small screens to ensure the entire menu shows */
 @media (max-width: 600px) {
-  .employment-card .mdl-card__title {
+  .mdl-layout__header-row {
     height: auto;
-    min-height: 4em;
-    padding: 12px;
+    padding-bottom: 16px;
   }
   
-  .employment-card .mdl-card__title-text {
-    font-size: 1.2em !important;
-    line-height: 1.3;
+  .mdl-layout__header-row .mdl-navigation .mdl-navigation__link {
+    padding: 6px;
+    font-size: 12px;
   }
   
-  /* Fix for section header icons on small screens */
-  .mdl-card__title .material-icons {
-    flex-shrink: 0;
-  }
-  
-  /* Adjust footer button spacing */
-  .mdl-card__actions .mdl-button {
+  .mdl-layout__title {
     margin-bottom: 8px;
   }
-
-  /* Make sure up button is visible */
-  .mdl-button.up-button {
-    display: block;
-  }
-}
-
-/* Ensure small screen grid items are properly spaced */
-@media (max-width: 839px) {
-  #grid {
-    grid-gap: 16px;
-  }
-}
-
-/* Fix for hamburger menu on mobile */
-.mdl-layout__drawer-button {
-  display: block !important;
-  position: absolute;
-  color: rgba(255, 255, 255, 0.8);
-  top: 12px;
-  left: 12px;
-  z-index: 5;
-  height: 48px;  /* Larger touch target */
-  width: 48px;   /* Larger touch target */
-  padding: 8px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 32px;
-  cursor: pointer; /* Ensure cursor shows it's clickable */
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); /* Visual feedback on tap */
-  touch-action: manipulation; /* Optimized for touch */
-}
-
-/* Improve drawer menu items for touch */
-.mdl-layout__drawer .mdl-navigation__link {
-  padding: 16px !important;
-  height: 56px !important;
-  line-height: 24px !important;
-  display: flex !important;
-  align-items: center !important;
-  font-size: 16px !important;
-  cursor: pointer !important;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1); /* Visual feedback on tap */
-}
-
-/* Make theme toggle more tappable */
-.mdl-layout__drawer .theme-toggle {
-  padding: 16px !important;
-  width: auto !important;
-  height: 56px !important;
-  margin: 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  cursor: pointer !important;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1); /* Visual feedback on tap */
-}
-
-/* Make sure the drawer nav icons align properly */
-.mdl-layout__drawer .mdl-navigation__link i.material-icons {
-  margin-right: 32px;
-  min-width: 24px;
-  vertical-align: middle;
-  flex-shrink: 0;
-}
-
-/* Ensure the drawer is properly positioned */
-.mdl-layout__drawer {
-  top: 0 !important;
-  height: 100% !important;
-  left: 0 !important;
-  overflow-y: auto !important;
-  overflow-x: hidden !important;
-  touch-action: pan-y !important; /* Allow vertical scrolling */
-}
-
-/* Close button for drawer */
-.mdl-layout__drawer::before {
-  content: '×';
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  font-size: 24px;
-  line-height: 32px;
-  width: 32px;
-  height: 32px;
-  text-align: center;
-  cursor: pointer;
-  z-index: 10;
-}
-
-/* Disable scrolling when drawer is open */
-body.disable-scrolling {
-  overflow: hidden;
-}
-
-/* Ensure drawer appears on top */
-.mdl-layout__drawer {
-  z-index: 999;
-}
-
-/* Add a visible overlay when drawer is open */
-.mdl-layout__drawer.is-visible {
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
-}
-
-.mdl-layout__drawer.is-visible::after {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0,0,0,.5);
-  z-index: -1;
-  opacity: 1;
-  transition: opacity .2s cubic-bezier(.4,0,.2,1);
-}
-
-/* Ensure the drawer is wider on larger phones */
-@media (min-width: 400px) {
-  .mdl-layout__drawer {
-    width: 280px;
-    transform: translateX(-280px);
-  }
-}
-
-.mdl-layout__drawer-button .material-icons {
-  font-size: 24px;
-  color: white;
-}
-
-@media (max-width: 839px) {
-  .mdl-layout__header .mdl-layout__drawer-button {
-    display: block !important;
-    position: absolute;
-    color: rgba(255, 255, 255, 0.8);
-    top: 8px;
-    margin: 0;
-  }
-}
-
-@media (min-width: 840px) {
-  .mdl-layout__drawer-button {
-    display: none !important;
-  }
-}
-
-/* Extended invisible touch target */
-.mdl-layout__drawer-button .touch-target {
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  z-index: -1;
-}
-
-/* Add active state styling for better touch feedback */
-.mdl-layout__drawer-button:active {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.mdl-layout__drawer .mdl-navigation__link:active {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-/* Ensure theme toggle button is properly styled */
-.mdl-layout__drawer .theme-toggle:active {
-  background-color: rgba(0, 0, 0, 0.1);
 }
