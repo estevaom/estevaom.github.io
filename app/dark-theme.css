@@ -58,22 +58,14 @@ body {
   color: rgba(255,152,0,0.25);
 }
 
-.employment-card {
-  margin-bottom: 1em;
-  min-height: 220px;
-}
-
 .employment-card .mdl-card__title {
   background-color: #333;
   color: #e8eaed;
-  width: 100%;
-  padding: 16px;
   box-sizing: border-box;
 }
 
 .employment-card .mdl-card__supporting-text {
   color: #e8eaed;
-  margin-bottom: 1em;
 }
 
 .skills {
@@ -93,13 +85,7 @@ body {
   background-color: #2d2e31;
   border: 2px solid #444;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  margin-left: 10px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: #e8eaed;
   transition: all 0.3s ease;
 }
 

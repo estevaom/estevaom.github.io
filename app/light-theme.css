@@ -39,22 +39,10 @@ body {
   color: rgba(255,165,0,0.25);
 }
 
-.employment-card {
-  margin-bottom: 1em;
-  min-height: 220px;
-}
-
 .employment-card .mdl-card__title {
   background-color: #FFF;
   color: #000;
-  width: 100%;
-  padding: 16px;
   box-sizing: border-box;
-}
-
-.employment-card .mdl-card__supporting-text {
-  color: rgba(0,0,0,.87);
-  margin-bottom: 1em;
 }
 
 /* Theme toggle button styling */
@@ -62,13 +50,7 @@ body {
   background-color: #fafafa;
   border: 2px solid #ddd;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  margin-left: 10px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: #222;
   transition: all 0.3s ease;
 }
 

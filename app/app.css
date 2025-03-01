@@ -164,11 +164,8 @@ resume {
 
 .employment-card {
   font-size: small;
-  margin-bottom: 1em;
   flex-wrap: wrap;
   flex-direction: row;
-  position: relative;
-  min-height: 220px;
 }
 
 .employment-card .mdl-card__title {
@@ -189,7 +186,6 @@ resume {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1em;
 }
 
 .employment-card .footer {
@@ -200,26 +196,35 @@ resume {
 .employment-card .mdl-card__supporting-text ul {
   margin-bottom: 0.5em;
   padding-bottom: 0.5em;
-  min-height: 100px;
 }
 
 .employment-card .mdl-card__supporting-text ul li {
   margin-bottom: 0.25em;
 }
 
+/* Theme toggle button styling - structural parts only */
+.theme-toggle {
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (min-width: 1400px) {
   .employment-card {
     width: calc(50% - 12px);
   }
+}
 
-  .employment-card:nth-child(even) {
-    margin-right: 4px;
-  }
-
-  .employment-card:nth-child(odd) {
-    margin-left: 4px;
+@media (min-width: 840px) {
+  .mdl-cell {
+    margin: 6px;
   }
 }
+
 
 /* Company date footers */
 resume > div:last-child {
