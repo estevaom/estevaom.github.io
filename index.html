@@ -20,17 +20,20 @@
         <script src="app/tech-item/tech-item.component.js"></script>
     </head>
     <body class="mdl-typography--body-1-force-preferred-font">
-        <div class="mdl-layout mdl-js-layout">
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
             <site-header></site-header>
 
-            <resume></resume>
+            <main class="mdl-layout__content">
+                <resume></resume>
 
-            <a href="#top">
-                <button class="up-button mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-                    <i class="material-icons">keyboard_arrow_up</i>
-                </button>
-            </a>
+                <a href="#top">
+                    <button class="up-button mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                        <i class="material-icons">keyboard_arrow_up</i>
+                    </button>
+                </a>
+            </main>
         </div>
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
         <script>
             // Initialize theme on page load
             (function() {
