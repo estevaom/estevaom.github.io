@@ -5,6 +5,27 @@
 (function() {
     'use strict';
     
+    // Add CSS to ensure content panels are above background effects
+    function addContentPanelStyles() {
+        var styleEl = document.createElement('style');
+        styleEl.id = 'starry-night-content-fix';
+        styleEl.textContent = `
+            /* Ensure content panels are above the starry background */
+            .mdl-layout__content > * {
+                position: relative;
+                z-index: 10;
+            }
+            .mdl-card, .mdl-grid {
+                position: relative;
+                z-index: 10;
+            }
+        `;
+        document.head.appendChild(styleEl);
+    }
+    
+    // Call this immediately
+    addContentPanelStyles();
+    
     /**
      * CONFIGURATION SETTINGS
      * Adjust these values to customize the Starry Night theme effects
@@ -16,6 +37,24 @@
             minSize: 3,        // Minimum star size in pixels
             maxSize: 12,       // Maximum star size in pixels
             glowEffect: true   // Whether to add glowing rings around stars
+        },
+        // New huge stars configuration
+        hugeStars: {
+            count: 8,          // Number of huge stars
+            minSize: 25,       // Minimum size in pixels
+            maxSize: 45,       // Maximum size in pixels
+            glowEffect: true,  // Whether to add glowing rings
+            minSpeed: 20,      // Minimum movement speed (seconds for one cycle)
+            maxSpeed: 50,      // Maximum movement speed (seconds for one cycle)
+            glowSize: 4,       // Multiplier for glow size relative to star size
+            movementRange: 180 // Maximum pixel range for movement
+        },
+        // New moon configuration
+        moon: {
+            size: 180,         // Size of the moon in pixels
+            glowSize: 60,      // Size of the glow effect
+            topOffset: 100,    // Distance from the top (after header)
+            rightOffset: 100   // Distance from the right edge
         },
         swirls: {
             count: 6,          // Number of swirling patterns
@@ -46,7 +85,7 @@
             fadeColor: 'rgba(255, 255, 255, 0)'    // Color at end of tail (typically transparent)
         },
         fireflies: {
-            count: 20,         // Number of firefly particles
+            count: 80,         // Number of firefly particles
             minSize: 2,        // Minimum firefly size in pixels
             maxSize: 5         // Maximum firefly size in pixels
         },
@@ -63,14 +102,16 @@
         },
         
         // Advanced settings
-        zIndex: {              // Z-index values for various elements
-            container: 0,      // Main container
-            background: 0,     // Background effects
-            brushstrokes: 1,   // Brush strokes
-            swirls: 1,         // Swirling patterns
-            stars: 2,          // Stars
-            fireflies: 2,      // Firefly particles
-            shootingStars: 3   // Shooting stars
+        zIndex: {              
+            container: -100,        // Extreme negative value
+            background: -90,        // Background effects
+            moon: -80,              // Moon
+            brushstrokes: -70,      // Brush strokes
+            swirls: -60,            // Swirling patterns
+            stars: -50,             // Regular stars
+            hugeStars: -40,         // Huge stars
+            fireflies: 15,          // Firefly particles (above content)
+            shootingStars: 20       // Shooting stars (above content)
         },
         performance: {
             reduceFXonMobile: true  // Reduce effects on mobile devices
@@ -98,45 +139,50 @@
     
     // Keep track of intervals for effects
     var effectIntervals = [];
+
+    // Global window function for theme initialization
+    window.initStarryNightTheme = initStarryNightTheme;
     
+    /**
+     * Initialize the Starry Night theme elements
+     */
     function initStarryNightTheme() {
-        // Clear any existing effects first
-        clearStarryNightEffects();
+        // Add listener to adjust for page resizing
+        window.addEventListener('resize', function() {
+            setTimeout(function() {
+                clearStarryNightEffects();
+                initStarryNightTheme();
+            }, 200);
+        });
         
-        // Theme is applied via class on the body
-        if (!document.body.classList.contains('starry-night-theme')) {
-            console.log('Starry Night Theme: body does not have starry-night-theme class');
-            return;
-        }
-        
-        console.log('Initializing Starry Night Theme effects');
-        
-        // Apply performance settings if needed
-        if (starryNightConfig.performance.reduceFXonMobile && isMobileDevice()) {
+        // Check if we're on a mobile device and adjust effects accordingly
+        if (isMobileDevice()) {
             reduceEffectsForMobile();
         }
         
-        // Create containers for our effects
+        // Create the starry night container elements
         createContainers();
         
-        // Add the animation styles
+        // Add CSS animations
         createAnimationStyles();
         
-        // Create all the effects
+        // Create background elements
+        var container = document.getElementById('starry-night-container');
+        if (!container) return;
+        
+        // Create the moon (before stars so it's in the background)
+        createMoon();
+        
+        // Create other elements
         createStars(starryNightConfig.stars.count);
+        createHugeStars(starryNightConfig.hugeStars.count);
         createSwirls(starryNightConfig.swirls.count);
         createShootingStars(starryNightConfig.shootingStars.count);
         createFireflies(starryNightConfig.fireflies.count);
-        createBrushStrokes(starryNightConfig.brushStrokes.count);
+        createBrushStrokes(starryNightConfig.brushStrokes ? starryNightConfig.brushStrokes.count : 0);
         
-        // Schedule random additional effects
+        // Set up random effects to happen over time
         scheduleRandomEffects();
-        
-        // Add window resize handler
-        window.addEventListener('resize', function() {
-            clearStarryNightEffects();
-            initStarryNightTheme();
-        });
     }
     
     function isMobileDevice() {
@@ -164,8 +210,22 @@
         // Create main container
         var container = document.createElement('div');
         container.id = 'starry-night-container';
-        container.style.cssText = `position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: ${starryNightConfig.zIndex.container};`;
-        document.body.appendChild(container);
+        container.style.cssText = `
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            pointer-events: none; 
+            z-index: ${starryNightConfig.zIndex.container};
+        `;
+        
+        // Insert at the beginning of body instead of appending
+        if (document.body.firstChild) {
+            document.body.insertBefore(container, document.body.firstChild);
+        } else {
+            document.body.appendChild(container);
+        }
         
         // Create specific containers for different effects
         var layers = ['stars', 'swirls', 'brushstrokes', 'fireflies', 'shooting-stars', 'energy-waves'];
@@ -199,56 +259,101 @@
         effectIntervals = [];
     }
     
+    /**
+     * Create animation styles for the starry night elements
+     */
     function createAnimationStyles() {
-        if (document.getElementById('starry-night-animations')) return;
+        // Remove any existing animation styles to prevent duplicates
+        var existingStyles = document.getElementById('starry-night-animations');
+        if (existingStyles) {
+            existingStyles.parentNode.removeChild(existingStyles);
+        }
         
-        // Create keyframes for different shooting star directions and angles
-        var shootingStarKeyframes = createShootingStarKeyframes();
+        // Create style element for animations
+        var styleEl = document.createElement('style');
+        styleEl.id = 'starry-night-animations';
         
-        var style = document.createElement('style');
-        style.id = 'starry-night-animations';
-        style.textContent = `
-            @keyframes starry-night-star-pulse {
-                0% { transform: scale(1); opacity: 0.8; }
-                50% { transform: scale(1.2); opacity: 1; }
-                100% { transform: scale(1); opacity: 0.8; }
+        // Define animations
+        var css = `
+            @keyframes starry-night-twinkle {
+                0%, 100% { opacity: 1; transform: scale(1); }
+                50% { opacity: 0.5; transform: scale(0.7); }
             }
             
-            @keyframes starry-night-star-drift {
-                0% { transform: translate(0, 0); }
-                25% { transform: translate(3px, 1px); }
-                50% { transform: translate(0, 3px); }
-                75% { transform: translate(-2px, 1px); }
-                100% { transform: translate(0, 0); }
+            @keyframes starry-night-float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-20px); }
+                100% { transform: translateY(0px); }
             }
             
-            ${shootingStarKeyframes}
-            
-            @keyframes starry-night-firefly {
-                0% { transform: translate(0, 0) scale(0.6); opacity: 0.2; }
-                25% { transform: translate(10px, -10px) scale(1); opacity: 0.8; }
-                50% { transform: translate(20px, 0) scale(0.8); opacity: 0.6; }
-                75% { transform: translate(10px, 10px) scale(1.2); opacity: 0.8; }
-                100% { transform: translate(0, 0) scale(0.6); opacity: 0.2; }
-            }
-            
-            @keyframes starry-night-swirl-rotate {
+            @keyframes starry-night-swirl {
                 0% { transform: rotate(0deg); }
                 100% { transform: rotate(360deg); }
             }
             
-            @keyframes starry-night-brushstroke {
-                0% { transform: scale(1) rotate(0deg); opacity: 0.6; }
-                50% { transform: scale(1.1) rotate(2deg); opacity: 0.8; }
-                100% { transform: scale(1) rotate(0deg); opacity: 0.6; }
+            @keyframes starry-night-swell {
+                0%, 100% { transform: scale(1); }
+                50% { transform: scale(1.2); }
             }
             
-            @keyframes starry-night-wave-pulse {
-                0% { transform: scale(0.8); opacity: 0.4; }
-                100% { transform: scale(2.0); opacity: 0; }
+            @keyframes starry-night-firefly {
+                0%, 100% { opacity: 0.2; transform: scale(0.6); }
+                50% { opacity: 1; transform: scale(1); }
+            }
+            
+            @keyframes huge-star-movement-1 {
+                0% { transform: translate(0, 0); }
+                25% { transform: translate(140px, 80px); }
+                50% { transform: translate(70px, 180px); }
+                75% { transform: translate(-80px, 120px); }
+                100% { transform: translate(0, 0); }
+            }
+            
+            @keyframes huge-star-movement-2 {
+                0% { transform: translate(0, 0); }
+                25% { transform: translate(-100px, 140px); }
+                50% { transform: translate(-180px, 20px); }
+                75% { transform: translate(-60px, -120px); }
+                100% { transform: translate(0, 0); }
+            }
+            
+            @keyframes huge-star-movement-3 {
+                0% { transform: translate(0, 0); }
+                33% { transform: translate(120px, -80px); }
+                66% { transform: translate(-120px, -160px); }
+                100% { transform: translate(0, 0); }
+            }
+            
+            @keyframes huge-star-movement-4 {
+                0% { transform: translate(0, 0); }
+                25% { transform: translate(180px, 120px); }
+                50% { transform: translate(100px, 200px); }
+                75% { transform: translate(-140px, 90px); }
+                100% { transform: translate(0, 0); }
+            }
+            
+            @keyframes huge-star-pulse {
+                0%, 100% { transform: scale(1); filter: brightness(1); }
+                50% { transform: scale(1.3); filter: brightness(1.5); }
+            }
+            
+            @keyframes huge-star-glow {
+                0%, 100% { opacity: 0.5; box-shadow: 0 0 35px 10px rgba(255, 255, 200, 0.7); }
+                50% { opacity: 0.7; box-shadow: 0 0 60px 20px rgba(255, 250, 160, 0.9); }
+            }
+            
+            @keyframes moon-glow {
+                0%, 100% { box-shadow: 0 0 80px 10px rgba(255, 252, 170, 0.6); }
+                50% { box-shadow: 0 0 100px 20px rgba(255, 252, 170, 0.8); }
             }
         `;
-        document.head.appendChild(style);
+        
+        // Add shooting star keyframe animations
+        css += createShootingStarKeyframes();
+        
+        // Add the CSS to the style element
+        styleEl.textContent = css;
+        document.head.appendChild(styleEl);
     }
     
     function createShootingStarKeyframes() {
@@ -610,5 +715,183 @@
     
     function randomBetween(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    /**
+     * Create the moon element in the top right corner
+     */
+    function createMoon() {
+        var container = document.getElementById('starry-night-container');
+        if (!container) return;
+        
+        var moon = document.createElement('div');
+        var moonSize = starryNightConfig.moon.size;
+        var topOffset = starryNightConfig.moon.topOffset;
+        var rightOffset = starryNightConfig.moon.rightOffset;
+        
+        // Style the moon
+        moon.className = 'starry-night-moon';
+        moon.style.position = 'absolute';
+        moon.style.top = topOffset + 'px';
+        moon.style.right = rightOffset + 'px';
+        moon.style.width = moonSize + 'px';
+        moon.style.height = moonSize + 'px';
+        moon.style.borderRadius = '50%';
+        moon.style.background = 'radial-gradient(circle at 30% 30%, #fffce3, #ffed91 40%, #ffd25b 70%)';
+        moon.style.boxShadow = '0 0 80px 10px rgba(255, 252, 170, 0.6)';
+        moon.style.zIndex = starryNightConfig.zIndex.moon;
+        moon.style.animation = 'moon-glow 15s ease-in-out infinite';
+        
+        // Add some texture to the moon to look like craters
+        var moonTexture = document.createElement('div');
+        moonTexture.style.position = 'absolute';
+        moonTexture.style.top = '15%';
+        moonTexture.style.left = '25%';
+        moonTexture.style.width = '30%';
+        moonTexture.style.height = '30%';
+        moonTexture.style.borderRadius = '50%';
+        moonTexture.style.background = 'rgba(229, 220, 180, 0.3)';
+        moon.appendChild(moonTexture);
+        
+        var moonTexture2 = document.createElement('div');
+        moonTexture2.style.position = 'absolute';
+        moonTexture2.style.top = '55%';
+        moonTexture2.style.left = '20%';
+        moonTexture2.style.width = '40%';
+        moonTexture2.style.height = '25%';
+        moonTexture2.style.borderRadius = '50%';
+        moonTexture2.style.background = 'rgba(229, 220, 180, 0.2)';
+        moon.appendChild(moonTexture2);
+        
+        var moonTexture3 = document.createElement('div');
+        moonTexture3.style.position = 'absolute';
+        moonTexture3.style.top = '40%';
+        moonTexture3.style.left = '60%';
+        moonTexture3.style.width = '25%';
+        moonTexture3.style.height = '25%';
+        moonTexture3.style.borderRadius = '50%';
+        moonTexture3.style.background = 'rgba(229, 220, 180, 0.3)';
+        moon.appendChild(moonTexture3);
+        
+        // Add to container
+        container.appendChild(moon);
+    }
+    
+    /**
+     * Create huge stars that move around
+     */
+    function createHugeStars(count) {
+        var container = document.getElementById('starry-night-container');
+        if (!container) return;
+        
+        var windowWidth = window.innerWidth;
+        var windowHeight = Math.max(document.body.scrollHeight, window.innerHeight);
+        
+        // Create each huge star
+        for (var i = 0; i < count; i++) {
+            // Create a wrapper for the star and its glow to move together
+            var starWrapper = document.createElement('div');
+            var size = randomBetween(starryNightConfig.hugeStars.minSize, starryNightConfig.hugeStars.maxSize);
+            
+            // Calculate position (avoiding top header area and very bottom)
+            var headerHeight = 120; // Approximate header height
+            var x = randomBetween(100, windowWidth - 200);
+            var y = randomBetween(headerHeight + 100, windowHeight - 300);
+            
+            // Style the wrapper to handle the movement
+            starWrapper.className = 'starry-night-huge-star-wrapper';
+            starWrapper.style.position = 'absolute';
+            starWrapper.style.left = x + 'px';
+            starWrapper.style.top = y + 'px';
+            starWrapper.style.width = size + 'px';
+            starWrapper.style.height = size + 'px';
+            starWrapper.style.zIndex = starryNightConfig.zIndex.hugeStars;
+            
+            // Add movement animation to the wrapper
+            var movementDuration = randomBetween(starryNightConfig.hugeStars.minSpeed, starryNightConfig.hugeStars.maxSpeed);
+            var movementType = (i % 4) + 1; // Get one of 4 movement patterns
+            starWrapper.style.animation = `huge-star-movement-${movementType} ${movementDuration}s ease-in-out infinite`;
+            
+            // Create the actual star inside the wrapper
+            var star = document.createElement('div');
+            star.className = 'starry-night-huge-star';
+            star.style.position = 'absolute';
+            star.style.width = '100%';
+            star.style.height = '100%';
+            star.style.borderRadius = '50%';
+            star.style.background = 'radial-gradient(circle at 30% 30%, #ffffff, #fffce3 30%, #ffd25b 70%)';
+            star.style.boxShadow = '0 0 35px 10px rgba(255, 255, 200, 0.7)';
+            star.style.animation = 'huge-star-pulse 5s ease-in-out infinite, huge-star-glow 7s ease-in-out infinite';
+            
+            // Create a strong glow effect around the star
+            var glow = document.createElement('div');
+            var glowSize = size * starryNightConfig.hugeStars.glowSize;
+            glow.className = 'starry-night-huge-star-glow';
+            glow.style.position = 'absolute';
+            glow.style.width = glowSize + 'px';
+            glow.style.height = glowSize + 'px';
+            glow.style.left = -((glowSize - size) / 2) + 'px';
+            glow.style.top = -((glowSize - size) / 2) + 'px';
+            glow.style.borderRadius = '50%';
+            glow.style.background = 'radial-gradient(circle at center, rgba(255, 250, 150, 0.4) 0%, rgba(255, 240, 110, 0.2) 40%, rgba(255, 230, 100, 0) 70%)';
+            glow.style.zIndex = '-1';
+            
+            // Add subtle rotation to the glow
+            var rotateSpeed = randomBetween(30, 60);
+            glow.style.animation = `starry-night-swirl ${rotateSpeed}s linear infinite`;
+            
+            // Add star and glow to the wrapper
+            starWrapper.appendChild(glow);
+            starWrapper.appendChild(star);
+            
+            // Add to container
+            container.appendChild(starWrapper);
+            
+            // Add subtle rings like the small stars have
+            var ringCount = randomBetween(2, 4);
+            for (var r = 0; r < ringCount; r++) {
+                var ring = document.createElement('div');
+                var ringSize = size * (1.5 + (r * 0.5)); // Increasing sizes for each ring
+                var rotateSpeed = randomBetween(40, 80);
+                
+                ring.className = 'starry-night-huge-star-ring';
+                ring.style.position = 'absolute';
+                ring.style.width = ringSize + 'px';
+                ring.style.height = ringSize + 'px';
+                ring.style.left = (size - ringSize) / 2 + 'px';
+                ring.style.top = (size - ringSize) / 2 + 'px';
+                ring.style.borderRadius = '50%';
+                ring.style.border = '1px solid rgba(255, 250, 150, ' + (0.3 - (r * 0.07)) + ')';
+                ring.style.filter = 'blur(1px)';
+                ring.style.animation = `starry-night-swirl ${rotateSpeed}s linear infinite ${r * 3}s`;
+                ring.style.zIndex = '-1';
+                
+                starWrapper.appendChild(ring);
+            }
+            
+            // Add more subtle rays to make the star more van Gogh-like
+            var rayCount = randomBetween(5, 8);
+            for (var j = 0; j < rayCount; j++) {
+                var ray = document.createElement('div');
+                var rayLength = size * randomBetween(1.0, 1.5); // Shorter rays
+                var rayWidth = size * 0.08; // Thinner rays
+                var rayRotation = (j * (360 / rayCount)) + randomBetween(-10, 10);
+                
+                ray.className = 'starry-night-huge-star-ray';
+                ray.style.position = 'absolute';
+                ray.style.width = rayLength + 'px';
+                ray.style.height = rayWidth + 'px';
+                ray.style.left = (size / 2) + 'px';
+                ray.style.top = (size / 2 - rayWidth / 2) + 'px';
+                ray.style.transformOrigin = '0 50%';
+                ray.style.transform = `rotate(${rayRotation}deg)`;
+                ray.style.background = 'linear-gradient(90deg, rgba(255, 250, 150, 0.5) 0%, rgba(255, 230, 100, 0.1) 60%, rgba(255, 220, 80, 0) 100%)';
+                ray.style.borderRadius = `${rayWidth/2}px`;
+                ray.style.zIndex = '-1';
+                ray.style.filter = 'blur(1px)'; // Add slight blur for softness
+                
+                starWrapper.appendChild(ray);
+            }
+        }
     }
 })(); 
