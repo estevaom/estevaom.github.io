@@ -6,7 +6,7 @@
     angular
         .module('site-header')
         .component('siteHeader', {
-            templateUrl: 'app/site-header/site-header.template.html',
+            templateUrl: 'app/components/header/site-header.template.html',
             controller: SiteHeaderComponentController
         });
 
@@ -94,7 +94,7 @@
                 head.appendChild(themeLink);
             }
             
-            themeLink.href = 'app/' + theme + '-theme.css';
+            themeLink.href = 'app/styles/themes/' + theme + '-theme.css';
             
             // Apply body class for theme-specific styling (do this first)
             document.body.classList.remove('light-theme', 'dark-theme', 'starry-night-theme');
@@ -106,7 +106,7 @@
                 if (!starryNightScript) {
                     starryNightScript = document.createElement('script');
                     starryNightScript.id = 'starry-night-script';
-                    starryNightScript.src = 'app/starry-night-theme.js';
+                    starryNightScript.src = 'app/styles/themes/starry-night-theme.js';
                     head.appendChild(starryNightScript);
                     
                     // If script exists but needs to be reinitialized

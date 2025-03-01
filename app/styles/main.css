@@ -1,0 +1,523 @@
+/* Base layout styles - non-theme specific */
+
+tech-item a {
+  text-decoration: none;
+}
+
+.mdl-button.up-button {
+  display: none;
+  position: fixed;
+  bottom: .5em;
+  right: .5em;
+  z-index: 1000;
+}
+
+.mdl-chip {
+  height: 24px;
+  line-height: 24px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.mdl-layout__title {
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.material-icons {
+  cursor: default;
+}
+
+.mdl-card__title .material-icons {
+  color: orange;
+  transition: all 1s ease-in-out;
+}
+
+.mdl-card__title .material-icons:hover {
+  transform: scale(2);
+}
+
+.mdl-layout__header {
+  min-height: 64px;
+  height: auto;
+  padding-top: 0;
+}
+
+@media (min-width: 840px) {
+  .mdl-layout__header {
+    height: auto;
+    padding-top: 1em;
+  }
+}
+
+.mdl-layout__header-row {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  padding: 0 16px;
+}
+
+@media (max-width: 839px) {
+  .mdl-layout__title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  
+  .mdl-layout__header-row {
+    height: 56px;
+    padding: 0 16px;
+  }
+  
+  .mdl-layout__header-row .mdl-navigation {
+    display: none;
+  }
+  
+  /* Fix for section headers at small screen sizes */
+  .mdl-card__title {
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  .mdl-card__title .material-icons,
+  .mdl-card__title .mdl-card__title-text {
+    display: inline-block !important;
+  }
+  
+  .mdl-card__title-text {
+    font-size: 1.2em !important;
+  }
+}
+
+@media (min-width: 840px) {
+  .mdl-layout__header-row {
+    height: auto;
+    padding: 16px;
+  }
+  
+  .mdl-layout__drawer-button {
+    display: none;
+  }
+}
+
+resume {
+  display: block;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.mdl-list__item-avatar, .mdl-list__item-avatar.material-icons {
+  height: 30px;
+  width: 30px;
+  font-size: 30px;
+}
+
+.mdl-layout__drawer-button {
+  top: .8em;
+}
+
+.mdl-card__title-text {
+  margin-left: .4em;
+  font-weight: 100;
+}
+
+.mdl-list__item--three-line {
+  height: auto;
+}
+
+.mdl-card__supporting-text.mdl-cell--12-col.items-list {
+  padding-left: 0;
+  padding-bottom: 8px;
+}
+
+.mdl-list {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.mdl-card {
+  min-height: auto;
+}
+
+.experience-list .mdl-list__item {
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 2em;
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+  cursor: default;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 0 15px;
+}
+
+@media (max-width: 1024px) and (min-width: 840px) {
+  .mdl-layout__header-row .mdl-navigation__link {
+    padding: 0 8px;
+    font-size: 14px;
+  }
+}
+
+#grid {
+  display: grid;
+}
+
+#grid .mdl-card__supporting-text {
+  width: auto;
+  height: calc(100% - 92px);
+  position: relative;
+}
+
+.contact-links {
+  position: absolute;
+  padding: 1em 0;
+  bottom: 0;
+}
+
+#about-me p {
+  margin-bottom: 0;
+}
+#about-me .mdl-card__supporting-text {
+  width: 100%;
+}
+
+#objectives, #education, #contact {
+  width: 100%;
+}
+
+#objectives .mdl-card__supporting-text p, #education .mdl-card__supporting-text p {
+  margin-bottom: 0;
+}
+
+#objectives, #education {
+  margin-bottom: 1em;
+}
+
+#contact p {
+  margin-bottom: 3em;
+}
+
+.mdl-list__item--three-line .mdl-list__item-text-body {
+  height: auto;
+  margin-left: 1.6em;
+}
+
+.mdl-list__item--three-line .mdl-list__item-primary-content {
+  height: auto;
+}
+
+.skills {
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .04em;
+  line-height: 1;
+  padding: 8px 16px;
+  cursor: default;
+  overflow: hidden;
+}
+
+.employment-card {
+  font-size: small;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.employment-card .mdl-card__title {
+  height: 4.4em;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.employment-card .mdl-card__title-text {
+  font-size: 1.5em;
+  position: relative;
+  font-weight: 300;
+}
+
+#employment .mdl-card__supporting-text {
+  padding: 0 1em 0 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.employment-card .footer {
+  padding: 1em;
+  align-self: flex-end;
+}
+
+.employment-card .mdl-card__supporting-text ul {
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.employment-card .mdl-card__supporting-text ul li {
+  margin-bottom: 0.25em;
+}
+
+/* Theme toggle button styling - structural parts only */
+.theme-toggle {
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1400px) {
+  .employment-card {
+    width: calc(50% - 12px);
+  }
+}
+
+@media (min-width: 840px) {
+  .mdl-cell {
+    margin: 6px;
+  }
+}
+
+
+/* Company date footers */
+resume > div:last-child {
+  margin-top: 0;
+  padding-top: 0.5em;
+  clear: both;
+  position: relative;
+  z-index: 1;
+}
+
+/* Make sure the drawer navigation has the same links as the header */
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.mdl-layout__drawer .theme-toggle {
+  margin: 16px;
+}
+
+/* Fix for MDL card titles to ensure headers always appear */
+.mdl-card__title {
+  display: flex;
+  align-items: center;
+}
+
+.mdl-card__title .material-icons,
+.mdl-card__title h2.mdl-card__title-text,
+.mdl-card__title h3.mdl-card__title-text {
+  display: inline-block;
+}
+
+/* Ensure consistent header spacing */
+.mdl-card__title {
+  padding: 16px;
+  min-height: auto;
+}
+
+/* Ensure drawer navigation icons align properly */
+.mdl-layout__drawer .mdl-navigation__link i.material-icons {
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+/* Fix for employment cards on small screens */
+@media (max-width: 600px) {
+  .employment-card .mdl-card__title {
+    height: auto;
+    min-height: 4em;
+    padding: 12px;
+  }
+  
+  .employment-card .mdl-card__title-text {
+    font-size: 1.2em !important;
+    line-height: 1.3;
+  }
+  
+  /* Fix for section header icons on small screens */
+  .mdl-card__title .material-icons {
+    flex-shrink: 0;
+  }
+  
+  /* Adjust footer button spacing */
+  .mdl-card__actions .mdl-button {
+    margin-bottom: 8px;
+  }
+
+  /* Make sure up button is visible */
+  .mdl-button.up-button {
+    display: block;
+  }
+}
+
+/* Ensure small screen grid items are properly spaced */
+@media (max-width: 839px) {
+  #grid {
+    grid-gap: 16px;
+  }
+}
+
+/* Fix for hamburger menu on mobile */
+.mdl-layout__drawer-button {
+  display: block !important;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.8);
+  top: 12px;
+  left: 12px;
+  z-index: 5;
+  height: 48px;  /* Larger touch target */
+  width: 48px;   /* Larger touch target */
+  padding: 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  cursor: pointer; /* Ensure cursor shows it's clickable */
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); /* Visual feedback on tap */
+  touch-action: manipulation; /* Optimized for touch */
+}
+
+/* Improve drawer menu items for touch */
+.mdl-layout__drawer .mdl-navigation__link {
+  padding: 16px !important;
+  height: 56px !important;
+  line-height: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  font-size: 16px !important;
+  cursor: pointer !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1); /* Visual feedback on tap */
+}
+
+/* Make theme toggle more tappable */
+.mdl-layout__drawer .theme-toggle {
+  padding: 16px !important;
+  width: auto !important;
+  height: 56px !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  cursor: pointer !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1); /* Visual feedback on tap */
+}
+
+/* Make sure the drawer nav icons align properly */
+.mdl-layout__drawer .mdl-navigation__link i.material-icons {
+  margin-right: 32px;
+  min-width: 24px;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+/* Ensure the drawer is properly positioned */
+.mdl-layout__drawer {
+  top: 0 !important;
+  height: 100% !important;
+  left: 0 !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  touch-action: pan-y !important; /* Allow vertical scrolling */
+}
+
+/* Close button for drawer */
+.mdl-layout__drawer::before {
+  content: '×';
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 24px;
+  line-height: 32px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Disable scrolling when drawer is open */
+body.disable-scrolling {
+  overflow: hidden;
+}
+
+/* Ensure drawer appears on top */
+.mdl-layout__drawer {
+  z-index: 999;
+}
+
+/* Add a visible overlay when drawer is open */
+.mdl-layout__drawer.is-visible {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.mdl-layout__drawer.is-visible::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,.5);
+  z-index: -1;
+  opacity: 1;
+  transition: opacity .2s cubic-bezier(.4,0,.2,1);
+}
+
+/* Ensure the drawer is wider on larger phones */
+@media (min-width: 400px) {
+  .mdl-layout__drawer {
+    width: 280px;
+    transform: translateX(-280px);
+  }
+}
+
+.mdl-layout__drawer-button .material-icons {
+  font-size: 24px;
+  color: white;
+}
+
+@media (max-width: 839px) {
+  .mdl-layout__header .mdl-layout__drawer-button {
+    display: block !important;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.8);
+    top: 8px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 840px) {
+  .mdl-layout__drawer-button {
+    display: none !important;
+  }
+}
+
+/* Extended invisible touch target */
+.mdl-layout__drawer-button .touch-target {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  z-index: -1;
+}
+
+/* Add active state styling for better touch feedback */
+.mdl-layout__drawer-button:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.mdl-layout__drawer .mdl-navigation__link:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure theme toggle button is properly styled */
+.mdl-layout__drawer .theme-toggle:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}

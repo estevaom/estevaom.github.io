@@ -7,20 +7,26 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
         <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-blue.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="./app/app.css">
+        <link rel="stylesheet" href="./app/styles/main.css">
         <!-- Theme will be dynamically loaded by the theme toggle -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
-        <script src="app/app.module.js"></script>
-        <script src="app/services/technologies.service.js"></script>
-        <script src="app/site-header/site-header.module.js"></script>
-        <script src="app/site-header/site-header.component.js"></script>
-        <script src="app/resume/resume.module.js"></script>
-        <script src="app/resume/resume.component.js"></script>
-        <script src="app/tech-item/tech-item.module.js"></script>
-        <script src="app/tech-item/tech-item.component.js"></script>
+        <script src="app/core/config/app.module.js"></script>
+        <script src="app/core/services/technologies.service.js"></script>
+        <script src="app/components/header/site-header.module.js"></script>
+        <script src="app/components/header/site-header.component.js"></script>
+        <script src="app/components/resume/resume.module.js"></script>
+        <script src="app/components/resume/resume.component.js"></script>
+        <script src="app/components/tech-item/tech-item.module.js"></script>
+        <script src="app/components/tech-item/tech-item.component.js"></script>
     </head>
     <body class="mdl-typography--body-1-force-preferred-font">
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <!-- Improved mobile menu button with larger touch area -->
+            <div class="mdl-layout__drawer-button" role="button" aria-label="Open navigation menu" id="drawer-button">
+                <i class="material-icons">menu</i>
+                <span class="touch-target"></span> <!-- Additional touch target element -->
+            </div>
+            
             <site-header></site-header>
 
             <main class="mdl-layout__content">
@@ -42,9 +48,79 @@
                 var themeLink = document.createElement('link');
                 themeLink.id = 'theme-css';
                 themeLink.rel = 'stylesheet';
-                themeLink.href = 'app/' + savedTheme + '-theme.css';
+                themeLink.href = 'app/styles/themes/' + savedTheme + '-theme.css';
                 head.appendChild(themeLink);
             })();
+
+            // Ensure mobile drawer works correctly
+            window.addEventListener('load', function() {
+                // Add a fallback toggle mechanism for the drawer
+                var drawerButton = document.getElementById('drawer-button');
+                var layout = document.querySelector('.mdl-layout');
+                var drawer = document.querySelector('.mdl-layout__drawer');
+                
+                // Check if drawer exists before proceeding
+                if (!drawer) {
+                    console.warn('Drawer element not found. Navigation drawer functionality may be limited.');
+                    return;
+                }
+                
+                function toggleDrawer() {
+                    if (drawer.classList.contains('is-visible')) {
+                        drawer.classList.remove('is-visible');
+                        document.body.classList.remove('disable-scrolling');
+                    } else {
+                        drawer.classList.add('is-visible');
+                        document.body.classList.add('disable-scrolling');
+                    }
+                }
+                
+                if (drawerButton && drawer) {
+                    // Larger click target for the drawer button
+                    drawerButton.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        e.preventDefault();
+                        toggleDrawer();
+                        return false;
+                    });
+                }
+                
+                // Add click handler for the close X button
+                drawer.addEventListener('click', function(e) {
+                    // Check if the click was on the X button (the before pseudo-element)
+                    var rect = drawer.getBoundingClientRect();
+                    var isCloseButton = 
+                        e.clientX >= rect.right - 40 && 
+                        e.clientX <= rect.right && 
+                        e.clientY >= rect.top && 
+                        e.clientY <= rect.top + 40;
+                    
+                    if (isCloseButton) {
+                        e.stopPropagation();
+                        drawer.classList.remove('is-visible');
+                        document.body.classList.remove('disable-scrolling');
+                    }
+                });
+                
+                // Make drawer links close the drawer when clicked
+                var drawerLinks = drawer.querySelectorAll('.mdl-navigation__link');
+                drawerLinks.forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        drawer.classList.remove('is-visible');
+                        document.body.classList.remove('disable-scrolling');
+                    });
+                });
+                
+                // Close drawer when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (drawer && drawer.classList.contains('is-visible') && 
+                        !drawer.contains(e.target) && 
+                        !drawerButton.contains(e.target)) {
+                        drawer.classList.remove('is-visible');
+                        document.body.classList.remove('disable-scrolling');
+                    }
+                });
+            });
         </script>
     </body>
 </html>
