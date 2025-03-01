@@ -6,7 +6,7 @@
     angular
         .module('tech-item')
         .component('techItem', {
-            templateUrl: 'app/tech-item/tech-item.template.html',
+            templateUrl: 'app/components/tech-item/tech-item.template.html',
             bindings: {
                 handler: '@'
             },

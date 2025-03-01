@@ -6,7 +6,7 @@
     angular
         .module('resume')
         .component('resume', {
-            templateUrl: 'app/resume/resume.template.html',
+            templateUrl: 'app/components/resume/resume.template.html',
             controller: ResumeComponentController
         });
 

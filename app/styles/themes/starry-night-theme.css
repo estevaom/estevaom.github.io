@@ -33,7 +33,7 @@ body {
 .mdl-chip {
   background-color: rgba(31, 48, 94, 0.7);
   color: var(--starry-night-text-light);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(0px);
   position: relative;
   z-index: 2;
 }
@@ -49,7 +49,7 @@ body {
   color: var(--starry-night-text-light);
   background-color: rgba(31, 48, 94, 0.8);
   border-bottom: 1px solid var(--starry-night-border);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(0px);
   position: relative;
   z-index: 2;
 }
@@ -59,7 +59,7 @@ body {
   color: var(--starry-night-text-light);
   border: 1px solid rgba(58, 83, 148, 0.6);
   border-radius: 10px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(0px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 
               inset 0 0 20px rgba(90, 160, 210, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;

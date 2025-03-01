@@ -4,7 +4,7 @@
             Estevão de Abreu Machado
         </span>
         <div class="mdl-layout-spacer"></div>
-        <nav class="mdl-navigation">
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
             <a ng-repeat="link in $ctrl.navigation_links" class="mdl-navigation__link" href="{{link.url}}">{{link.title}}</a>
             <button class="theme-toggle" ng-click="$ctrl.toggleTheme()">
                 <i class="material-icons" ng-repeat="theme in $ctrl.themes" ng-if="$ctrl.currentTheme === theme.id">{{theme.icon}}</i>

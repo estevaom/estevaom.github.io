@@ -38,14 +38,73 @@ tech-item a {
 }
 
 .mdl-layout__header {
-  height: 8em;
-  padding-top: 1.5em;
+  min-height: 64px;
+  height: auto;
+  padding-top: 0;
+}
+
+@media (min-width: 840px) {
+  .mdl-layout__header {
+    height: auto;
+    padding-top: 1em;
+  }
 }
 
 .mdl-layout__header-row {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  padding: 0 16px;
+}
+
+@media (max-width: 839px) {
+  .mdl-layout__title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  
+  .mdl-layout__header-row {
+    height: 56px;
+    padding: 0 16px;
+  }
+  
+  /* Show navigation even on small screens */
+  .mdl-layout__header-row .mdl-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 8px;
+  }
+  
+  .mdl-layout__header-row .mdl-navigation .mdl-navigation__link {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  /* Fix for section headers at small screen sizes */
+  .mdl-card__title {
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  .mdl-card__title .material-icons,
+  .mdl-card__title .mdl-card__title-text {
+    display: inline-block !important;
+  }
+  
+  .mdl-card__title-text {
+    font-size: 1.2em !important;
+  }
+}
+
+@media (min-width: 840px) {
+  .mdl-layout__header-row {
+    height: auto;
+    padding: 16px;
+  }
 }
 
 resume {
@@ -103,6 +162,13 @@ resume {
   padding: 0 15px;
 }
 
+@media (max-width: 1024px) and (min-width: 840px) {
+  .mdl-layout__header-row .mdl-navigation__link {
+    padding: 0 8px;
+    font-size: 14px;
+  }
+}
+
 #grid {
   display: grid;
 }
@@ -124,6 +190,53 @@ resume {
 }
 #about-me .mdl-card__supporting-text {
   width: 100%;
+  overflow: visible;
+  padding: 16px 24px;
+  box-sizing: border-box;
+}
+
+#about-me .about-me-details {
+  margin-top: 15px;
+}
+
+#about-me .about-me-intro {
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+#about-me p {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+#about-me .about-me-projects {
+  display: inline-block;
+  line-height: 1.6;
+}
+
+#about-me .about-me-project {
+  display: inline-block;
+}
+
+#about-me .about-me-projects-list {
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-left: 24px;
+}
+
+#about-me .about-me-projects-list li {
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+@media (max-width: 839px) {
+  #about-me .mdl-card__supporting-text {
+    padding: 16px;
+  }
+  
+  #about-me p {
+    word-wrap: break-word;
+  }
 }
 
 #objectives, #education, #contact {
@@ -225,7 +338,6 @@ resume {
   }
 }
 
-
 /* Company date footers */
 resume > div:last-child {
   margin-top: 0;
@@ -233,4 +345,39 @@ resume > div:last-child {
   clear: both;
   position: relative;
   z-index: 1;
+}
+
+/* Fix for MDL card titles to ensure headers always appear */
+.mdl-card__title {
+  display: flex;
+  align-items: center;
+}
+
+.mdl-card__title .material-icons,
+.mdl-card__title h2.mdl-card__title-text,
+.mdl-card__title h3.mdl-card__title-text {
+  display: inline-block;
+}
+
+/* Ensure consistent header spacing */
+.mdl-card__title {
+  padding: 16px;
+  min-height: auto;
+}
+
+/* Fix for small screens to ensure the entire menu shows */
+@media (max-width: 600px) {
+  .mdl-layout__header-row {
+    height: auto;
+    padding-bottom: 16px;
+  }
+  
+  .mdl-layout__header-row .mdl-navigation .mdl-navigation__link {
+    padding: 6px;
+    font-size: 12px;
+  }
+  
+  .mdl-layout__title {
+    margin-bottom: 8px;
+  }
 }
