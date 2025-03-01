@@ -1,0 +1,77 @@
+body {
+  background-color: #ddd;
+}
+
+.mdl-button.up-button.mdl-button--colored {
+  background: rgb(158, 158, 158);
+}
+
+.mdl-button.up-button.mdl-button--colored:hover {
+  background: #222;
+}
+
+.mdl-chip:hover {
+  background: #222;
+  color: orange;
+  transition: all .5s ease-in-out;
+}
+
+.mdl-layout__header {
+  background-image: url('../img/header.png');
+  color: white;
+}
+
+.mdl-card__title {
+  background-color: #222;
+  color: white;
+}
+
+.experience-list .mdl-list__item:hover {
+  color: orange;
+  transition: all .3s ease-in-out;
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+  color: orange;
+}
+
+.mdl-layout__header-row .mdl-navigation__link:hover {
+  color: rgba(255,165,0,0.25);
+}
+
+.employment-card {
+  margin-bottom: 1em;
+  min-height: 220px;
+}
+
+.employment-card .mdl-card__title {
+  background-color: #FFF;
+  color: #000;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.employment-card .mdl-card__supporting-text {
+  color: rgba(0,0,0,.87);
+  margin-bottom: 1em;
+}
+
+/* Theme toggle button styling */
+.theme-toggle {
+  background-color: #fafafa;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle i {
+  color: orange;
+} 

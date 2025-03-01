@@ -6,6 +6,10 @@
         <div class="mdl-layout-spacer"></div>
         <nav class="mdl-navigation">
             <a ng-repeat="link in $ctrl.navigation_links" class="mdl-navigation__link" href="{{link.url}}">{{link.title}}</a>
+            <button class="theme-toggle" ng-click="$ctrl.toggleTheme()">
+                <i class="material-icons" ng-if="!$ctrl.isDarkTheme">brightness_7</i>
+                <i class="material-icons" ng-if="$ctrl.isDarkTheme">brightness_3</i>
+            </button>
         </nav>
     </div>
 </header>

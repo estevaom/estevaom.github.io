@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-blue.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="./app/app.css">
+        <!-- Theme will be dynamically loaded by the theme toggle -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
         <script src="app/app.module.js"></script>
         <script src="app/services/technologies.service.js"></script>
@@ -30,5 +31,17 @@
                 </button>
             </a>
         </div>
+        <script>
+            // Initialize theme on page load
+            (function() {
+                var savedTheme = localStorage.getItem('theme') || 'light';
+                var head = document.getElementsByTagName('head')[0];
+                var themeLink = document.createElement('link');
+                themeLink.id = 'theme-css';
+                themeLink.rel = 'stylesheet';
+                themeLink.href = 'app/' + savedTheme + '-theme.css';
+                head.appendChild(themeLink);
+            })();
+        </script>
     </body>
 </html>

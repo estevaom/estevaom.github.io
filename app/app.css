@@ -1,6 +1,4 @@
-body {
-  background-color: #ddd;
-}
+/* Base layout styles - non-theme specific */
 
 tech-item a {
   text-decoration: none;
@@ -12,15 +10,6 @@ tech-item a {
   bottom: .5em;
   right: .5em;
   z-index: 1000;
-  background: #222;
-}
-
-.mdl-button.up-button.mdl-button--colored:hover {
-  background: #222;
-}
-
-.mdl-button.up-button.mdl-button--colored {
-  background: rgb(158, 158, 158);
 }
 
 .mdl-chip {
@@ -28,12 +17,6 @@ tech-item a {
   line-height: 24px;
   margin-top: 10px;
   font-weight: 400;
-}
-
-.mdl-chip:hover {
-  background: #222;
-  color: orange;
-  transition: all .5s ease-in-out;
 }
 
 .mdl-layout__title {
@@ -55,8 +38,6 @@ tech-item a {
 }
 
 .mdl-layout__header {
-  background-image: url('../img/header.png');
-  color: white;
   height: 8em;
   padding-top: 1.5em;
 }
@@ -84,11 +65,6 @@ resume {
 
 .mdl-layout__drawer-button {
   top: .8em;
-}
-
-.mdl-card__title {
-  background-color: #222;
-  color: white;
 }
 
 .mdl-card__title-text {
@@ -120,23 +96,11 @@ resume {
   min-height: 2em;
 }
 
-.experience-list .mdl-list__item:hover {
-  color: orange;
-  transition: all .3s ease-in-out;
-}
-
 .mdl-layout__header-row .mdl-navigation__link {
   cursor: default;
-  color: orange;
   font-weight: 300;
   font-size: 16px;
   padding: 0 15px;
-}
-
-.mdl-layout__header-row .mdl-navigation__link:hover {
-  cursor: default;
-  transition: color 1s ease-in-out;
-  color: rgba(255,165,0,0.25);
 }
 
 #grid {
@@ -195,25 +159,23 @@ resume {
   line-height: 1;
   padding: 8px 16px;
   cursor: default;
-  color: rgba(0,0,0,.87);
   overflow: hidden;
 }
 
 .employment-card {
   font-size: small;
-  margin-bottom: 0;
+  margin-bottom: 1em;
   flex-wrap: wrap;
   flex-direction: row;
-}
-
-.employment-card:last-child {
-  margin-bottom: 8px;
+  position: relative;
+  min-height: 220px;
 }
 
 .employment-card .mdl-card__title {
-  background-color: #FFF;
-  color: #000;
   height: 4.4em;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
 .employment-card .mdl-card__title-text {
@@ -227,6 +189,7 @@ resume {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 1em;
 }
 
 .employment-card .footer {
@@ -234,7 +197,15 @@ resume {
   align-self: flex-end;
 }
 
+.employment-card .mdl-card__supporting-text ul {
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  min-height: 100px;
+}
 
+.employment-card .mdl-card__supporting-text ul li {
+  margin-bottom: 0.25em;
+}
 
 @media (min-width: 1400px) {
   .employment-card {
@@ -248,8 +219,13 @@ resume {
   .employment-card:nth-child(odd) {
     margin-left: 4px;
   }
+}
 
-  .employment-card:nth-last-child(-n+2) {
-    margin-bottom: 8px;
-  }
+/* Company date footers */
+resume > div:last-child {
+  margin-top: 0;
+  padding-top: 0.5em;
+  clear: both;
+  position: relative;
+  z-index: 1;
 }
