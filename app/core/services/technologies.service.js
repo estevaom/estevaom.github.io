@@ -10,6 +10,6 @@
     TechnologiesService.$inject = ['$http'];
 
     function TechnologiesService($http) {
-        return $http.get('./data/technologies.json');
+        return $http.get('./app/data/technologies.json');
     }
 })(angular);

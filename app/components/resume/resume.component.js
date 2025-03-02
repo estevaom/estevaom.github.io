@@ -15,7 +15,7 @@
     function ResumeComponentController($http) {
         var self = this;
 
-        $http.get('./data/employment.json').then(function(response) {
+        $http.get('./app/data/employment.json').then(function(response) {
             self.employment = response.data;
         });
 
