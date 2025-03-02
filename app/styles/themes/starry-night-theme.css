@@ -60,6 +60,10 @@ body {
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 2;
+  background-color: rgba(14, 26, 64, 0.85);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  opacity: 0.92;
 }
 
 .mdl-card {

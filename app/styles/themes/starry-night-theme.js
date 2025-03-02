@@ -62,12 +62,12 @@
             maxSize: 300       // Maximum swirl size in pixels
         },
         shootingStars: {
-            count: 4,          // Initial number of shooting stars
-            interval: 5000,    // Milliseconds between random shooting stars
-            chance: 0.3,       // Probability (0-1) of new shooting star at each interval
+            count: 6,          // Initial number of shooting stars
+            interval: 3000,    // Milliseconds between random shooting stars
+            chance: 0.4,       // Probability (0-1) of new shooting star at each interval
             
             // Shooting star direction and movement
-            direction: 'right-to-left',  // 'left-to-right', 'right-to-left', or 'random'
+            direction: 'multi-position',  // 'left-to-right', 'right-to-left', 'multi-position', or 'random'
             angle: 45,                   // Angle in degrees: -45 = down-right, 45 = up-right, 135 = up-left, -135 = down-left
             minDuration: 4,              // Minimum animation duration in seconds (speed)
             maxDuration: 7,              // Maximum animation duration in seconds (speed)
@@ -139,6 +139,9 @@
     
     // Keep track of intervals for effects
     var effectIntervals = [];
+    
+    // Keep track of the number of active shooting stars
+    var activeShootingStars = 0;
 
     // Global window function for theme initialization
     window.initStarryNightTheme = initStarryNightTheme;
@@ -364,26 +367,82 @@
         // For a 45 degree angle, we need to move the same distance in X and Y
         // For other angles, we calculate the X and Y components
         var radians = angle * Math.PI / 180;
-        var distance = 400; // Base distance to travel
+        var distance = Math.max(window.innerWidth, window.innerHeight) * 1.5; // Ensure stars move completely off screen
         var dx = Math.cos(radians) * distance;
         var dy = Math.sin(radians) * distance;
         
         // Create the keyframes based on direction
         var keyframes = '';
         
+        // Add multiple keyframe sets for different fade points (75% to 90%)
+        for (var fadePoint = 75; fadePoint <= 90; fadePoint += 5) {
+            if (starryNightConfig.shootingStars.direction === 'left-to-right' || 
+                starryNightConfig.shootingStars.direction === 'random' ||
+                starryNightConfig.shootingStars.direction === 'multi-position') {
+                keyframes += `
+                    @keyframes starry-night-shooting-star-ltr-fade-${fadePoint} {
+                        0% { transform: translate(0, 0) rotate(${angle}deg) scale(0.5); opacity: 0; }
+                        10% { transform: translate(${dx * 0.1}px, ${dy * 0.1}px) rotate(${angle}deg) scale(1); opacity: 1; }
+                        ${fadePoint}% { transform: translate(${dx * fadePoint/100}px, ${dy * fadePoint/100}px) rotate(${angle}deg) scale(1); opacity: 1; }
+                        100% { transform: translate(${dx}px, ${dy}px) rotate(${angle}deg) scale(0.5); opacity: 0; }
+                    }
+                `;
+            }
+            
+            if (starryNightConfig.shootingStars.direction === 'right-to-left' || 
+                starryNightConfig.shootingStars.direction === 'random' ||
+                starryNightConfig.shootingStars.direction === 'multi-position') {
+                // For right-to-left, we invert the X movement and adjust the angle
+                var rtlAngle = 180 - angle;
+                var rtlRadians = rtlAngle * Math.PI / 180;
+                var rtlDx = Math.cos(rtlRadians) * distance;
+                var rtlDy = Math.sin(rtlRadians) * distance;
+                
+                keyframes += `
+                    @keyframes starry-night-shooting-star-rtl-fade-${fadePoint} {
+                        0% { transform: translate(0, 0) rotate(${rtlAngle}deg) scale(0.5); opacity: 0; }
+                        10% { transform: translate(${rtlDx * 0.1}px, ${rtlDy * 0.1}px) rotate(${rtlAngle}deg) scale(1); opacity: 1; }
+                        ${fadePoint}% { transform: translate(${rtlDx * fadePoint/100}px, ${rtlDy * fadePoint/100}px) rotate(${rtlAngle}deg) scale(1); opacity: 1; }
+                        100% { transform: translate(${rtlDx}px, ${rtlDy}px) rotate(${rtlAngle}deg) scale(0.5); opacity: 0; }
+                    }
+                `;
+            }
+            
+            if (starryNightConfig.shootingStars.direction === 'multi-position') {
+                // For top-to-bottom, we use a downward angle (135 degrees)
+                var ttbAngle = 135;
+                var ttbRadians = ttbAngle * Math.PI / 180;
+                var ttbDx = Math.cos(ttbRadians) * distance;
+                var ttbDy = Math.sin(ttbRadians) * distance;
+                
+                keyframes += `
+                    @keyframes starry-night-shooting-star-ttb-fade-${fadePoint} {
+                        0% { transform: translate(0, 0) rotate(${ttbAngle}deg) scale(0.5); opacity: 0; }
+                        10% { transform: translate(${ttbDx * 0.1}px, ${ttbDy * 0.1}px) rotate(${ttbAngle}deg) scale(1); opacity: 1; }
+                        ${fadePoint}% { transform: translate(${ttbDx * fadePoint/100}px, ${ttbDy * fadePoint/100}px) rotate(${ttbAngle}deg) scale(1); opacity: 1; }
+                        100% { transform: translate(${ttbDx}px, ${ttbDy}px) rotate(${ttbAngle}deg) scale(0.5); opacity: 0; }
+                    }
+                `;
+            }
+        }
+        
+        // Also keep the original animations as fallbacks
         if (starryNightConfig.shootingStars.direction === 'left-to-right' || 
-            starryNightConfig.shootingStars.direction === 'random') {
+            starryNightConfig.shootingStars.direction === 'random' ||
+            starryNightConfig.shootingStars.direction === 'multi-position') {
             keyframes += `
                 @keyframes starry-night-shooting-star-ltr {
                     0% { transform: translate(0, 0) rotate(${angle}deg) scale(0.5); opacity: 0; }
                     10% { transform: translate(${dx * 0.1}px, ${dy * 0.1}px) rotate(${angle}deg) scale(1); opacity: 1; }
-                    100% { transform: translate(${dx}px, ${dy}px) rotate(${angle}deg) scale(0.2); opacity: 0; }
+                    90% { transform: translate(${dx * 0.9}px, ${dy * 0.9}px) rotate(${angle}deg) scale(1); opacity: 1; }
+                    100% { transform: translate(${dx}px, ${dy}px) rotate(${angle}deg) scale(0.5); opacity: 0; }
                 }
             `;
         }
         
         if (starryNightConfig.shootingStars.direction === 'right-to-left' || 
-            starryNightConfig.shootingStars.direction === 'random') {
+            starryNightConfig.shootingStars.direction === 'random' ||
+            starryNightConfig.shootingStars.direction === 'multi-position') {
             // For right-to-left, we invert the X movement and adjust the angle
             var rtlAngle = 180 - angle;
             var rtlRadians = rtlAngle * Math.PI / 180;
@@ -394,7 +453,25 @@
                 @keyframes starry-night-shooting-star-rtl {
                     0% { transform: translate(0, 0) rotate(${rtlAngle}deg) scale(0.5); opacity: 0; }
                     10% { transform: translate(${rtlDx * 0.1}px, ${rtlDy * 0.1}px) rotate(${rtlAngle}deg) scale(1); opacity: 1; }
-                    100% { transform: translate(${rtlDx}px, ${rtlDy}px) rotate(${rtlAngle}deg) scale(0.2); opacity: 0; }
+                    90% { transform: translate(${rtlDx * 0.9}px, ${rtlDy * 0.9}px) rotate(${rtlAngle}deg) scale(1); opacity: 1; }
+                    100% { transform: translate(${rtlDx}px, ${rtlDy}px) rotate(${rtlAngle}deg) scale(0.5); opacity: 0; }
+                }
+            `;
+        }
+        
+        if (starryNightConfig.shootingStars.direction === 'multi-position') {
+            // For top-to-bottom, we use a downward angle (135 degrees)
+            var ttbAngle = 135;
+            var ttbRadians = ttbAngle * Math.PI / 180;
+            var ttbDx = Math.cos(ttbRadians) * distance;
+            var ttbDy = Math.sin(ttbRadians) * distance;
+            
+            keyframes += `
+                @keyframes starry-night-shooting-star-ttb {
+                    0% { transform: translate(0, 0) rotate(${ttbAngle}deg) scale(0.5); opacity: 0; }
+                    10% { transform: translate(${ttbDx * 0.1}px, ${ttbDy * 0.1}px) rotate(${ttbAngle}deg) scale(1); opacity: 1; }
+                    90% { transform: translate(${ttbDx * 0.9}px, ${ttbDy * 0.9}px) rotate(${ttbAngle}deg) scale(1); opacity: 1; }
+                    100% { transform: translate(${ttbDx}px, ${ttbDy}px) rotate(${ttbAngle}deg) scale(0.5); opacity: 0; }
                 }
             `;
         }
@@ -526,11 +603,20 @@
         var container = document.getElementById('starry-night-shooting-stars');
         if (!container) return;
         
-        for (var i = 0; i < count; i++) {
+        // Limit the number of stars to a maximum of 10
+        var starsToCreate = Math.min(count, 10 - activeShootingStars);
+        if (starsToCreate <= 0) return;
+        
+        for (var i = 0; i < starsToCreate; i++) {
             // Determine direction for this star
             var direction = starryNightConfig.shootingStars.direction;
             if (direction === 'random') {
                 direction = Math.random() > 0.5 ? 'left-to-right' : 'right-to-left';
+            }
+
+            // For multi-position, randomly choose between top-to-bottom and right-to-left
+            if (direction === 'multi-position') {
+                direction = Math.random() > 0.4 ? 'right-to-left' : 'top-to-bottom';
             }
             
             var shootingStar = document.createElement('div');
@@ -538,7 +624,15 @@
             
             // Duration and delay
             var duration = randomBetween(starryNightConfig.shootingStars.minDuration, starryNightConfig.shootingStars.maxDuration);
-            var delay = randomBetween(0, 15);
+            var delay = randomBetween(0, 3);
+            
+            // Add variation to size
+            var thicknessVariation = Math.random() * 0.6 + 0.4; // 40% to 100% of configured thickness
+            var thickness = Math.round(starryNightConfig.shootingStars.thickness * thicknessVariation);
+            var length = Math.round(starryNightConfig.shootingStars.length * (thicknessVariation * 0.8 + 0.2)); // Size affects length but less dramatically
+            
+            // Add variation to fade timing - round to nearest 5 for animation names
+            var fadeStartPoint = Math.round(randomBetween(75, 90) / 5) * 5; // 75, 80, 85, or 90
             
             // Calculate starting position based on direction
             if (direction === 'left-to-right') {
@@ -549,7 +643,13 @@
                     window.innerHeight * (starryNightConfig.shootingStars.startAreaBottom / 100)
                 );
                 gradientDirection = '90deg'; // Left to right gradient
-                animationName = 'starry-night-shooting-star-ltr';
+                animationName = `starry-night-shooting-star-ltr-fade-${fadeStartPoint}`;
+            } else if (direction === 'top-to-bottom') {
+                // Start from top edge of screen across the full width
+                x = randomBetween(0, window.innerWidth);
+                y = randomBetween(0, window.innerHeight * (starryNightConfig.shootingStars.startSidePosition / 100));
+                gradientDirection = '180deg'; // Top to bottom gradient
+                animationName = `starry-night-shooting-star-ttb-fade-${fadeStartPoint}`;
             } else {
                 // Start from right edge of screen within the configured start area
                 x = randomBetween(
@@ -561,27 +661,37 @@
                     window.innerHeight * (starryNightConfig.shootingStars.startAreaBottom / 100)
                 );
                 gradientDirection = '270deg'; // Right to left gradient
-                animationName = 'starry-night-shooting-star-rtl';
+                animationName = `starry-night-shooting-star-rtl-fade-${fadeStartPoint}`;
             }
             
             shootingStar.className = 'starry-night-shooting-star';
             shootingStar.style.cssText = `
                 position: absolute;
-                width: ${starryNightConfig.shootingStars.length}px;
-                height: ${starryNightConfig.shootingStars.thickness}px;
+                width: ${length}px;
+                height: ${thickness}px;
                 left: ${x}px;
                 top: ${y}px;
                 background: linear-gradient(${gradientDirection}, 
                     ${starryNightConfig.shootingStars.headColor} 0%, 
                     ${starryNightConfig.shootingStars.trailColor} 50%, 
                     ${starryNightConfig.shootingStars.fadeColor} 100%);
-                box-shadow: 0 0 10px 0 rgba(255, 230, 128, 0.5);
+                box-shadow: 0 0 ${thickness}px ${Math.ceil(thickness/2)}px rgba(255, 230, 128, 0.5);
                 border-radius: 100px;
-                animation: ${animationName} ${duration}s ${delay}s infinite linear;
+                animation: ${animationName} ${duration}s ${delay}s 1 linear forwards;
                 z-index: ${starryNightConfig.zIndex.shootingStars};
             `;
             
             container.appendChild(shootingStar);
+            activeShootingStars++;
+            
+            // Remove the shooting star when the animation completes
+            var removalTime = (duration + delay) * 1000;
+            setTimeout(function() {
+                if (shootingStar.parentNode) {
+                    shootingStar.parentNode.removeChild(shootingStar);
+                    activeShootingStars--;
+                }
+            }, removalTime);
         }
     }
     
@@ -694,7 +804,7 @@
     function scheduleRandomEffects() {
         // Occasionally add a new shooting star
         var shootingStarInterval = setInterval(function() {
-            if (Math.random() > (1 - starryNightConfig.shootingStars.chance)) {
+            if (activeShootingStars < 10 && Math.random() > (1 - starryNightConfig.shootingStars.chance)) {
                 createShootingStars(1);
             }
         }, starryNightConfig.shootingStars.interval);
