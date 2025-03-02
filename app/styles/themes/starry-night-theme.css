@@ -52,13 +52,12 @@ body {
 }
 
 .mdl-layout__header {
-  background-image: url('../img/header.svg');
-  color: var(--starry-night-text-light);
-  background-color: rgba(12, 18, 44, var(--glass-opacity));
-  backdrop-filter: blur(var(--glass-blur));
-  -webkit-backdrop-filter: blur(var(--glass-blur));
-  border-bottom: 1px solid var(--starry-night-border);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  background-image: url('../img/header-starry.svg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid rgba(40, 40, 80, 0.5);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 2;
 }
@@ -132,6 +131,12 @@ body {
 .mdl-layout__header-row .mdl-navigation__link:hover {
   color: rgba(255, 230, 128, 0.6);
   text-shadow: 0 0 5px rgba(255, 220, 128, 0.5);
+}
+
+/* Ensure header title is white */
+.mdl-layout__title {
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .employment-card .mdl-card__title {

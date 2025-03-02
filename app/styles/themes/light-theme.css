@@ -50,14 +50,11 @@ body {
 
 .mdl-layout__header {
   background-image: url('../img/header.svg');
-  color: var(--light-bg);
-  background-color: rgba(255, 255, 255, var(--glass-opacity));
-  backdrop-filter: blur(var(--glass-blur));
-  -webkit-backdrop-filter: blur(var(--glass-blur));
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
   border-bottom: 1px solid var(--light-border);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  position: relative;
-  z-index: 2;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .mdl-card {
@@ -119,6 +116,12 @@ body {
 .mdl-layout__header-row .mdl-navigation__link:hover {
   color: rgba(255,165,0,0.75);
   text-shadow: 0 0 8px rgba(255, 165, 0, 0.4);
+}
+
+/* Ensure header title is white */
+.mdl-layout__title {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .employment-card .mdl-card__title {
