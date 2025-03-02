@@ -52,12 +52,13 @@ body {
 }
 
 .mdl-layout__header {
-  background-image: url('../img/header.png');
+  background-image: url('../img/header.svg');
   color: var(--starry-night-text-light);
-  background-color: rgba(31, 48, 94, var(--glass-opacity));
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(12, 18, 44, var(--glass-opacity));
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
+  border-bottom: 1px solid var(--starry-night-border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 2;
 }

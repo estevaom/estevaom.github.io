@@ -49,13 +49,13 @@ body {
 }
 
 .mdl-layout__header {
-  background-image: url('../img/header.png');
-  color: white;
+  background-image: url('../img/header.svg');
+  color: var(--light-bg);
   background-color: rgba(255, 255, 255, var(--glass-opacity));
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
   border-bottom: 1px solid var(--light-border);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   position: relative;
   z-index: 2;
 }

@@ -53,7 +53,7 @@ body {
 }
 
 .mdl-layout__header {
-  background-image: url('../img/header.png');
+  background-image: url('../img/header.svg');
   color: var(--dark-text-light);
   background-color: rgba(33, 33, 33, var(--glass-opacity));
   backdrop-filter: blur(var(--glass-blur));
