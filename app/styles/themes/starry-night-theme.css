@@ -11,6 +11,11 @@
     --starry-night-text-light: #ffffff;
     --starry-night-text-accent: #ffdc80;
     --starry-night-border: #3a5394;
+    /* Glassmorphism variables */
+    --glass-opacity: 0.25;
+    --glass-blur: 12px;
+    --glass-border-opacity: 0.25;
+    --glass-shadow-opacity: 0.2;
 }
 
 body {
@@ -31,15 +36,17 @@ body {
 }
 
 .mdl-chip {
-  background-color: rgba(31, 48, 94, 0.7);
+  background-color: rgba(31, 48, 94, var(--glass-opacity));
   color: var(--starry-night-text-light);
-  backdrop-filter: blur(0px);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
   z-index: 2;
 }
 
 .mdl-chip:hover {
-  background: var(--starry-night-accent-blue);
+  background: rgba(72, 104, 173, 0.4);
   color: var(--starry-night-text-accent);
   transition: all .5s ease-in-out;
 }
@@ -47,21 +54,23 @@ body {
 .mdl-layout__header {
   background-image: url('../img/header.png');
   color: var(--starry-night-text-light);
-  background-color: rgba(31, 48, 94, 0.8);
-  border-bottom: 1px solid var(--starry-night-border);
-  backdrop-filter: blur(0px);
+  background-color: rgba(31, 48, 94, var(--glass-opacity));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
   position: relative;
   z-index: 2;
 }
 
 .mdl-card {
-  background-color: rgba(31, 48, 94, 0.5);
+  background-color: rgba(31, 48, 94, var(--glass-opacity));
   color: var(--starry-night-text-light);
-  border: 1px solid rgba(58, 83, 148, 0.6);
-  border-radius: 10px;
-  backdrop-filter: blur(0px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 
-              inset 0 0 20px rgba(90, 160, 210, 0.1);
+  border: 1px solid rgba(255, 255, 255, var(--glass-border-opacity));
+  border-radius: 12px;
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  box-shadow: 0 4px 20px rgba(0, 0, 0, var(--glass-shadow-opacity)), 
+              inset 0 0 20px rgba(255, 255, 255, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   z-index: 2;
@@ -85,16 +94,21 @@ body {
 
 .mdl-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3),
-              inset 0 0 25px rgba(90, 160, 210, 0.2);
-  border-color: var(--starry-night-star-yellow);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25),
+              inset 0 0 25px rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 230, 128, 0.3);
+  background-color: rgba(31, 48, 94, 0.35);
+  backdrop-filter: blur(calc(var(--glass-blur) + 4px));
+  -webkit-backdrop-filter: blur(calc(var(--glass-blur) + 4px));
   transition: all 0.4s ease;
 }
 
 .mdl-card__title {
-  background-color: var(--starry-night-bg-medium);
+  background-color: rgba(31, 48, 94, 0.6);
   color: var(--starry-night-text-accent);
   text-shadow: 0 0 5px rgba(255, 220, 128, 0.3);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
 }
 
 .mdl-card__supporting-text {
@@ -120,9 +134,11 @@ body {
 }
 
 .employment-card .mdl-card__title {
-  background-color: rgba(31, 48, 94, 0.8);
+  background-color: rgba(31, 48, 94, 0.6);
   color: var(--starry-night-text-accent);
   box-sizing: border-box;
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
 }
 
 .employment-card .mdl-card__supporting-text {
@@ -143,10 +159,13 @@ body {
 
 /* Theme toggle button styling */
 .theme-toggle {
-  background-color: rgba(31, 48, 94, 0.7);
-  border: 2px solid var(--starry-night-border);
+  background-color: rgba(31, 48, 94, var(--glass-opacity));
+  border: 1px solid rgba(255, 255, 255, var(--glass-border-opacity));
   border-radius: 50%;
   color: var(--starry-night-text-light);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   position: relative;
   z-index: 3;
