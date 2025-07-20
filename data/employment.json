@@ -1,0 +1,140 @@
+[
+  {
+    "name": "Readytech",
+    "title": "Engineering Manager",
+    "location": "Sydney, Australia",
+    "remote": true,
+    "url": "https://www.readytech.com.au/",
+    "description": [
+      "Lead and manage engineering team development efforts",
+      "Estimate and plan new feature implementations",
+      "Develop and test Ruby on Rails applications",
+      "Deliver technical presentations at company retreats",
+      "Drive innovation through extensive use of AI tools and technologies",
+      "Architect and execute large-scale refactoring of legacy applications to modern standards"
+    ],
+    "technologies": [
+      "ruby-on-rails",
+      "jquery",
+      "css",
+      "mysql",
+      "hotwire",
+      "github-copilot",
+      "cline",
+      "claude-3"
+    ]
+  },
+  {
+    "name": "Reinteractive",
+    "title": "Senior Web Developer",
+    "location": "Sydney, Australia",
+    "remote": true,
+    "url": "https://www.reinteractive.net/",
+    "description": [
+      "Worked on auditing and consulting products for PwC, nib and other clients"
+    ],
+    "technologies": [
+      "ruby-on-rails",
+      "angularjs",
+      "css",
+      "google-cloud-datastore",
+      "elasticsearch"
+    ]
+  },
+  {
+    "name": "DashBid Media",
+    "title": "Senior Web Developer",
+    "location": "New York, USA",
+    "remote": true,
+    "url": "https://www.dashbid.com/",
+    "description": [
+      "Developed countless features in an agile environment",
+      "Planned and carried out daily scrums, weekly estimations and retrospectives and pair programming",
+      "Developed and tested customer facing apps and internal dashboards using Google Material",
+      "Created Treasure Data and RedShift big data services queries to feed our database",
+      "Built and tested REST APIs and their docs to be used by our many customers",
+      "Set up and maintained applications on Amazon Web Services"
+    ],
+    "technologies": [
+      "node-js",
+      "angular-4",
+      "amazon-dynamodb",
+      "ruby-on-rails",
+      "jquery",
+      "css",
+      "mysql",
+      "amazon-elasticache",
+      "amazon-redshift",
+      "treasure-data"
+    ]
+  },
+  {
+    "name": "XL Solutions",
+    "title": "Web Developer",
+    "location": "Rio de Janeiro, Brazil",
+    "remote": false,
+    "url": "http://www.xlsol.com/",
+    "description": [
+      "Built e-commerces for the biggest phone carriers in Brazil (Claro, Tim, Vivo, Oi, Porto Seguro)",
+      "Often worked in a support role answering tickets, fixing bugs, talking to customers, going to meetings and creating new features on demand for our many projects",
+      "Developed and tested APIs and high traffic websites like real time auction, e-learning school and e-commerces",
+      "Developed a mobile web app to be opened on specific tablets and be used as interface for selling mobile phones in stores in Angular 1.5",
+      "Full implementation and maintenance of marketplaces with millions of items parsed from XMLs or Json APIs loaded to ElasticSearch",
+      "Ported legacy applications from Ruby 1.8 and Rails 2.3 to Ruby 2 and Rails 4"
+    ],
+    "technologies": [
+      "ruby-on-rails",
+      "jquery",
+      "css",
+      "mysql",
+      "angularjs",
+      "amazon-s3",
+      "sidekiq",
+      "elasticsearch"
+    ]
+  },
+  {
+    "name": "Kissy",
+    "title": "Web Developer, Operations",
+    "location": "Rio de Janeiro, Brazil",
+    "remote": false,
+    "url": "#",
+    "description": [
+      "Created and maintained an iPhone and Android webview dating app with push notification and HTML5 geolocation",
+      "Set up all services on Amazon Web Services to host the app",
+      "Interacted with many social network APIs like Gmail, Google Maps, Facebook and Foursquare"
+    ],
+    "technologies": [
+      "ruby-on-rails",
+      "jquery",
+      "css",
+      "mysql",
+      "amazon-ec2",
+      "amazon-rds",
+      "amazon-s3"
+    ]
+  },
+  {
+    "name": "Hands S.A.",
+    "title": "Web Developer",
+    "location": "Rio de Janeiro, Brazil",
+    "remote": false,
+    "url": "http://www.hands.com.br/",
+    "description": [
+      "Maintained a crawler that saved websites news to be displayed in a mobile environment",
+      "Released the first mobile portal in Brazil the same day the first iPhone was",
+      "Planned and executed the codebase migration from C# to Ruby on Rails",
+      "Developed mobile websites",
+      "Developed and maintained a CMS in Ruby on Rails"
+    ],
+    "technologies": [
+      "csharp",
+      "xml",
+      "html5",
+      "ruby",
+      "ruby-on-rails",
+      "css",
+      "javascript"
+    ]
+  }
+]
