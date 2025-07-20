@@ -46,7 +46,6 @@ tech-item a {
 @media (min-width: 840px) {
     .mdl-layout__header {
         height: auto;
-        padding-top: 1em;
     }
 }
 

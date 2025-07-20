@@ -1,9 +1,4 @@
 {
-  "profileData": {
-    "name": "Estevão de Abreu Machado",
-    "title": "Full Stack Developer & Engineering Manager"
-  },
-  "featuredEmployment": [],
   "allTechnologies": [
     {
       "handler": "ai-agents",
@@ -66,9 +61,9 @@
       "url": null
     },
     {
-      "handler": "claude-3",
-      "name": "Claude 3.5-sonnet",
-      "url": "https://www.anthropic.com/news/claude-3-5-sonnet"
+      "handler": "claude-code",
+      "name": "Claude Code",
+      "url": "https://claude.ai/code"
     },
     {
       "handler": "cline",
@@ -114,6 +109,11 @@
       "handler": "google-cloud-datastore",
       "name": "Google Cloud Datastore",
       "url": "https://cloud.google.com/datastore/"
+    },
+    {
+      "handler": "graphql",
+      "name": "GraphQL",
+      "url": "https://graphql.org/"
     },
     {
       "handler": "google-material",
@@ -196,9 +196,19 @@
       "url": null
     },
     {
+      "handler": "react",
+      "name": "React",
+      "url": "https://react.dev/"
+    },
+    {
       "handler": "redis",
       "name": "Redis",
       "url": "https://redis.io/"
+    },
+    {
+      "handler": "relay",
+      "name": "Relay",
+      "url": "https://relay.dev/"
     },
     {
       "handler": "roo-code",
@@ -244,6 +254,11 @@
       "handler": "vagrant",
       "name": "Vagrant",
       "url": null
+    },
+    {
+      "handler": "vuejs",
+      "name": "Vue.js",
+      "url": "https://vuejs.org/"
     },
     {
       "handler": "webpack",
@@ -317,9 +332,9 @@
           "url": "https://cline.bot/"
         },
         {
-          "handler": "claude-3",
-          "name": "Claude 3.5-sonnet",
-          "url": "https://www.anthropic.com/news/claude-3-5-sonnet"
+          "handler": "claude-code",
+          "name": "Claude Code",
+          "url": "https://claude.ai/code"
         }
       ],
       "title": "Engineering Manager",
@@ -343,6 +358,26 @@
           "handler": "angularjs",
           "name": "AngularJS",
           "url": "https://angularjs.org/"
+        },
+        {
+          "handler": "vuejs",
+          "name": "Vue.js",
+          "url": "https://vuejs.org/"
+        },
+        {
+          "handler": "react",
+          "name": "React",
+          "url": "https://react.dev/"
+        },
+        {
+          "handler": "graphql",
+          "name": "GraphQL",
+          "url": "https://graphql.org/"
+        },
+        {
+          "handler": "relay",
+          "name": "Relay",
+          "url": "https://relay.dev/"
         },
         {
           "handler": "css",
@@ -611,9 +646,9 @@
           "url": "https://codeium.com/windsurf"
         },
         {
-          "handler": "claude-3",
-          "name": "Claude 3.5-sonnet",
-          "url": "https://www.anthropic.com/news/claude-3-5-sonnet"
+          "handler": "claude-code",
+          "name": "Claude Code",
+          "url": "https://claude.ai/code"
         },
         {
           "handler": "ai-agents",
@@ -694,6 +729,21 @@
           "handler": "jquery",
           "name": "JQuery",
           "url": "https://jquery.com/"
+        },
+        {
+          "handler": "react",
+          "name": "React",
+          "url": "https://react.dev/"
+        },
+        {
+          "handler": "relay",
+          "name": "Relay",
+          "url": "https://relay.dev/"
+        },
+        {
+          "handler": "vuejs",
+          "name": "Vue.js",
+          "url": "https://vuejs.org/"
         }
       ],
       "type": "Frontend"
@@ -734,6 +784,11 @@
           "handler": "elasticsearch",
           "name": "Elasticsearch",
           "url": "https://www.elastic.co/products/elasticsearch"
+        },
+        {
+          "handler": "graphql",
+          "name": "GraphQL",
+          "url": "https://graphql.org/"
         },
         {
           "handler": "memcached",
@@ -853,5 +908,12 @@
       ],
       "type": "Other"
     }
-  ]
+  ],
+  "profileData": {
+    "name": "Estevão de Abreu Machado",
+    "title": "Full Stack Developer & Engineering Manager",
+    "totalEmployment": 6,
+    "totalTechnologies": 56
+  },
+  "featuredEmployment": []
 }

@@ -21,7 +21,7 @@
       "hotwire",
       "github-copilot",
       "cline",
-      "claude-3"
+      "claude-code"
     ]
   },
   {
@@ -36,6 +36,10 @@
     "technologies": [
       "ruby-on-rails",
       "angularjs",
+      "vuejs",
+      "react",
+      "graphql",
+      "relay",
       "css",
       "google-cloud-datastore",
       "elasticsearch"

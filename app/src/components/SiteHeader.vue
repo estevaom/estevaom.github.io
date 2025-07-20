@@ -9,6 +9,7 @@
                     :key="link.url"
                     class="mdl-navigation__link"
                     :href="link.url"
+                    @click="handleNavClick($event, link.url)"
                 >
                     {{ link.title }}
                 </a>
@@ -54,6 +55,20 @@ onMounted(() => {
     applyTheme(savedTheme);
 });
 
+function handleNavClick(event, url) {
+    if (url.startsWith("#")) {
+        event.preventDefault();
+        const targetId = url.substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
+    }
+}
+
 function toggleTheme() {
     const currentIndex = themes.findIndex((t) => t.id === currentTheme.value);
     const nextIndex = (currentIndex + 1) % themes.length;
@@ -96,3 +111,32 @@ function applyTheme(theme) {
     }
 }
 </script>
+
+<style scoped>
+.mdl-layout__header {
+    background-color: black;
+}
+
+/* Center title on mobile */
+@media (max-width: 1024px) {
+    .mdl-layout__header-row {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .mdl-layout__title {
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .mdl-layout-spacer {
+        display: none;
+    }
+
+    .mdl-navigation {
+        display: none;
+    }
+}
+</style>

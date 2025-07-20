@@ -6,7 +6,7 @@
     <div class="mdl-card__supporting-text">
         <p>
             B.A., Computer Science &amp; Project Management - 2009<br />
-            Universidade Gama Filho, Rio de Janeiro, RJ
+            Universidade Gama Filho, Rio de Janeiro, Brazil
         </p>
     </div>
 </template>

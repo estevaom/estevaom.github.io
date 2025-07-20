@@ -6,7 +6,7 @@
         "github-copilot",
         "cursor-ide",
         "windsurf-ide",
-        "claude-3",
+        "claude-code",
         "ai-agents",
         "cline",
         "roo-code"
@@ -27,7 +27,10 @@
         "html5",
         "hotwire",
         "javascript",
-        "jquery"
+        "jquery",
+        "react",
+        "relay",
+        "vuejs"
       ]
     },
     {
@@ -40,6 +43,7 @@
         "treasure-data",
         "google-cloud-datastore",
         "elasticsearch",
+        "graphql",
         "memcached",
         "redis"
       ]

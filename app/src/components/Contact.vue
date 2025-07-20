@@ -31,4 +31,9 @@
 
 <script setup></script>
 
-<style scoped></style>
+<style scoped>
+.contact-links .mdl-chip {
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+</style>

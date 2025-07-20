@@ -48,9 +48,9 @@
   { "handler": "capistrano", "name": "Capistrano" },
   { "handler": "capybara", "name": "Capybara" },
   {
-    "handler": "claude-3",
-    "name": "Claude 3.5-sonnet",
-    "url": "https://www.anthropic.com/news/claude-3-5-sonnet"
+    "handler": "claude-code",
+    "name": "Claude Code",
+    "url": "https://claude.ai/code"
   },
   { "handler": "cline", "name": "Cline", "url": "https://cline.bot/" },
   {
@@ -84,6 +84,11 @@
     "handler": "google-cloud-datastore",
     "name": "Google Cloud Datastore",
     "url": "https://cloud.google.com/datastore/"
+  },
+  {
+    "handler": "graphql",
+    "name": "GraphQL",
+    "url": "https://graphql.org/"
   },
   {
     "handler": "google-material",
@@ -121,7 +126,17 @@
     "url": "https://www.postgresql.org/"
   },
   { "handler": "protractor", "name": "Protractor" },
+  {
+    "handler": "react",
+    "name": "React",
+    "url": "https://react.dev/"
+  },
   { "handler": "redis", "name": "Redis", "url": "https://redis.io/" },
+  {
+    "handler": "relay",
+    "name": "Relay",
+    "url": "https://relay.dev/"
+  },
   {
     "handler": "roo-code",
     "name": "Roo Code",
@@ -143,6 +158,11 @@
   },
   { "handler": "typescript", "name": "Typescript" },
   { "handler": "vagrant", "name": "Vagrant" },
+  {
+    "handler": "vuejs",
+    "name": "Vue.js",
+    "url": "https://vuejs.org/"
+  },
   { "handler": "webpack", "name": "Webpack" },
   { "handler": "wercker", "name": "Wercker" },
   {
