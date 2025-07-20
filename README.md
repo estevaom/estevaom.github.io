@@ -1,60 +1,98 @@
-# estevaom.github.io
+<h1 align="center">https://www.estevaom.com</h1>
 
-My personal website and blog featuring AI editor reviews and professional experience.
+<p align="center">
+  <img src="./.github/images/screenshot1.png" width="80%" />
+</p>
 
-## Personal Website
+Personal portfolio website showcasing professional experience, technical skills, and projects.
 
-The main website showcases my professional experience, skills, and technical background. It features a responsive design that works across devices and includes:
+## Architecture
 
-- Interactive components for browsing employment history
-- Technology skill showcase with categorization
-- Multiple theme options (Light, Dark, and Starry Night)
-- Mobile-optimized navigation
+The site uses a modern static generation approach with a Rust build tool that transforms JSON data into GraphQL-like API responses, which are then consumed by a Vue 3 frontend.
 
-### Themes
+### Technology Stack
 
-The website offers three distinct themes:
-- **Light Theme**: Clean, professional appearance with light backgrounds
-- **Dark Theme**: Reduced eye strain with dark backgrounds and appropriate contrast
-- **Starry Night Theme**: Interactive animated background with stars and parallax effects, influenced by Vincent van Gogh's famous painting
-
-### Technical Implementation
-
-- Built with AngularJS components
-- Material Design Lite for UI elements
-- Modular code organization
-- Responsive layout for all screen sizes
-
-**Note**: All updates and improvements to the personal website have been implemented with Cursor using Claude 3.7 Sonnet Thinking. The entire codebase reorganization and theme implementation was assisted by AI.
-
-## Blog
-
-The `/blog` section contains editor reviews and AI development experiences with:
-- Interactive star ratings
-- Image carousel with lightbox
-- Synthwave '84 theme
+- **Build Tool**: Rust with serde/serde_json for data processing
+- **Runtime**: Bun for package management and development server
+- **Frontend Framework**: Vue 3 with Composition API
+- **Build System**: Vite
+- **UI Library**: Material Design Lite (MDL)
+- **Hosting**: GitHub Pages with GitHub Actions for CI/CD
 
 ## Project Structure
 
-The application follows a modular organization pattern:
+```
+/
+├── app/                    # Vue 3 application
+│   ├── src/               # Vue components and application logic
+│   ├── public/            # Static assets (themes, styles, images)
+│   └── package.json       # Vue application dependencies
+├── build/                 # Rust build tool
+│   ├── src/               # Rust source code
+│   └── Cargo.toml        # Rust dependencies
+├── data/                  # Source data files
+│   ├── employment.json    # Work experience data
+│   ├── technologies.json  # Technology definitions
+│   └── resume.json       # Resume structure and categories
+└── dist/                  # Build output (gitignored)
+    └── api/              # Generated API responses
+```
 
-- `/` - Main website with resume and professional information
-- `/blog` - Editor reviews and AI development experiences
-- `/app` - Application code
-  - `/components` - UI components
-  - `/core` - Services and configuration
-  - `/styles` - CSS and themes
-- `/assets` - Static resources
-- `/data` - JSON data files
+## Development
 
-## Technologies
+### Prerequisites
 
-### Frontend Framework
-- AngularJS with component architecture
-- Material Design Lite
-- CSS3 with advanced animations
+- Rust (latest stable)
+- Bun (latest version)
 
-### AI Assistants
-- Claude 3.7 Sonnet
-- Cursor
-- Cline
+### Getting Started
+
+1. Clone the repository
+2. Run the development server:
+   ```bash
+   ./dev.sh
+   ```
+
+This script will:
+- Build the API responses using the Rust tool (if not already built)
+- Start the Vue development server on http://localhost:5173
+
+### Building for Production
+
+```bash
+./build.sh
+```
+
+This generates a production-ready build in the `app/dist` directory.
+
+## Deployment
+
+The site is automatically deployed to GitHub Pages when changes are pushed to the main branch. The GitHub Actions workflow handles:
+
+1. Building the Rust API generator
+2. Installing dependencies
+3. Building the Vue application
+4. Deploying to GitHub Pages
+
+## Data Management
+
+Content is managed through JSON files in the `/data` directory:
+
+- **employment.json**: Professional experience entries
+- **technologies.json**: Technology definitions with URLs
+- **resume.json**: Categorizes technologies and defines the resume structure
+
+After modifying data files, run the build process to regenerate the API responses.
+
+## Features
+
+- Responsive design with Material Design components
+- Three theme options: Light, Dark, and Starry Night
+- Static site generation for optimal performance
+- GraphQL-like API structure for future scalability
+- Smooth scrolling navigation
+- Mobile-optimized layout
+
+---
+
+Built with Claude Opus 4 @ Claude Code
