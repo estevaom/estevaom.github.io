@@ -1,5 +1,11 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import "./style.css";
 
-createApp(App).mount("#app");
+const app = createApp(App);
+app.mount("#app");
+
+app.config.globalProperties.$nextTick(() => {
+  if (window.componentHandler) {
+    window.componentHandler.upgradeAllRegistered();
+  }
+});

@@ -79,6 +79,20 @@ function applyTheme(theme) {
         themeLink.rel = "stylesheet";
         document.head.appendChild(themeLink);
     }
-    themeLink.href = `/themes/${theme}-theme.css`;
+    themeLink.href = `/styles/themes/${theme}-theme.css`;
+
+    // Handle starry night script
+    const existingScript = document.getElementById("starry-night-script");
+    if (theme === "starry-night" && !existingScript) {
+        const script = document.createElement("script");
+        script.id = "starry-night-script";
+        script.src = "/styles/themes/starry-night-theme.js";
+        document.head.appendChild(script);
+    } else if (theme !== "starry-night" && existingScript) {
+        existingScript.remove();
+        // Clear any starry night elements
+        const container = document.getElementById("starry-night-container");
+        if (container) container.innerHTML = "";
+    }
 }
 </script>

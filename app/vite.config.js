@@ -6,13 +6,5 @@ export default defineConfig({
   build: {
     outDir: "../dist",
   },
-  server: {
-    proxy: {
-      "/dist/api": {
-        target: "http://localhost:5173",
-        rewrite: (path) => path.replace(/^\/dist/, ""),
-      },
-    },
-  },
   publicDir: "public",
 });

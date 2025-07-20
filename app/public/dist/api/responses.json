@@ -1,0 +1,857 @@
+{
+  "profileData": {
+    "name": "Estevão de Abreu Machado",
+    "title": "Full Stack Developer & Engineering Manager"
+  },
+  "featuredEmployment": [],
+  "allTechnologies": [
+    {
+      "handler": "ai-agents",
+      "name": "AI Agents",
+      "url": "https://aws.amazon.com/what-is/ai-agents/"
+    },
+    {
+      "handler": "amazon-dynamodb",
+      "name": "Amazon DynamoDB",
+      "url": "https://aws.amazon.com/dynamodb/"
+    },
+    {
+      "handler": "amazon-ec2",
+      "name": "Amazon EC2",
+      "url": "https://aws.amazon.com/ec2/"
+    },
+    {
+      "handler": "amazon-elasticache",
+      "name": "Amazon ElastiCache",
+      "url": "https://aws.amazon.com/elasticache/"
+    },
+    {
+      "handler": "amazon-rds",
+      "name": "Amazon RDS",
+      "url": "https://aws.amazon.com/rds/"
+    },
+    {
+      "handler": "amazon-redshift",
+      "name": "Amazon Redshift",
+      "url": "https://aws.amazon.com/redshift/"
+    },
+    {
+      "handler": "amazon-s3",
+      "name": "Amazon S3",
+      "url": "https://aws.amazon.com/s3/"
+    },
+    {
+      "handler": "angular-4",
+      "name": "Angular 4",
+      "url": "https://angular.io/"
+    },
+    {
+      "handler": "angularjs",
+      "name": "AngularJS",
+      "url": "https://angularjs.org/"
+    },
+    {
+      "handler": "bootstrap",
+      "name": "Bootstrap",
+      "url": "http://getbootstrap.com/"
+    },
+    {
+      "handler": "capistrano",
+      "name": "Capistrano",
+      "url": null
+    },
+    {
+      "handler": "capybara",
+      "name": "Capybara",
+      "url": null
+    },
+    {
+      "handler": "claude-3",
+      "name": "Claude 3.5-sonnet",
+      "url": "https://www.anthropic.com/news/claude-3-5-sonnet"
+    },
+    {
+      "handler": "cline",
+      "name": "Cline",
+      "url": "https://cline.bot/"
+    },
+    {
+      "handler": "csharp",
+      "name": "C#",
+      "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+    },
+    {
+      "handler": "css",
+      "name": "CSS",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+      "handler": "cursor-ide",
+      "name": "Cursor IDE",
+      "url": "https://www.cursor.com/"
+    },
+    {
+      "handler": "datamapper",
+      "name": "Datamapper",
+      "url": null
+    },
+    {
+      "handler": "elasticsearch",
+      "name": "Elasticsearch",
+      "url": "https://www.elastic.co/products/elasticsearch"
+    },
+    {
+      "handler": "git",
+      "name": "Git",
+      "url": null
+    },
+    {
+      "handler": "github-copilot",
+      "name": "Github Copilot",
+      "url": "https://github.com/features/copilot"
+    },
+    {
+      "handler": "google-cloud-datastore",
+      "name": "Google Cloud Datastore",
+      "url": "https://cloud.google.com/datastore/"
+    },
+    {
+      "handler": "google-material",
+      "name": "Google Material",
+      "url": "https://getmdl.io/"
+    },
+    {
+      "handler": "html5",
+      "name": "HTML5",
+      "url": "https://www.w3.org/TR/html5/"
+    },
+    {
+      "handler": "hotwire",
+      "name": "Hotwire",
+      "url": "https://hotwired.dev/"
+    },
+    {
+      "handler": "javascript",
+      "name": "Javascript",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+      "handler": "jasmine",
+      "name": "Jasmine",
+      "url": null
+    },
+    {
+      "handler": "jenkins",
+      "name": "Jenkins",
+      "url": null
+    },
+    {
+      "handler": "jquery",
+      "name": "JQuery",
+      "url": "https://jquery.com/"
+    },
+    {
+      "handler": "karma",
+      "name": "Karma",
+      "url": null
+    },
+    {
+      "handler": "memcached",
+      "name": "Memcached",
+      "url": "https://memcached.org/"
+    },
+    {
+      "handler": "minitest",
+      "name": "Minitest",
+      "url": null
+    },
+    {
+      "handler": "mocha",
+      "name": "Mocha",
+      "url": null
+    },
+    {
+      "handler": "mysql",
+      "name": "MySQL",
+      "url": "https://www.mysql.com/"
+    },
+    {
+      "handler": "new-relic",
+      "name": "New Relic",
+      "url": null
+    },
+    {
+      "handler": "node-js",
+      "name": "Node.js",
+      "url": "https://nodejs.org/en/"
+    },
+    {
+      "handler": "postgresql",
+      "name": "PostgreSQL",
+      "url": "https://www.postgresql.org/"
+    },
+    {
+      "handler": "protractor",
+      "name": "Protractor",
+      "url": null
+    },
+    {
+      "handler": "redis",
+      "name": "Redis",
+      "url": "https://redis.io/"
+    },
+    {
+      "handler": "roo-code",
+      "name": "Roo Code",
+      "url": "https://github.com/RooVetGit/Roo-Code"
+    },
+    {
+      "handler": "rspec",
+      "name": "Rspec",
+      "url": null
+    },
+    {
+      "handler": "ruby",
+      "name": "Ruby",
+      "url": "https://www.ruby-lang.org/en/"
+    },
+    {
+      "handler": "ruby-on-rails",
+      "name": "Ruby on Rails",
+      "url": "http://rubyonrails.org/"
+    },
+    {
+      "handler": "semaphore",
+      "name": "Semaphore",
+      "url": null
+    },
+    {
+      "handler": "sidekiq",
+      "name": "Sidekiq",
+      "url": "http://sidekiq.org/"
+    },
+    {
+      "handler": "treasure-data",
+      "name": "Treasure Data",
+      "url": "https://www.treasuredata.com/"
+    },
+    {
+      "handler": "typescript",
+      "name": "Typescript",
+      "url": null
+    },
+    {
+      "handler": "vagrant",
+      "name": "Vagrant",
+      "url": null
+    },
+    {
+      "handler": "webpack",
+      "name": "Webpack",
+      "url": null
+    },
+    {
+      "handler": "wercker",
+      "name": "Wercker",
+      "url": null
+    },
+    {
+      "handler": "windsurf-ide",
+      "name": "Windsurf IDE",
+      "url": "https://codeium.com/windsurf"
+    },
+    {
+      "handler": "xml",
+      "name": "XML",
+      "url": "https://www.w3.org/XML/"
+    }
+  ],
+  "employmentWithTechnologies": [
+    {
+      "description": [
+        "Lead and manage engineering team development efforts",
+        "Estimate and plan new feature implementations",
+        "Develop and test Ruby on Rails applications",
+        "Deliver technical presentations at company retreats",
+        "Drive innovation through extensive use of AI tools and technologies",
+        "Architect and execute large-scale refactoring of legacy applications to modern standards"
+      ],
+      "featured": null,
+      "location": "Sydney, Australia",
+      "name": "Readytech",
+      "remote": true,
+      "technologies": [
+        {
+          "handler": "ruby-on-rails",
+          "name": "Ruby on Rails",
+          "url": "http://rubyonrails.org/"
+        },
+        {
+          "handler": "jquery",
+          "name": "JQuery",
+          "url": "https://jquery.com/"
+        },
+        {
+          "handler": "css",
+          "name": "CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "handler": "mysql",
+          "name": "MySQL",
+          "url": "https://www.mysql.com/"
+        },
+        {
+          "handler": "hotwire",
+          "name": "Hotwire",
+          "url": "https://hotwired.dev/"
+        },
+        {
+          "handler": "github-copilot",
+          "name": "Github Copilot",
+          "url": "https://github.com/features/copilot"
+        },
+        {
+          "handler": "cline",
+          "name": "Cline",
+          "url": "https://cline.bot/"
+        },
+        {
+          "handler": "claude-3",
+          "name": "Claude 3.5-sonnet",
+          "url": "https://www.anthropic.com/news/claude-3-5-sonnet"
+        }
+      ],
+      "title": "Engineering Manager",
+      "url": "https://www.readytech.com.au/"
+    },
+    {
+      "description": [
+        "Worked on auditing and consulting products for PwC, nib and other clients"
+      ],
+      "featured": null,
+      "location": "Sydney, Australia",
+      "name": "Reinteractive",
+      "remote": true,
+      "technologies": [
+        {
+          "handler": "ruby-on-rails",
+          "name": "Ruby on Rails",
+          "url": "http://rubyonrails.org/"
+        },
+        {
+          "handler": "angularjs",
+          "name": "AngularJS",
+          "url": "https://angularjs.org/"
+        },
+        {
+          "handler": "css",
+          "name": "CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "handler": "google-cloud-datastore",
+          "name": "Google Cloud Datastore",
+          "url": "https://cloud.google.com/datastore/"
+        },
+        {
+          "handler": "elasticsearch",
+          "name": "Elasticsearch",
+          "url": "https://www.elastic.co/products/elasticsearch"
+        }
+      ],
+      "title": "Senior Web Developer",
+      "url": "https://www.reinteractive.net/"
+    },
+    {
+      "description": [
+        "Developed countless features in an agile environment",
+        "Planned and carried out daily scrums, weekly estimations and retrospectives and pair programming",
+        "Developed and tested customer facing apps and internal dashboards using Google Material",
+        "Created Treasure Data and RedShift big data services queries to feed our database",
+        "Built and tested REST APIs and their docs to be used by our many customers",
+        "Set up and maintained applications on Amazon Web Services"
+      ],
+      "featured": null,
+      "location": "New York, USA",
+      "name": "DashBid Media",
+      "remote": true,
+      "technologies": [
+        {
+          "handler": "node-js",
+          "name": "Node.js",
+          "url": "https://nodejs.org/en/"
+        },
+        {
+          "handler": "angular-4",
+          "name": "Angular 4",
+          "url": "https://angular.io/"
+        },
+        {
+          "handler": "amazon-dynamodb",
+          "name": "Amazon DynamoDB",
+          "url": "https://aws.amazon.com/dynamodb/"
+        },
+        {
+          "handler": "ruby-on-rails",
+          "name": "Ruby on Rails",
+          "url": "http://rubyonrails.org/"
+        },
+        {
+          "handler": "jquery",
+          "name": "JQuery",
+          "url": "https://jquery.com/"
+        },
+        {
+          "handler": "css",
+          "name": "CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "handler": "mysql",
+          "name": "MySQL",
+          "url": "https://www.mysql.com/"
+        },
+        {
+          "handler": "amazon-elasticache",
+          "name": "Amazon ElastiCache",
+          "url": "https://aws.amazon.com/elasticache/"
+        },
+        {
+          "handler": "amazon-redshift",
+          "name": "Amazon Redshift",
+          "url": "https://aws.amazon.com/redshift/"
+        },
+        {
+          "handler": "treasure-data",
+          "name": "Treasure Data",
+          "url": "https://www.treasuredata.com/"
+        }
+      ],
+      "title": "Senior Web Developer",
+      "url": "https://www.dashbid.com/"
+    },
+    {
+      "description": [
+        "Built e-commerces for the biggest phone carriers in Brazil (Claro, Tim, Vivo, Oi, Porto Seguro)",
+        "Often worked in a support role answering tickets, fixing bugs, talking to customers, going to meetings and creating new features on demand for our many projects",
+        "Developed and tested APIs and high traffic websites like real time auction, e-learning school and e-commerces",
+        "Developed a mobile web app to be opened on specific tablets and be used as interface for selling mobile phones in stores in Angular 1.5",
+        "Full implementation and maintenance of marketplaces with millions of items parsed from XMLs or Json APIs loaded to ElasticSearch",
+        "Ported legacy applications from Ruby 1.8 and Rails 2.3 to Ruby 2 and Rails 4"
+      ],
+      "featured": null,
+      "location": "Rio de Janeiro, Brazil",
+      "name": "XL Solutions",
+      "remote": false,
+      "technologies": [
+        {
+          "handler": "ruby-on-rails",
+          "name": "Ruby on Rails",
+          "url": "http://rubyonrails.org/"
+        },
+        {
+          "handler": "jquery",
+          "name": "JQuery",
+          "url": "https://jquery.com/"
+        },
+        {
+          "handler": "css",
+          "name": "CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "handler": "mysql",
+          "name": "MySQL",
+          "url": "https://www.mysql.com/"
+        },
+        {
+          "handler": "angularjs",
+          "name": "AngularJS",
+          "url": "https://angularjs.org/"
+        },
+        {
+          "handler": "amazon-s3",
+          "name": "Amazon S3",
+          "url": "https://aws.amazon.com/s3/"
+        },
+        {
+          "handler": "sidekiq",
+          "name": "Sidekiq",
+          "url": "http://sidekiq.org/"
+        },
+        {
+          "handler": "elasticsearch",
+          "name": "Elasticsearch",
+          "url": "https://www.elastic.co/products/elasticsearch"
+        }
+      ],
+      "title": "Web Developer",
+      "url": "http://www.xlsol.com/"
+    },
+    {
+      "description": [
+        "Created and maintained an iPhone and Android webview dating app with push notification and HTML5 geolocation",
+        "Set up all services on Amazon Web Services to host the app",
+        "Interacted with many social network APIs like Gmail, Google Maps, Facebook and Foursquare"
+      ],
+      "featured": null,
+      "location": "Rio de Janeiro, Brazil",
+      "name": "Kissy",
+      "remote": false,
+      "technologies": [
+        {
+          "handler": "ruby-on-rails",
+          "name": "Ruby on Rails",
+          "url": "http://rubyonrails.org/"
+        },
+        {
+          "handler": "jquery",
+          "name": "JQuery",
+          "url": "https://jquery.com/"
+        },
+        {
+          "handler": "css",
+          "name": "CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "handler": "mysql",
+          "name": "MySQL",
+          "url": "https://www.mysql.com/"
+        },
+        {
+          "handler": "amazon-ec2",
+          "name": "Amazon EC2",
+          "url": "https://aws.amazon.com/ec2/"
+        },
+        {
+          "handler": "amazon-rds",
+          "name": "Amazon RDS",
+          "url": "https://aws.amazon.com/rds/"
+        },
+        {
+          "handler": "amazon-s3",
+          "name": "Amazon S3",
+          "url": "https://aws.amazon.com/s3/"
+        }
+      ],
+      "title": "Web Developer, Operations",
+      "url": "https://www.kissy.app/"
+    },
+    {
+      "description": [
+        "Maintained a crawler that saved websites news to be displayed in a mobile environment",
+        "Released the first mobile portal in Brazil the same day the first iPhone was",
+        "Planned and executed the codebase migration from C# to Ruby on Rails",
+        "Developed mobile websites",
+        "Developed and maintained a CMS in Ruby on Rails"
+      ],
+      "featured": null,
+      "location": "Rio de Janeiro, Brazil",
+      "name": "Hands S.A.",
+      "remote": false,
+      "technologies": [
+        {
+          "handler": "csharp",
+          "name": "C#",
+          "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+        },
+        {
+          "handler": "xml",
+          "name": "XML",
+          "url": "https://www.w3.org/XML/"
+        },
+        {
+          "handler": "html5",
+          "name": "HTML5",
+          "url": "https://www.w3.org/TR/html5/"
+        },
+        {
+          "handler": "ruby",
+          "name": "Ruby",
+          "url": "https://www.ruby-lang.org/en/"
+        },
+        {
+          "handler": "ruby-on-rails",
+          "name": "Ruby on Rails",
+          "url": "http://rubyonrails.org/"
+        },
+        {
+          "handler": "css",
+          "name": "CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "handler": "javascript",
+          "name": "Javascript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        }
+      ],
+      "title": "Web Developer",
+      "url": "http://www.hands.com.br/"
+    }
+  ],
+  "technologiesByCategory": [
+    {
+      "technologies": [
+        {
+          "handler": "github-copilot",
+          "name": "Github Copilot",
+          "url": "https://github.com/features/copilot"
+        },
+        {
+          "handler": "cursor-ide",
+          "name": "Cursor IDE",
+          "url": "https://www.cursor.com/"
+        },
+        {
+          "handler": "windsurf-ide",
+          "name": "Windsurf IDE",
+          "url": "https://codeium.com/windsurf"
+        },
+        {
+          "handler": "claude-3",
+          "name": "Claude 3.5-sonnet",
+          "url": "https://www.anthropic.com/news/claude-3-5-sonnet"
+        },
+        {
+          "handler": "ai-agents",
+          "name": "AI Agents",
+          "url": "https://aws.amazon.com/what-is/ai-agents/"
+        },
+        {
+          "handler": "cline",
+          "name": "Cline",
+          "url": "https://cline.bot/"
+        },
+        {
+          "handler": "roo-code",
+          "name": "Roo Code",
+          "url": "https://github.com/RooVetGit/Roo-Code"
+        }
+      ],
+      "type": "AI Developer Tools"
+    },
+    {
+      "technologies": [
+        {
+          "handler": "ruby-on-rails",
+          "name": "Ruby on Rails",
+          "url": "http://rubyonrails.org/"
+        },
+        {
+          "handler": "node-js",
+          "name": "Node.js",
+          "url": "https://nodejs.org/en/"
+        }
+      ],
+      "type": "Backend"
+    },
+    {
+      "technologies": [
+        {
+          "handler": "angularjs",
+          "name": "AngularJS",
+          "url": "https://angularjs.org/"
+        },
+        {
+          "handler": "angular-4",
+          "name": "Angular 4",
+          "url": "https://angular.io/"
+        },
+        {
+          "handler": "bootstrap",
+          "name": "Bootstrap",
+          "url": "http://getbootstrap.com/"
+        },
+        {
+          "handler": "css",
+          "name": "CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "handler": "google-material",
+          "name": "Google Material",
+          "url": "https://getmdl.io/"
+        },
+        {
+          "handler": "html5",
+          "name": "HTML5",
+          "url": "https://www.w3.org/TR/html5/"
+        },
+        {
+          "handler": "hotwire",
+          "name": "Hotwire",
+          "url": "https://hotwired.dev/"
+        },
+        {
+          "handler": "javascript",
+          "name": "Javascript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "handler": "jquery",
+          "name": "JQuery",
+          "url": "https://jquery.com/"
+        }
+      ],
+      "type": "Frontend"
+    },
+    {
+      "technologies": [
+        {
+          "handler": "mysql",
+          "name": "MySQL",
+          "url": "https://www.mysql.com/"
+        },
+        {
+          "handler": "postgresql",
+          "name": "PostgreSQL",
+          "url": "https://www.postgresql.org/"
+        },
+        {
+          "handler": "amazon-dynamodb",
+          "name": "Amazon DynamoDB",
+          "url": "https://aws.amazon.com/dynamodb/"
+        },
+        {
+          "handler": "amazon-redshift",
+          "name": "Amazon Redshift",
+          "url": "https://aws.amazon.com/redshift/"
+        },
+        {
+          "handler": "treasure-data",
+          "name": "Treasure Data",
+          "url": "https://www.treasuredata.com/"
+        },
+        {
+          "handler": "google-cloud-datastore",
+          "name": "Google Cloud Datastore",
+          "url": "https://cloud.google.com/datastore/"
+        },
+        {
+          "handler": "elasticsearch",
+          "name": "Elasticsearch",
+          "url": "https://www.elastic.co/products/elasticsearch"
+        },
+        {
+          "handler": "memcached",
+          "name": "Memcached",
+          "url": "https://memcached.org/"
+        },
+        {
+          "handler": "redis",
+          "name": "Redis",
+          "url": "https://redis.io/"
+        }
+      ],
+      "type": "Database / Cache Storage"
+    },
+    {
+      "technologies": [
+        {
+          "handler": "capybara",
+          "name": "Capybara",
+          "url": null
+        },
+        {
+          "handler": "jasmine",
+          "name": "Jasmine",
+          "url": null
+        },
+        {
+          "handler": "karma",
+          "name": "Karma",
+          "url": null
+        },
+        {
+          "handler": "minitest",
+          "name": "Minitest",
+          "url": null
+        },
+        {
+          "handler": "mocha",
+          "name": "Mocha",
+          "url": null
+        },
+        {
+          "handler": "protractor",
+          "name": "Protractor",
+          "url": null
+        },
+        {
+          "handler": "rspec",
+          "name": "Rspec",
+          "url": null
+        }
+      ],
+      "type": "Test"
+    },
+    {
+      "technologies": [
+        {
+          "handler": "amazon-s3",
+          "name": "Amazon S3",
+          "url": "https://aws.amazon.com/s3/"
+        },
+        {
+          "handler": "capistrano",
+          "name": "Capistrano",
+          "url": null
+        },
+        {
+          "handler": "datamapper",
+          "name": "Datamapper",
+          "url": null
+        },
+        {
+          "handler": "git",
+          "name": "Git",
+          "url": null
+        },
+        {
+          "handler": "jenkins",
+          "name": "Jenkins",
+          "url": null
+        },
+        {
+          "handler": "new-relic",
+          "name": "New Relic",
+          "url": null
+        },
+        {
+          "handler": "semaphore",
+          "name": "Semaphore",
+          "url": null
+        },
+        {
+          "handler": "sidekiq",
+          "name": "Sidekiq",
+          "url": "http://sidekiq.org/"
+        },
+        {
+          "handler": "typescript",
+          "name": "Typescript",
+          "url": null
+        },
+        {
+          "handler": "vagrant",
+          "name": "Vagrant",
+          "url": null
+        },
+        {
+          "handler": "webpack",
+          "name": "Webpack",
+          "url": null
+        },
+        {
+          "handler": "wercker",
+          "name": "Wercker",
+          "url": null
+        }
+      ],
+      "type": "Other"
+    }
+  ]
+}

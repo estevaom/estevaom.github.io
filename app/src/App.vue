@@ -15,8 +15,36 @@
 </template>
 
 <script setup>
+import { onMounted, nextTick } from "vue";
 import SiteHeader from "./components/SiteHeader.vue";
 import Resume from "./components/Resume.vue";
+
+onMounted(async () => {
+    await nextTick();
+    if (window.componentHandler) {
+        window.componentHandler.upgradeAllRegistered();
+    }
+});
 </script>
 
-<style></style>
+<style>
+.mdl-layout__header-row {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+main.mdl-layout__content {
+    display: block;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+}
+
+@media (min-width: 1400px) {
+    .employment-card {
+        width: calc(50% - 12px);
+    }
+}
+</style>
