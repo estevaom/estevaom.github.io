@@ -1,0 +1,387 @@
+/* Base layout styles - non-theme specific */
+
+tech-item a {
+    text-decoration: none;
+}
+
+.mdl-button.up-button {
+    display: none;
+    position: fixed;
+    bottom: 0.5em;
+    right: 0.5em;
+    z-index: 1000;
+}
+
+.mdl-chip {
+    height: 24px;
+    line-height: 24px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.mdl-layout__title {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.material-icons {
+    cursor: default;
+}
+
+.mdl-card__title .material-icons {
+    color: orange;
+    transition: all 1s ease-in-out;
+}
+
+.mdl-card__title .material-icons:hover {
+    transform: scale(2);
+}
+
+.mdl-layout__header {
+    min-height: 64px;
+    height: auto;
+    padding-top: 0;
+}
+
+@media (min-width: 840px) {
+    .mdl-layout__header {
+        height: auto;
+    }
+}
+
+.mdl-layout__header-row {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 0 16px;
+}
+
+@media (max-width: 839px) {
+    .mdl-layout__title {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .mdl-layout__header-row {
+        height: 56px;
+        padding: 0 16px;
+    }
+
+    /* Show navigation even on small screens */
+    .mdl-layout__header-row .mdl-navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .mdl-layout__header-row .mdl-navigation .mdl-navigation__link {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    /* Fix for section headers at small screen sizes */
+    .mdl-card__title {
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    .mdl-card__title .material-icons,
+    .mdl-card__title .mdl-card__title-text {
+        display: inline-block !important;
+    }
+
+    .mdl-card__title-text {
+        font-size: 1.2em !important;
+    }
+}
+
+@media (min-width: 840px) {
+    .mdl-layout__header-row {
+        height: auto;
+        padding: 16px;
+    }
+}
+
+resume {
+    display: block;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.mdl-list__item-avatar,
+.mdl-list__item-avatar.material-icons {
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+}
+
+.mdl-layout__drawer-button {
+    top: 0.8em;
+}
+
+.mdl-card__title-text {
+    margin-left: 0.4em;
+    font-weight: 100;
+}
+
+.mdl-list__item--three-line {
+    height: auto;
+}
+
+.mdl-card__supporting-text.mdl-cell--12-col.items-list {
+    padding-left: 0;
+    padding-bottom: 8px;
+}
+
+.mdl-list {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.mdl-card {
+    min-height: auto;
+}
+
+.experience-list .mdl-list__item {
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 2em;
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+    cursor: default;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 0 15px;
+}
+
+@media (max-width: 1024px) and (min-width: 840px) {
+    .mdl-layout__header-row .mdl-navigation__link {
+        padding: 0 8px;
+        font-size: 14px;
+    }
+}
+
+#grid {
+    display: grid;
+}
+
+#grid .mdl-card__supporting-text {
+    width: auto;
+    height: calc(100% - 92px);
+    position: relative;
+}
+
+.contact-links {
+    position: absolute;
+    padding: 1em 0;
+    bottom: 0;
+}
+
+#about-me p {
+    margin-bottom: 0;
+}
+#about-me .mdl-card__supporting-text {
+    width: 100%;
+    overflow: visible;
+    padding: 16px 24px;
+    box-sizing: border-box;
+}
+
+#about-me .about-me-details {
+    margin-top: 15px;
+}
+
+#about-me .about-me-intro {
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+#about-me p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+#about-me .about-me-projects {
+    display: inline-block;
+    line-height: 1.6;
+}
+
+#about-me .about-me-project {
+    display: inline-block;
+}
+
+#about-me .about-me-projects-list {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-left: 24px;
+}
+
+#about-me .about-me-projects-list li {
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+@media (max-width: 839px) {
+    #about-me .mdl-card__supporting-text {
+        padding: 16px;
+    }
+
+    #about-me p {
+        word-wrap: break-word;
+    }
+}
+
+#objectives,
+#education,
+#contact {
+    width: 100%;
+}
+
+#objectives .mdl-card__supporting-text p,
+#education .mdl-card__supporting-text p {
+    margin-bottom: 0;
+}
+
+#objectives,
+#education {
+    margin-bottom: 1em;
+}
+
+#contact p {
+    margin-bottom: 3em;
+}
+
+.mdl-list__item--three-line .mdl-list__item-text-body {
+    height: auto;
+    margin-left: 1.6em;
+}
+
+.mdl-list__item--three-line .mdl-list__item-primary-content {
+    height: auto;
+}
+
+.skills {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    padding: 8px 16px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.employment-card {
+    font-size: small;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.employment-card .mdl-card__title {
+    height: 4.4em;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.employment-card .mdl-card__title-text {
+    font-size: 1.5em;
+    position: relative;
+    font-weight: 300;
+}
+
+#employment .mdl-card__supporting-text {
+    padding: 0 1em 0 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.employment-card .footer {
+    padding: 1em;
+    align-self: flex-end;
+}
+
+.employment-card .mdl-card__supporting-text ul {
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.employment-card .mdl-card__supporting-text ul li {
+    margin-bottom: 0.25em;
+}
+
+/* Theme toggle button styling - structural parts only */
+.theme-toggle {
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1400px) {
+    .employment-card {
+        width: calc(50% - 12px);
+    }
+}
+
+@media (min-width: 840px) {
+    .mdl-cell {
+        margin: 6px;
+    }
+}
+
+/* Company date footers */
+resume > div:last-child {
+    margin-top: 0;
+    padding-top: 0.5em;
+    clear: both;
+    position: relative;
+    z-index: 1;
+}
+
+/* Fix for MDL card titles to ensure headers always appear */
+.mdl-card__title {
+    display: flex;
+    align-items: center;
+}
+
+.mdl-card__title .material-icons,
+.mdl-card__title h2.mdl-card__title-text,
+.mdl-card__title h3.mdl-card__title-text {
+    display: inline-block;
+}
+
+/* Ensure consistent header spacing */
+.mdl-card__title {
+    padding: 16px;
+    min-height: auto;
+}
+
+/* Fix for small screens to ensure the entire menu shows */
+@media (max-width: 600px) {
+    .mdl-layout__header-row {
+        height: auto;
+        padding-bottom: 16px;
+    }
+
+    .mdl-layout__header-row .mdl-navigation .mdl-navigation__link {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .mdl-layout__title {
+        margin-bottom: 8px;
+    }
+}

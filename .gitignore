@@ -1,0 +1,10 @@
+/build/target/
+/build/Cargo.lock
+
+/dist/
+
+/app/node_modules/
+/app/dist/
+/app/public/dist/
+
+.DS_Store
