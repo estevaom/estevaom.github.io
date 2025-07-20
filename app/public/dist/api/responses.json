@@ -1,286 +1,4 @@
 {
-  "allTechnologies": [
-    {
-      "handler": "ai-agents",
-      "name": "AI Agents",
-      "url": "https://aws.amazon.com/what-is/ai-agents/"
-    },
-    {
-      "handler": "amazon-dynamodb",
-      "name": "Amazon DynamoDB",
-      "url": "https://aws.amazon.com/dynamodb/"
-    },
-    {
-      "handler": "amazon-ec2",
-      "name": "Amazon EC2",
-      "url": "https://aws.amazon.com/ec2/"
-    },
-    {
-      "handler": "amazon-elasticache",
-      "name": "Amazon ElastiCache",
-      "url": "https://aws.amazon.com/elasticache/"
-    },
-    {
-      "handler": "amazon-rds",
-      "name": "Amazon RDS",
-      "url": "https://aws.amazon.com/rds/"
-    },
-    {
-      "handler": "amazon-redshift",
-      "name": "Amazon Redshift",
-      "url": "https://aws.amazon.com/redshift/"
-    },
-    {
-      "handler": "amazon-s3",
-      "name": "Amazon S3",
-      "url": "https://aws.amazon.com/s3/"
-    },
-    {
-      "handler": "angular-4",
-      "name": "Angular 4",
-      "url": "https://angular.io/"
-    },
-    {
-      "handler": "angularjs",
-      "name": "AngularJS",
-      "url": "https://angularjs.org/"
-    },
-    {
-      "handler": "bootstrap",
-      "name": "Bootstrap",
-      "url": "http://getbootstrap.com/"
-    },
-    {
-      "handler": "capistrano",
-      "name": "Capistrano",
-      "url": null
-    },
-    {
-      "handler": "capybara",
-      "name": "Capybara",
-      "url": null
-    },
-    {
-      "handler": "claude-code",
-      "name": "Claude Code",
-      "url": "https://claude.ai/code"
-    },
-    {
-      "handler": "cline",
-      "name": "Cline",
-      "url": "https://cline.bot/"
-    },
-    {
-      "handler": "csharp",
-      "name": "C#",
-      "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
-    },
-    {
-      "handler": "css",
-      "name": "CSS",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
-    },
-    {
-      "handler": "cursor-ide",
-      "name": "Cursor IDE",
-      "url": "https://www.cursor.com/"
-    },
-    {
-      "handler": "datamapper",
-      "name": "Datamapper",
-      "url": null
-    },
-    {
-      "handler": "elasticsearch",
-      "name": "Elasticsearch",
-      "url": "https://www.elastic.co/products/elasticsearch"
-    },
-    {
-      "handler": "git",
-      "name": "Git",
-      "url": null
-    },
-    {
-      "handler": "github-copilot",
-      "name": "Github Copilot",
-      "url": "https://github.com/features/copilot"
-    },
-    {
-      "handler": "google-cloud-datastore",
-      "name": "Google Cloud Datastore",
-      "url": "https://cloud.google.com/datastore/"
-    },
-    {
-      "handler": "graphql",
-      "name": "GraphQL",
-      "url": "https://graphql.org/"
-    },
-    {
-      "handler": "google-material",
-      "name": "Google Material",
-      "url": "https://getmdl.io/"
-    },
-    {
-      "handler": "html5",
-      "name": "HTML5",
-      "url": "https://www.w3.org/TR/html5/"
-    },
-    {
-      "handler": "hotwire",
-      "name": "Hotwire",
-      "url": "https://hotwired.dev/"
-    },
-    {
-      "handler": "javascript",
-      "name": "Javascript",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-    },
-    {
-      "handler": "jasmine",
-      "name": "Jasmine",
-      "url": null
-    },
-    {
-      "handler": "jenkins",
-      "name": "Jenkins",
-      "url": null
-    },
-    {
-      "handler": "jquery",
-      "name": "JQuery",
-      "url": "https://jquery.com/"
-    },
-    {
-      "handler": "karma",
-      "name": "Karma",
-      "url": null
-    },
-    {
-      "handler": "memcached",
-      "name": "Memcached",
-      "url": "https://memcached.org/"
-    },
-    {
-      "handler": "minitest",
-      "name": "Minitest",
-      "url": null
-    },
-    {
-      "handler": "mocha",
-      "name": "Mocha",
-      "url": null
-    },
-    {
-      "handler": "mysql",
-      "name": "MySQL",
-      "url": "https://www.mysql.com/"
-    },
-    {
-      "handler": "new-relic",
-      "name": "New Relic",
-      "url": null
-    },
-    {
-      "handler": "node-js",
-      "name": "Node.js",
-      "url": "https://nodejs.org/en/"
-    },
-    {
-      "handler": "postgresql",
-      "name": "PostgreSQL",
-      "url": "https://www.postgresql.org/"
-    },
-    {
-      "handler": "protractor",
-      "name": "Protractor",
-      "url": null
-    },
-    {
-      "handler": "react",
-      "name": "React",
-      "url": "https://react.dev/"
-    },
-    {
-      "handler": "redis",
-      "name": "Redis",
-      "url": "https://redis.io/"
-    },
-    {
-      "handler": "relay",
-      "name": "Relay",
-      "url": "https://relay.dev/"
-    },
-    {
-      "handler": "roo-code",
-      "name": "Roo Code",
-      "url": "https://github.com/RooVetGit/Roo-Code"
-    },
-    {
-      "handler": "rspec",
-      "name": "Rspec",
-      "url": null
-    },
-    {
-      "handler": "ruby",
-      "name": "Ruby",
-      "url": "https://www.ruby-lang.org/en/"
-    },
-    {
-      "handler": "ruby-on-rails",
-      "name": "Ruby on Rails",
-      "url": "http://rubyonrails.org/"
-    },
-    {
-      "handler": "semaphore",
-      "name": "Semaphore",
-      "url": null
-    },
-    {
-      "handler": "sidekiq",
-      "name": "Sidekiq",
-      "url": "http://sidekiq.org/"
-    },
-    {
-      "handler": "treasure-data",
-      "name": "Treasure Data",
-      "url": "https://www.treasuredata.com/"
-    },
-    {
-      "handler": "typescript",
-      "name": "Typescript",
-      "url": null
-    },
-    {
-      "handler": "vagrant",
-      "name": "Vagrant",
-      "url": null
-    },
-    {
-      "handler": "vuejs",
-      "name": "Vue.js",
-      "url": "https://vuejs.org/"
-    },
-    {
-      "handler": "webpack",
-      "name": "Webpack",
-      "url": null
-    },
-    {
-      "handler": "wercker",
-      "name": "Wercker",
-      "url": null
-    },
-    {
-      "handler": "windsurf-ide",
-      "name": "Windsurf IDE",
-      "url": "https://codeium.com/windsurf"
-    },
-    {
-      "handler": "xml",
-      "name": "XML",
-      "url": "https://www.w3.org/XML/"
-    }
-  ],
   "employmentWithTechnologies": [
     {
       "description": [
@@ -909,11 +627,293 @@
       "type": "Other"
     }
   ],
+  "featuredEmployment": [],
   "profileData": {
     "name": "Estevão de Abreu Machado",
     "title": "Full Stack Developer & Engineering Manager",
     "totalEmployment": 6,
     "totalTechnologies": 56
   },
-  "featuredEmployment": []
+  "allTechnologies": [
+    {
+      "handler": "ai-agents",
+      "name": "AI Agents",
+      "url": "https://aws.amazon.com/what-is/ai-agents/"
+    },
+    {
+      "handler": "amazon-dynamodb",
+      "name": "Amazon DynamoDB",
+      "url": "https://aws.amazon.com/dynamodb/"
+    },
+    {
+      "handler": "amazon-ec2",
+      "name": "Amazon EC2",
+      "url": "https://aws.amazon.com/ec2/"
+    },
+    {
+      "handler": "amazon-elasticache",
+      "name": "Amazon ElastiCache",
+      "url": "https://aws.amazon.com/elasticache/"
+    },
+    {
+      "handler": "amazon-rds",
+      "name": "Amazon RDS",
+      "url": "https://aws.amazon.com/rds/"
+    },
+    {
+      "handler": "amazon-redshift",
+      "name": "Amazon Redshift",
+      "url": "https://aws.amazon.com/redshift/"
+    },
+    {
+      "handler": "amazon-s3",
+      "name": "Amazon S3",
+      "url": "https://aws.amazon.com/s3/"
+    },
+    {
+      "handler": "angular-4",
+      "name": "Angular 4",
+      "url": "https://angular.io/"
+    },
+    {
+      "handler": "angularjs",
+      "name": "AngularJS",
+      "url": "https://angularjs.org/"
+    },
+    {
+      "handler": "bootstrap",
+      "name": "Bootstrap",
+      "url": "http://getbootstrap.com/"
+    },
+    {
+      "handler": "capistrano",
+      "name": "Capistrano",
+      "url": null
+    },
+    {
+      "handler": "capybara",
+      "name": "Capybara",
+      "url": null
+    },
+    {
+      "handler": "claude-code",
+      "name": "Claude Code",
+      "url": "https://claude.ai/code"
+    },
+    {
+      "handler": "cline",
+      "name": "Cline",
+      "url": "https://cline.bot/"
+    },
+    {
+      "handler": "csharp",
+      "name": "C#",
+      "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+    },
+    {
+      "handler": "css",
+      "name": "CSS",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+      "handler": "cursor-ide",
+      "name": "Cursor IDE",
+      "url": "https://www.cursor.com/"
+    },
+    {
+      "handler": "datamapper",
+      "name": "Datamapper",
+      "url": null
+    },
+    {
+      "handler": "elasticsearch",
+      "name": "Elasticsearch",
+      "url": "https://www.elastic.co/products/elasticsearch"
+    },
+    {
+      "handler": "git",
+      "name": "Git",
+      "url": null
+    },
+    {
+      "handler": "github-copilot",
+      "name": "Github Copilot",
+      "url": "https://github.com/features/copilot"
+    },
+    {
+      "handler": "google-cloud-datastore",
+      "name": "Google Cloud Datastore",
+      "url": "https://cloud.google.com/datastore/"
+    },
+    {
+      "handler": "graphql",
+      "name": "GraphQL",
+      "url": "https://graphql.org/"
+    },
+    {
+      "handler": "google-material",
+      "name": "Google Material",
+      "url": "https://getmdl.io/"
+    },
+    {
+      "handler": "html5",
+      "name": "HTML5",
+      "url": "https://www.w3.org/TR/html5/"
+    },
+    {
+      "handler": "hotwire",
+      "name": "Hotwire",
+      "url": "https://hotwired.dev/"
+    },
+    {
+      "handler": "javascript",
+      "name": "Javascript",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+      "handler": "jasmine",
+      "name": "Jasmine",
+      "url": null
+    },
+    {
+      "handler": "jenkins",
+      "name": "Jenkins",
+      "url": null
+    },
+    {
+      "handler": "jquery",
+      "name": "JQuery",
+      "url": "https://jquery.com/"
+    },
+    {
+      "handler": "karma",
+      "name": "Karma",
+      "url": null
+    },
+    {
+      "handler": "memcached",
+      "name": "Memcached",
+      "url": "https://memcached.org/"
+    },
+    {
+      "handler": "minitest",
+      "name": "Minitest",
+      "url": null
+    },
+    {
+      "handler": "mocha",
+      "name": "Mocha",
+      "url": null
+    },
+    {
+      "handler": "mysql",
+      "name": "MySQL",
+      "url": "https://www.mysql.com/"
+    },
+    {
+      "handler": "new-relic",
+      "name": "New Relic",
+      "url": null
+    },
+    {
+      "handler": "node-js",
+      "name": "Node.js",
+      "url": "https://nodejs.org/en/"
+    },
+    {
+      "handler": "postgresql",
+      "name": "PostgreSQL",
+      "url": "https://www.postgresql.org/"
+    },
+    {
+      "handler": "protractor",
+      "name": "Protractor",
+      "url": null
+    },
+    {
+      "handler": "react",
+      "name": "React",
+      "url": "https://react.dev/"
+    },
+    {
+      "handler": "redis",
+      "name": "Redis",
+      "url": "https://redis.io/"
+    },
+    {
+      "handler": "relay",
+      "name": "Relay",
+      "url": "https://relay.dev/"
+    },
+    {
+      "handler": "roo-code",
+      "name": "Roo Code",
+      "url": "https://github.com/RooVetGit/Roo-Code"
+    },
+    {
+      "handler": "rspec",
+      "name": "Rspec",
+      "url": null
+    },
+    {
+      "handler": "ruby",
+      "name": "Ruby",
+      "url": "https://www.ruby-lang.org/en/"
+    },
+    {
+      "handler": "ruby-on-rails",
+      "name": "Ruby on Rails",
+      "url": "http://rubyonrails.org/"
+    },
+    {
+      "handler": "semaphore",
+      "name": "Semaphore",
+      "url": null
+    },
+    {
+      "handler": "sidekiq",
+      "name": "Sidekiq",
+      "url": "http://sidekiq.org/"
+    },
+    {
+      "handler": "treasure-data",
+      "name": "Treasure Data",
+      "url": "https://www.treasuredata.com/"
+    },
+    {
+      "handler": "typescript",
+      "name": "Typescript",
+      "url": null
+    },
+    {
+      "handler": "vagrant",
+      "name": "Vagrant",
+      "url": null
+    },
+    {
+      "handler": "vuejs",
+      "name": "Vue.js",
+      "url": "https://vuejs.org/"
+    },
+    {
+      "handler": "webpack",
+      "name": "Webpack",
+      "url": null
+    },
+    {
+      "handler": "wercker",
+      "name": "Wercker",
+      "url": null
+    },
+    {
+      "handler": "windsurf-ide",
+      "name": "Windsurf IDE",
+      "url": "https://codeium.com/windsurf"
+    },
+    {
+      "handler": "xml",
+      "name": "XML",
+      "url": "https://www.w3.org/XML/"
+    }
+  ]
 }
