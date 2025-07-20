@@ -1,0 +1,262 @@
+/* Starry Night Theme - Van Gogh inspired theme without the sun */
+
+:root {
+    /* Theme Colors */
+    --starry-night-bg-dark: #0e1a40;
+    --starry-night-bg-medium: #1f305e;
+    --starry-night-bg-light: #112054;
+    --starry-night-accent-blue: rgba(72, 104, 173, 1);
+    --starry-night-accent-light-blue: rgba(90, 160, 210, 1);
+    --starry-night-star-yellow: rgba(255, 230, 128, 1);
+    --starry-night-text-light: #ffffff;
+    --starry-night-text-accent: #ffdc80;
+    --starry-night-border: #3a5394;
+    /* Glassmorphism variables */
+    --glass-opacity: 0.25;
+    --glass-blur: 12px;
+    --glass-border-opacity: 0.25;
+    --glass-shadow-opacity: 0.2;
+}
+
+body {
+    background: linear-gradient(
+        135deg,
+        var(--starry-night-bg-dark) 0%,
+        var(--starry-night-bg-medium) 40%,
+        var(--starry-night-bg-light) 100%
+    );
+    color: var(--starry-night-text-light);
+    position: relative;
+    overflow-x: hidden;
+}
+
+.mdl-button.up-button.mdl-button--colored {
+    background: var(--starry-night-accent-blue);
+    position: relative;
+    z-index: 2;
+}
+
+.mdl-button.up-button.mdl-button--colored:hover {
+    background: var(--starry-night-accent-light-blue);
+}
+
+.mdl-chip {
+    background-color: rgba(31, 48, 94, var(--glass-opacity));
+    color: var(--starry-night-text-light);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.mdl-chip:hover {
+    background: rgba(72, 104, 173, 0.4);
+    color: var(--starry-night-text-accent);
+    transition: all 0.5s ease-in-out;
+}
+
+.mdl-layout__header {
+    background-image: url("../img/header-starry.svg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgba(40, 40, 80, 0.5);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+    background-color: rgba(14, 26, 64, 0.85);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    opacity: 0.92;
+}
+
+.mdl-card {
+    background-color: rgba(31, 48, 94, var(--glass-opacity));
+    color: var(--starry-night-text-light);
+    border: 1px solid rgba(255, 255, 255, var(--glass-border-opacity));
+    border-radius: 12px;
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, var(--glass-shadow-opacity)),
+        inset 0 0 20px rgba(255, 255, 255, 0.05);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.mdl-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.03) 50%,
+        rgba(255, 255, 255, 0.05) 100%
+    );
+    pointer-events: none;
+    z-index: -1;
+}
+
+.mdl-card:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25),
+        inset 0 0 25px rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 230, 128, 0.3);
+    background-color: rgba(31, 48, 94, 0.35);
+    backdrop-filter: blur(calc(var(--glass-blur) + 4px));
+    -webkit-backdrop-filter: blur(calc(var(--glass-blur) + 4px));
+    transition: all 0.4s ease;
+}
+
+.mdl-card__title {
+    background-color: rgba(31, 48, 94, 0.6);
+    color: var(--starry-night-text-accent);
+    text-shadow: 0 0 5px rgba(255, 220, 128, 0.3);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+}
+
+.mdl-card__supporting-text {
+    color: var(--starry-night-text-light);
+}
+
+.experience-list .mdl-list__item {
+    color: var(--starry-night-text-light);
+}
+
+.experience-list .mdl-list__item:hover {
+    color: var(--starry-night-text-accent);
+    transition: all 0.3s ease-in-out;
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+    color: var(--starry-night-star-yellow);
+}
+
+.mdl-layout__header-row .mdl-navigation__link:hover {
+    color: rgba(255, 230, 128, 0.6);
+    text-shadow: 0 0 5px rgba(255, 220, 128, 0.5);
+}
+
+/* Ensure header title is white */
+.mdl-layout__title {
+    color: #ffffff;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.employment-card .mdl-card__title {
+    background-color: rgba(31, 48, 94, 0.6);
+    color: var(--starry-night-text-accent);
+    box-sizing: border-box;
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+}
+
+.employment-card .mdl-card__supporting-text {
+    color: var(--starry-night-text-light);
+}
+
+.skills {
+    color: var(--starry-night-text-light);
+}
+
+.mdl-list__item-primary-content {
+    color: var(--starry-night-text-light);
+}
+
+.mdl-list__item-text-body {
+    color: var(--starry-night-text-accent);
+}
+
+/* Theme toggle button styling */
+.theme-toggle {
+    background-color: rgba(31, 48, 94, var(--glass-opacity));
+    border: 1px solid rgba(255, 255, 255, var(--glass-border-opacity));
+    border-radius: 50%;
+    color: var(--starry-night-text-light);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 3;
+}
+
+.theme-toggle i {
+    color: var(--starry-night-star-yellow);
+}
+
+/* Background starry effect */
+body.starry-night-theme::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(
+            circle at 30% 20%,
+            rgba(31, 58, 147, 0.7) 0%,
+            rgba(31, 58, 147, 0) 35%
+        ),
+        radial-gradient(
+            circle at 70% 60%,
+            rgba(48, 77, 153, 0.7) 0%,
+            rgba(48, 77, 153, 0) 35%
+        ),
+        radial-gradient(
+            circle at 20% 40%,
+            rgba(72, 104, 173, 0.7) 0%,
+            rgba(72, 104, 173, 0) 35%
+        ),
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(60, 90, 170, 0.7) 0%,
+            rgba(60, 90, 170, 0) 35%
+        ),
+        radial-gradient(
+            circle at 40% 80%,
+            rgba(50, 85, 165, 0.7) 0%,
+            rgba(50, 85, 165, 0) 35%
+        ),
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(72, 104, 173, 0.5) 0%,
+            rgba(72, 104, 173, 0) 65%
+        );
+    filter: blur(4px);
+    opacity: 0.6;
+    z-index: 0;
+    pointer-events: none;
+    animation: sky-rotate 240s linear infinite;
+}
+
+/* Make sure the starry night container is visible */
+#starry-night-container {
+    z-index: 1 !important;
+}
+
+.starry-night-star,
+.starry-night-shooting-star {
+    z-index: 1 !important;
+}
+
+@keyframes sky-rotate {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
