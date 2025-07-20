@@ -1,10 +1,6 @@
-<p align="center">
-  <a href="https://www.estevaom.com"><img src="https://img.shields.io/badge/website-estevaom.com-1f305e" alt="Website"></a>
-  <a href="https://www.rust-lang.org/"><img src="https://img.shields.io/badge/Built%20with-Rust-orange?logo=rust" alt="Built with Rust"></a>
-  <a href="https://bun.sh/"><img src="https://img.shields.io/badge/Powered%20by-Bun-black?logo=bun" alt="Powered by Bun"></a>
-  <a href="https://vuejs.org/"><img src="https://img.shields.io/badge/Made%20with-Vue.js-4FC08D?logo=vue.js" alt="Made with Vue.js"></a>
-  <a href="https://getmdl.io/"><img src="https://img.shields.io/badge/UI-Material%20Design-757575?logo=material-design" alt="Material Design"></a>
-</p>
+# estevaom.github.io
+
+[![Website](https://img.shields.io/badge/website-estevaom.com-1f305e)](https://www.estevaom.com)
 
 <p align="center">
   <img src="./.github/images/screenshot1.png" width="80%" />
