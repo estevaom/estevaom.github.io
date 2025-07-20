@@ -1,4 +1,6 @@
-<h1 align="center">https://www.estevaom.com</h1>
+# estevaom.github.io
+
+[![Website](https://img.shields.io/badge/website-estevaom.com-1f305e)](https://www.estevaom.com)
 
 <p align="center">
   <img src="./.github/images/screenshot1.png" width="80%" />
