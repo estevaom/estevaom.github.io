@@ -45,6 +45,11 @@
     "name": "Bootstrap",
     "url": "http://getbootstrap.com/"
   },
+  {
+    "handler": "bun",
+    "name": "Bun",
+    "url": "https://bun.sh/"
+  },
   { "handler": "capistrano", "name": "Capistrano" },
   { "handler": "capybara", "name": "Capybara" },
   {
@@ -68,7 +73,6 @@
     "name": "Cursor IDE",
     "url": "https://www.cursor.com/"
   },
-  { "handler": "datamapper", "name": "Datamapper" },
   {
     "handler": "elasticsearch",
     "name": "Elasticsearch",
@@ -106,10 +110,8 @@
     "name": "Javascript",
     "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
   },
-  { "handler": "jasmine", "name": "Jasmine" },
   { "handler": "jenkins", "name": "Jenkins" },
   { "handler": "jquery", "name": "JQuery", "url": "https://jquery.com/" },
-  { "handler": "karma", "name": "Karma" },
   {
     "handler": "memcached",
     "name": "Memcached",
@@ -125,7 +127,6 @@
     "name": "PostgreSQL",
     "url": "https://www.postgresql.org/"
   },
-  { "handler": "protractor", "name": "Protractor" },
   {
     "handler": "react",
     "name": "React",
@@ -145,6 +146,11 @@
   { "handler": "rspec", "name": "Rspec" },
   { "handler": "ruby", "name": "Ruby", "url": "https://www.ruby-lang.org/en/" },
   {
+    "handler": "rust",
+    "name": "Rust",
+    "url": "https://www.rust-lang.org/"
+  },
+  {
     "handler": "ruby-on-rails",
     "name": "Ruby on Rails",
     "url": "http://rubyonrails.org/"
@@ -157,18 +163,15 @@
     "url": "https://www.treasuredata.com/"
   },
   { "handler": "typescript", "name": "Typescript" },
-  { "handler": "vagrant", "name": "Vagrant" },
   {
     "handler": "vuejs",
     "name": "Vue.js",
     "url": "https://vuejs.org/"
   },
   { "handler": "webpack", "name": "Webpack" },
-  { "handler": "wercker", "name": "Wercker" },
   {
     "handler": "windsurf-ide",
     "name": "Windsurf IDE",
     "url": "https://codeium.com/windsurf"
   },
-  { "handler": "xml", "name": "XML", "url": "https://www.w3.org/XML/" }
 ]
