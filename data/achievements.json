@@ -1,0 +1,75 @@
+[
+  {
+    "title": "Automated Rails Modernization at Scale",
+    "metric": "35x productivity multiplier",
+    "description": "Fixed 23,000 failing tests in 19 days during Rails 5.0 to 5.1 upgrade using AI-powered automation",
+    "details": [
+      "Required only 30 hours of oversight for what would take months manually",
+      "Built multi-agent system using Claude and custom orchestration",
+      "Reduced complex refactoring cases to just 9 files requiring manual intervention"
+    ],
+    "impact": "critical",
+    "year": "2024"
+  },
+  {
+    "title": "Industry-Leading Team Performance",
+    "metric": "2x productivity per developer",
+    "description": "Lead team consistently delivering 55-60 story points vs company average of 30",
+    "details": [
+      "Team of 3 regularly outperforms teams of 5+ engineers",
+      "Achieved through AI-augmented workflows and best practices",
+      "Highest performing team in company history"
+    ],
+    "impact": "high",
+    "year": "2023-2025"
+  },
+  {
+    "title": "Zero-Downtime Curriculum Versioning",
+    "metric": "0 production incidents",
+    "description": "Architected and executed largest refactoring in 18-year application history",
+    "details": [
+      "Introduced primary keys to legacy join tables affecting 2,000+ queries",
+      "Executed phased migration with zero production incidents",
+      "Maintained full backward compatibility throughout transition"
+    ],
+    "impact": "critical",
+    "year": "2024"
+  },
+  {
+    "title": "Company-Wide AI Transformation",
+    "metric": "130+ engineers trained",
+    "description": "Led AI adoption initiative securing full company sponsorship",
+    "details": [
+      "Delivered 5 technical presentations including 130+ person workshop",
+      "Established AI development practices now standard across engineering org",
+      "Personally mentored executives and technical leads on AI workflows",
+      "Demonstrated clear ROI leading to company-wide tool sponsorship"
+    ],
+    "impact": "transformative",
+    "year": "2024-2025"
+  },
+  {
+    "title": "Enterprise Code Quality Standards",
+    "metric": "90%+ test coverage",
+    "description": "Consistently achieved 90%+ test coverage across all client projects",
+    "details": [
+      "Managed 20+ enterprise applications under Code Care program",
+      "Established testing best practices adopted company-wide",
+      "Reduced bug rates by over 60% through comprehensive testing"
+    ],
+    "impact": "high",
+    "year": "2017-2022"
+  },
+  {
+    "title": "Remote Engineering Excellence",
+    "metric": "10+ years",
+    "description": "Successfully collaborated remotely across multiple time zones and continents",
+    "details": [
+      "Worked with teams in USA, Australia, and Brazil",
+      "Maintained high productivity and communication standards",
+      "Led distributed teams effectively before remote work became mainstream"
+    ],
+    "impact": "foundational",
+    "year": "2015-Present"
+  }
+]

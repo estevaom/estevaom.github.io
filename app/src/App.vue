@@ -71,7 +71,7 @@ main.mdl-layout__content > * {
 }
 
 @media (min-width: 1400px) {
-    .employment-card {
+    .inner-card {
         width: calc(50% - 12px);
     }
 }

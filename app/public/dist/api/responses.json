@@ -1,13 +1,349 @@
 {
+  "featuredEmployment": [],
+  "allTechnologies": [
+    {
+      "handler": "ai-agents",
+      "name": "AI Agents",
+      "url": "https://aws.amazon.com/what-is/ai-agents/"
+    },
+    {
+      "handler": "amazon-dynamodb",
+      "name": "Amazon DynamoDB",
+      "url": "https://aws.amazon.com/dynamodb/"
+    },
+    {
+      "handler": "amazon-ec2",
+      "name": "Amazon EC2",
+      "url": "https://aws.amazon.com/ec2/"
+    },
+    {
+      "handler": "amazon-elasticache",
+      "name": "Amazon ElastiCache",
+      "url": "https://aws.amazon.com/elasticache/"
+    },
+    {
+      "handler": "amazon-rds",
+      "name": "Amazon RDS",
+      "url": "https://aws.amazon.com/rds/"
+    },
+    {
+      "handler": "amazon-redshift",
+      "name": "Amazon Redshift",
+      "url": "https://aws.amazon.com/redshift/"
+    },
+    {
+      "handler": "amazon-s3",
+      "name": "Amazon S3",
+      "url": "https://aws.amazon.com/s3/"
+    },
+    {
+      "handler": "angular-4",
+      "name": "Angular 4",
+      "url": "https://angular.io/"
+    },
+    {
+      "handler": "angularjs",
+      "name": "AngularJS",
+      "url": "https://angularjs.org/"
+    },
+    {
+      "handler": "bootstrap",
+      "name": "Bootstrap",
+      "url": "http://getbootstrap.com/"
+    },
+    {
+      "handler": "bun",
+      "name": "Bun",
+      "url": "https://bun.sh/"
+    },
+    {
+      "handler": "capistrano",
+      "name": "Capistrano",
+      "url": null
+    },
+    {
+      "handler": "capybara",
+      "name": "Capybara",
+      "url": null
+    },
+    {
+      "handler": "buildkite",
+      "name": "Buildkite",
+      "url": "https://buildkite.com/"
+    },
+    {
+      "handler": "claude-code",
+      "name": "Claude Code",
+      "url": "https://claude.ai/code"
+    },
+    {
+      "handler": "cline",
+      "name": "Cline",
+      "url": "https://cline.bot/"
+    },
+    {
+      "handler": "claude",
+      "name": "Claude",
+      "url": "https://claude.ai/"
+    },
+    {
+      "handler": "csharp",
+      "name": "C#",
+      "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+    },
+    {
+      "handler": "css",
+      "name": "CSS",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+      "handler": "cursor-ide",
+      "name": "Cursor IDE",
+      "url": "https://www.cursor.com/"
+    },
+    {
+      "handler": "datadog",
+      "name": "Datadog",
+      "url": "https://www.datadoghq.com/"
+    },
+    {
+      "handler": "elasticsearch",
+      "name": "Elasticsearch",
+      "url": "https://www.elastic.co/products/elasticsearch"
+    },
+    {
+      "handler": "git",
+      "name": "Git",
+      "url": null
+    },
+    {
+      "handler": "github-copilot",
+      "name": "Github Copilot",
+      "url": "https://github.com/features/copilot"
+    },
+    {
+      "handler": "gpt-5",
+      "name": "GPT-5",
+      "url": "https://openai.com/"
+    },
+    {
+      "handler": "google-cloud-datastore",
+      "name": "Google Cloud Datastore",
+      "url": "https://cloud.google.com/datastore/"
+    },
+    {
+      "handler": "graphql",
+      "name": "GraphQL",
+      "url": "https://graphql.org/"
+    },
+    {
+      "handler": "google-material",
+      "name": "Google Material",
+      "url": "https://getmdl.io/"
+    },
+    {
+      "handler": "html5",
+      "name": "HTML5",
+      "url": "https://www.w3.org/TR/html5/"
+    },
+    {
+      "handler": "hotwire",
+      "name": "Hotwire",
+      "url": "https://hotwired.dev/"
+    },
+    {
+      "handler": "honeybadger",
+      "name": "Honeybadger",
+      "url": "https://www.honeybadger.io/"
+    },
+    {
+      "handler": "javascript",
+      "name": "Javascript",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+      "handler": "jenkins",
+      "name": "Jenkins",
+      "url": null
+    },
+    {
+      "handler": "jquery",
+      "name": "JQuery",
+      "url": "https://jquery.com/"
+    },
+    {
+      "handler": "memcached",
+      "name": "Memcached",
+      "url": "https://memcached.org/"
+    },
+    {
+      "handler": "minitest",
+      "name": "Minitest",
+      "url": null
+    },
+    {
+      "handler": "mocha",
+      "name": "Mocha",
+      "url": null
+    },
+    {
+      "handler": "mysql",
+      "name": "MySQL",
+      "url": "https://www.mysql.com/"
+    },
+    {
+      "handler": "new-relic",
+      "name": "New Relic",
+      "url": null
+    },
+    {
+      "handler": "node-js",
+      "name": "Node.js",
+      "url": "https://nodejs.org/en/"
+    },
+    {
+      "handler": "postgresql",
+      "name": "PostgreSQL",
+      "url": "https://www.postgresql.org/"
+    },
+    {
+      "handler": "react",
+      "name": "React",
+      "url": "https://react.dev/"
+    },
+    {
+      "handler": "redis",
+      "name": "Redis",
+      "url": "https://redis.io/"
+    },
+    {
+      "handler": "relay",
+      "name": "Relay",
+      "url": "https://relay.dev/"
+    },
+    {
+      "handler": "roo-code",
+      "name": "Roo Code",
+      "url": "https://github.com/RooVetGit/Roo-Code"
+    },
+    {
+      "handler": "rollbar",
+      "name": "Rollbar",
+      "url": "https://rollbar.com/"
+    },
+    {
+      "handler": "rspec",
+      "name": "Rspec",
+      "url": null
+    },
+    {
+      "handler": "ruby",
+      "name": "Ruby",
+      "url": "https://www.ruby-lang.org/en/"
+    },
+    {
+      "handler": "rust",
+      "name": "Rust",
+      "url": "https://www.rust-lang.org/"
+    },
+    {
+      "handler": "ruby-on-rails",
+      "name": "Ruby on Rails",
+      "url": "http://rubyonrails.org/"
+    },
+    {
+      "handler": "scout-apm",
+      "name": "Scout APM",
+      "url": "https://scoutapm.com/"
+    },
+    {
+      "handler": "semaphore",
+      "name": "Semaphore",
+      "url": null
+    },
+    {
+      "handler": "sentry",
+      "name": "Sentry",
+      "url": "https://sentry.io/"
+    },
+    {
+      "handler": "sidekiq",
+      "name": "Sidekiq",
+      "url": "http://sidekiq.org/"
+    },
+    {
+      "handler": "skylight",
+      "name": "Skylight",
+      "url": "https://www.skylight.io/"
+    },
+    {
+      "handler": "treasure-data",
+      "name": "Treasure Data",
+      "url": "https://www.treasuredata.com/"
+    },
+    {
+      "handler": "typescript",
+      "name": "Typescript",
+      "url": null
+    },
+    {
+      "handler": "vuejs",
+      "name": "Vue.js",
+      "url": "https://vuejs.org/"
+    },
+    {
+      "handler": "webpack",
+      "name": "Webpack",
+      "url": null
+    },
+    {
+      "handler": "lancedb",
+      "name": "LanceDB",
+      "url": "https://lancedb.com/"
+    },
+    {
+      "handler": "bge-embeddings",
+      "name": "BGE Embeddings",
+      "url": "https://huggingface.co/BAAI/bge-large-en-v1.5"
+    },
+    {
+      "handler": "ratatui",
+      "name": "Ratatui",
+      "url": "https://ratatui.rs/"
+    },
+    {
+      "handler": "clap",
+      "name": "Clap",
+      "url": "https://docs.rs/clap/"
+    },
+    {
+      "handler": "serde",
+      "name": "Serde",
+      "url": "https://serde.rs/"
+    },
+    {
+      "handler": "terminal-ui",
+      "name": "Terminal UI",
+      "url": "https://github.com/ratatui-org/ratatui"
+    },
+    {
+      "handler": "windsurf-ide",
+      "name": "Windsurf IDE",
+      "url": "https://codeium.com/windsurf"
+    }
+  ],
   "employmentWithTechnologies": [
     {
+      "dates": "2023 - Present",
       "description": [
-        "Lead and manage engineering team development efforts",
-        "Estimate and plan new feature implementations",
-        "Develop and test Ruby on Rails applications",
-        "Deliver technical presentations at company retreats",
-        "Drive innovation through extensive use of AI tools and technologies",
-        "Architect and execute large-scale refactoring of legacy applications to modern standards"
+        "Leading engineering team for student management system serving Australia's largest universities and TAFEs",
+        "Automated Rails 5.0 to 5.1 upgrade fixing 23,000 failing tests in 19 days using AI orchestration (35x productivity multiplier)",
+        "Architected zero-downtime curriculum versioning - largest refactoring in 18-year application history",
+        "Lead highest-performing team in company (55-60 story points vs 30 average, 2x productivity per developer)",
+        "Drove company-wide AI transformation, securing full sponsorship after demonstrating ROI",
+        "Delivered 130+ person AI workshop and multiple technical presentations on AI-augmented development",
+        "Integrated multiple payment gateways for automated enrollment workflows",
+        "Reduced error rates using comprehensive monitoring (Rollbar, Datadog)"
       ],
       "featured": null,
       "location": "Sydney, Australia",
@@ -35,32 +371,49 @@
           "url": "https://www.mysql.com/"
         },
         {
-          "handler": "hotwire",
-          "name": "Hotwire",
-          "url": "https://hotwired.dev/"
-        },
-        {
           "handler": "github-copilot",
           "name": "Github Copilot",
           "url": "https://github.com/features/copilot"
         },
         {
-          "handler": "cline",
-          "name": "Cline",
-          "url": "https://cline.bot/"
-        },
-        {
           "handler": "claude-code",
           "name": "Claude Code",
           "url": "https://claude.ai/code"
+        },
+        {
+          "handler": "sidekiq",
+          "name": "Sidekiq",
+          "url": "http://sidekiq.org/"
+        },
+        {
+          "handler": "redis",
+          "name": "Redis",
+          "url": "https://redis.io/"
+        },
+        {
+          "handler": "datadog",
+          "name": "Datadog",
+          "url": "https://www.datadoghq.com/"
+        },
+        {
+          "handler": "rollbar",
+          "name": "Rollbar",
+          "url": "https://rollbar.com/"
         }
       ],
-      "title": "Engineering Manager",
+      "title": "Engineering Lead",
       "url": "https://www.readytech.com.au/"
     },
     {
+      "dates": "2017 - 2022",
       "description": [
-        "Worked on auditing and consulting products for PwC, nib and other clients"
+        "Managed 20+ client applications under Code Care program, providing Rails expertise to enterprise clients",
+        "Raised test coverage to 90%+ across all client projects",
+        "Mastered comprehensive monitoring stack (New Relic, Skylight, Datadog, Scout APM, Honeybadger, Sentry)",
+        "Delivered consulting for PwC, nib, and other enterprise clients",
+        "Led technical interviews and built team for growing client base",
+        "Worked across 30+ projects including Vue.js and GraphQL implementations",
+        "Reduced incident response times through proactive monitoring and alerting"
       ],
       "featured": null,
       "location": "Sydney, Australia",
@@ -111,12 +464,53 @@
           "handler": "elasticsearch",
           "name": "Elasticsearch",
           "url": "https://www.elastic.co/products/elasticsearch"
+        },
+        {
+          "handler": "new-relic",
+          "name": "New Relic",
+          "url": null
+        },
+        {
+          "handler": "skylight",
+          "name": "Skylight",
+          "url": "https://www.skylight.io/"
+        },
+        {
+          "handler": "datadog",
+          "name": "Datadog",
+          "url": "https://www.datadoghq.com/"
+        },
+        {
+          "handler": "scout-apm",
+          "name": "Scout APM",
+          "url": "https://scoutapm.com/"
+        },
+        {
+          "handler": "honeybadger",
+          "name": "Honeybadger",
+          "url": "https://www.honeybadger.io/"
+        },
+        {
+          "handler": "sentry",
+          "name": "Sentry",
+          "url": "https://sentry.io/"
+        },
+        {
+          "handler": "rspec",
+          "name": "Rspec",
+          "url": null
+        },
+        {
+          "handler": "capybara",
+          "name": "Capybara",
+          "url": null
         }
       ],
       "title": "Senior Web Developer",
       "url": "https://www.reinteractive.net/"
     },
     {
+      "dates": "2015 - 2017",
       "description": [
         "Developed countless features in an agile environment",
         "Planned and carried out daily scrums, weekly estimations and retrospectives and pair programming",
@@ -185,6 +579,7 @@
       "url": "https://www.dashbid.com/"
     },
     {
+      "dates": "2012 - 2015",
       "description": [
         "Built e-commerces for the biggest phone carriers in Brazil (Claro, Tim, Vivo, Oi, Porto Seguro)",
         "Often worked in a support role answering tickets, fixing bugs, talking to customers, going to meetings and creating new features on demand for our many projects",
@@ -243,6 +638,7 @@
       "url": "http://www.xlsol.com/"
     },
     {
+      "dates": "2011 - 2012",
       "description": [
         "Created and maintained an iPhone and Android webview dating app with push notification and HTML5 geolocation",
         "Set up all services on Amazon Web Services to host the app",
@@ -293,6 +689,7 @@
       "url": "https://www.kissy.app/"
     },
     {
+      "dates": "2007 - 2012",
       "description": [
         "Maintained a crawler that saved websites news to be displayed in a mobile environment",
         "Released the first mobile portal in Brazil the same day the first iPhone was",
@@ -309,11 +706,6 @@
           "handler": "csharp",
           "name": "C#",
           "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
-        },
-        {
-          "handler": "xml",
-          "name": "XML",
-          "url": "https://www.w3.org/XML/"
         },
         {
           "handler": "html5",
@@ -346,6 +738,36 @@
     }
   ],
   "technologiesByCategory": [
+    {
+      "technologies": [
+        {
+          "handler": "ruby",
+          "name": "Ruby",
+          "url": "https://www.ruby-lang.org/en/"
+        },
+        {
+          "handler": "rust",
+          "name": "Rust",
+          "url": "https://www.rust-lang.org/"
+        },
+        {
+          "handler": "javascript",
+          "name": "Javascript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "handler": "typescript",
+          "name": "Typescript",
+          "url": null
+        },
+        {
+          "handler": "csharp",
+          "name": "C#",
+          "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+        }
+      ],
+      "type": "Languages"
+    },
     {
       "technologies": [
         {
@@ -397,6 +819,11 @@
           "handler": "node-js",
           "name": "Node.js",
           "url": "https://nodejs.org/en/"
+        },
+        {
+          "handler": "bun",
+          "name": "Bun",
+          "url": "https://bun.sh/"
         }
       ],
       "type": "Backend"
@@ -529,16 +956,6 @@
           "url": null
         },
         {
-          "handler": "jasmine",
-          "name": "Jasmine",
-          "url": null
-        },
-        {
-          "handler": "karma",
-          "name": "Karma",
-          "url": null
-        },
-        {
           "handler": "minitest",
           "name": "Minitest",
           "url": null
@@ -546,11 +963,6 @@
         {
           "handler": "mocha",
           "name": "Mocha",
-          "url": null
-        },
-        {
-          "handler": "protractor",
-          "name": "Protractor",
           "url": null
         },
         {
@@ -571,11 +983,6 @@
         {
           "handler": "capistrano",
           "name": "Capistrano",
-          "url": null
-        },
-        {
-          "handler": "datamapper",
-          "name": "Datamapper",
           "url": null
         },
         {
@@ -609,311 +1016,131 @@
           "url": null
         },
         {
-          "handler": "vagrant",
-          "name": "Vagrant",
-          "url": null
-        },
-        {
           "handler": "webpack",
           "name": "Webpack",
-          "url": null
-        },
-        {
-          "handler": "wercker",
-          "name": "Wercker",
           "url": null
         }
       ],
       "type": "Other"
     }
   ],
-  "featuredEmployment": [],
+  "achievements": [
+    {
+      "description": "Fixed 23,000 failing tests in 19 days during Rails 5.0 to 5.1 upgrade using AI-powered automation",
+      "details": [
+        "Required only 30 hours of oversight for what would take months manually",
+        "Built multi-agent system using Claude and custom orchestration",
+        "Reduced complex refactoring cases to just 9 files requiring manual intervention"
+      ],
+      "impact": "critical",
+      "metric": "35x productivity multiplier",
+      "title": "Automated Rails Modernization at Scale",
+      "year": "2024"
+    },
+    {
+      "description": "Lead team consistently delivering 55-60 story points vs company average of 30",
+      "details": [
+        "Team of 3 regularly outperforms teams of 5+ engineers",
+        "Achieved through AI-augmented workflows and best practices",
+        "Highest performing team in company history"
+      ],
+      "impact": "high",
+      "metric": "2x productivity per developer",
+      "title": "Industry-Leading Team Performance",
+      "year": "2023-2025"
+    },
+    {
+      "description": "Architected and executed largest refactoring in 18-year application history",
+      "details": [
+        "Introduced primary keys to legacy join tables affecting 2,000+ queries",
+        "Executed phased migration with zero production incidents",
+        "Maintained full backward compatibility throughout transition"
+      ],
+      "impact": "critical",
+      "metric": "0 production incidents",
+      "title": "Zero-Downtime Curriculum Versioning",
+      "year": "2024"
+    },
+    {
+      "description": "Led AI adoption initiative securing full company sponsorship",
+      "details": [
+        "Delivered 5 technical presentations including 130+ person workshop",
+        "Established AI development practices now standard across engineering org",
+        "Personally mentored executives and technical leads on AI workflows",
+        "Demonstrated clear ROI leading to company-wide tool sponsorship"
+      ],
+      "impact": "transformative",
+      "metric": "130+ engineers trained",
+      "title": "Company-Wide AI Transformation",
+      "year": "2024-2025"
+    },
+    {
+      "description": "Consistently achieved 90%+ test coverage across all client projects",
+      "details": [
+        "Managed 20+ enterprise applications under Code Care program",
+        "Established testing best practices adopted company-wide",
+        "Reduced bug rates by over 60% through comprehensive testing"
+      ],
+      "impact": "high",
+      "metric": "90%+ test coverage",
+      "title": "Enterprise Code Quality Standards",
+      "year": "2017-2022"
+    },
+    {
+      "description": "Successfully collaborated remotely across multiple time zones and continents",
+      "details": [
+        "Worked with teams in USA, Australia, and Brazil",
+        "Maintained high productivity and communication standards",
+        "Led distributed teams effectively before remote work became mainstream"
+      ],
+      "impact": "foundational",
+      "metric": "10+ years",
+      "title": "Remote Engineering Excellence",
+      "year": "2015-Present"
+    }
+  ],
+  "projects": [
+    {
+      "description": "High-performance semantic search engine for markdown journals with RAG system",
+      "highlights": [
+        "Built semantic search achieving <20ms query times",
+        "Implemented RAG system using LanceDB and BGE embeddings",
+        "Rust workspace with multiple crates for search and frontmatter analysis",
+        "Claude Code integration for AI-powered journaling"
+      ],
+      "name": "Markdown Journal Rust",
+      "technologies": [
+        "rust",
+        "lancedb",
+        "bge-embeddings",
+        "claude-code"
+      ],
+      "url": "https://github.com/estevaom/markdown-journal-rust",
+      "year": "2025"
+    },
+    {
+      "description": "Terminal music visualizer built with Rust",
+      "highlights": [
+        "Terminal-based audio visualization using Ratatui",
+        "Real-time audio processing and spectrum analysis",
+        "Cross-platform terminal UI with responsive design"
+      ],
+      "name": "Trackwatch",
+      "technologies": [
+        "rust",
+        "ratatui",
+        "terminal-ui"
+      ],
+      "url": "https://github.com/estevaom/trackwatch",
+      "year": "2025"
+    }
+  ],
   "profileData": {
     "name": "Estevão de Abreu Machado",
-    "title": "Full Stack Developer & Engineering Manager",
+    "title": "Engineering Lead / Senior Rails & AI Automation Engineer",
+    "totalAchievements": 6,
     "totalEmployment": 6,
-    "totalTechnologies": 56
-  },
-  "allTechnologies": [
-    {
-      "handler": "ai-agents",
-      "name": "AI Agents",
-      "url": "https://aws.amazon.com/what-is/ai-agents/"
-    },
-    {
-      "handler": "amazon-dynamodb",
-      "name": "Amazon DynamoDB",
-      "url": "https://aws.amazon.com/dynamodb/"
-    },
-    {
-      "handler": "amazon-ec2",
-      "name": "Amazon EC2",
-      "url": "https://aws.amazon.com/ec2/"
-    },
-    {
-      "handler": "amazon-elasticache",
-      "name": "Amazon ElastiCache",
-      "url": "https://aws.amazon.com/elasticache/"
-    },
-    {
-      "handler": "amazon-rds",
-      "name": "Amazon RDS",
-      "url": "https://aws.amazon.com/rds/"
-    },
-    {
-      "handler": "amazon-redshift",
-      "name": "Amazon Redshift",
-      "url": "https://aws.amazon.com/redshift/"
-    },
-    {
-      "handler": "amazon-s3",
-      "name": "Amazon S3",
-      "url": "https://aws.amazon.com/s3/"
-    },
-    {
-      "handler": "angular-4",
-      "name": "Angular 4",
-      "url": "https://angular.io/"
-    },
-    {
-      "handler": "angularjs",
-      "name": "AngularJS",
-      "url": "https://angularjs.org/"
-    },
-    {
-      "handler": "bootstrap",
-      "name": "Bootstrap",
-      "url": "http://getbootstrap.com/"
-    },
-    {
-      "handler": "capistrano",
-      "name": "Capistrano",
-      "url": null
-    },
-    {
-      "handler": "capybara",
-      "name": "Capybara",
-      "url": null
-    },
-    {
-      "handler": "claude-code",
-      "name": "Claude Code",
-      "url": "https://claude.ai/code"
-    },
-    {
-      "handler": "cline",
-      "name": "Cline",
-      "url": "https://cline.bot/"
-    },
-    {
-      "handler": "csharp",
-      "name": "C#",
-      "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
-    },
-    {
-      "handler": "css",
-      "name": "CSS",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
-    },
-    {
-      "handler": "cursor-ide",
-      "name": "Cursor IDE",
-      "url": "https://www.cursor.com/"
-    },
-    {
-      "handler": "datamapper",
-      "name": "Datamapper",
-      "url": null
-    },
-    {
-      "handler": "elasticsearch",
-      "name": "Elasticsearch",
-      "url": "https://www.elastic.co/products/elasticsearch"
-    },
-    {
-      "handler": "git",
-      "name": "Git",
-      "url": null
-    },
-    {
-      "handler": "github-copilot",
-      "name": "Github Copilot",
-      "url": "https://github.com/features/copilot"
-    },
-    {
-      "handler": "google-cloud-datastore",
-      "name": "Google Cloud Datastore",
-      "url": "https://cloud.google.com/datastore/"
-    },
-    {
-      "handler": "graphql",
-      "name": "GraphQL",
-      "url": "https://graphql.org/"
-    },
-    {
-      "handler": "google-material",
-      "name": "Google Material",
-      "url": "https://getmdl.io/"
-    },
-    {
-      "handler": "html5",
-      "name": "HTML5",
-      "url": "https://www.w3.org/TR/html5/"
-    },
-    {
-      "handler": "hotwire",
-      "name": "Hotwire",
-      "url": "https://hotwired.dev/"
-    },
-    {
-      "handler": "javascript",
-      "name": "Javascript",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-    },
-    {
-      "handler": "jasmine",
-      "name": "Jasmine",
-      "url": null
-    },
-    {
-      "handler": "jenkins",
-      "name": "Jenkins",
-      "url": null
-    },
-    {
-      "handler": "jquery",
-      "name": "JQuery",
-      "url": "https://jquery.com/"
-    },
-    {
-      "handler": "karma",
-      "name": "Karma",
-      "url": null
-    },
-    {
-      "handler": "memcached",
-      "name": "Memcached",
-      "url": "https://memcached.org/"
-    },
-    {
-      "handler": "minitest",
-      "name": "Minitest",
-      "url": null
-    },
-    {
-      "handler": "mocha",
-      "name": "Mocha",
-      "url": null
-    },
-    {
-      "handler": "mysql",
-      "name": "MySQL",
-      "url": "https://www.mysql.com/"
-    },
-    {
-      "handler": "new-relic",
-      "name": "New Relic",
-      "url": null
-    },
-    {
-      "handler": "node-js",
-      "name": "Node.js",
-      "url": "https://nodejs.org/en/"
-    },
-    {
-      "handler": "postgresql",
-      "name": "PostgreSQL",
-      "url": "https://www.postgresql.org/"
-    },
-    {
-      "handler": "protractor",
-      "name": "Protractor",
-      "url": null
-    },
-    {
-      "handler": "react",
-      "name": "React",
-      "url": "https://react.dev/"
-    },
-    {
-      "handler": "redis",
-      "name": "Redis",
-      "url": "https://redis.io/"
-    },
-    {
-      "handler": "relay",
-      "name": "Relay",
-      "url": "https://relay.dev/"
-    },
-    {
-      "handler": "roo-code",
-      "name": "Roo Code",
-      "url": "https://github.com/RooVetGit/Roo-Code"
-    },
-    {
-      "handler": "rspec",
-      "name": "Rspec",
-      "url": null
-    },
-    {
-      "handler": "ruby",
-      "name": "Ruby",
-      "url": "https://www.ruby-lang.org/en/"
-    },
-    {
-      "handler": "ruby-on-rails",
-      "name": "Ruby on Rails",
-      "url": "http://rubyonrails.org/"
-    },
-    {
-      "handler": "semaphore",
-      "name": "Semaphore",
-      "url": null
-    },
-    {
-      "handler": "sidekiq",
-      "name": "Sidekiq",
-      "url": "http://sidekiq.org/"
-    },
-    {
-      "handler": "treasure-data",
-      "name": "Treasure Data",
-      "url": "https://www.treasuredata.com/"
-    },
-    {
-      "handler": "typescript",
-      "name": "Typescript",
-      "url": null
-    },
-    {
-      "handler": "vagrant",
-      "name": "Vagrant",
-      "url": null
-    },
-    {
-      "handler": "vuejs",
-      "name": "Vue.js",
-      "url": "https://vuejs.org/"
-    },
-    {
-      "handler": "webpack",
-      "name": "Webpack",
-      "url": null
-    },
-    {
-      "handler": "wercker",
-      "name": "Wercker",
-      "url": null
-    },
-    {
-      "handler": "windsurf-ide",
-      "name": "Windsurf IDE",
-      "url": "https://codeium.com/windsurf"
-    },
-    {
-      "handler": "xml",
-      "name": "XML",
-      "url": "https://www.w3.org/XML/"
-    }
-  ]
+    "totalProjects": 2,
+    "totalTechnologies": 66
+  }
 }

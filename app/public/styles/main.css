@@ -279,43 +279,45 @@ resume {
     overflow: hidden;
 }
 
-.employment-card {
+.inner-card {
     font-size: small;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.employment-card .mdl-card__title {
+.inner-card .mdl-card__title {
     height: 4.4em;
     width: 100%;
     padding: 16px;
     box-sizing: border-box;
 }
 
-.employment-card .mdl-card__title-text {
+.inner-card .mdl-card__title-text {
     font-size: 1.5em;
     position: relative;
     font-weight: 300;
 }
 
-#employment .mdl-card__supporting-text {
+#employment .mdl-card__supporting-text,
+#achievements .mdl-card__supporting-text,
+#projects .mdl-card__supporting-text {
     padding: 0 1em 0 0;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.employment-card .footer {
+.inner-card .footer {
     padding: 1em;
     align-self: flex-end;
 }
 
-.employment-card .mdl-card__supporting-text ul {
+.inner-card .mdl-card__supporting-text ul {
     margin-bottom: 0.5em;
     padding-bottom: 0.5em;
 }
 
-.employment-card .mdl-card__supporting-text ul li {
+.inner-card .mdl-card__supporting-text ul li {
     margin-bottom: 0.25em;
 }
 
@@ -331,7 +333,7 @@ resume {
 }
 
 @media (min-width: 1400px) {
-    .employment-card {
+    .inner-card {
         width: calc(50% - 12px);
     }
 }
