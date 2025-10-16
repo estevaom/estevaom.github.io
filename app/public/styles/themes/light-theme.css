@@ -130,7 +130,7 @@ body {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.employment-card .mdl-card__title {
+.inner-card .mdl-card__title {
     background-color: rgba(255, 255, 255, 0.7);
     color: #000;
     box-sizing: border-box;

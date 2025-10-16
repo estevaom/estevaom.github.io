@@ -12,6 +12,14 @@
 
         <div
             class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp"
+            id="achievements"
+            v-if="apiData.achievements && apiData.achievements.length"
+        >
+            <AchievementsSection :achievements="apiData.achievements" />
+        </div>
+
+        <div
+            class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp"
             id="employment"
         >
             <div class="mdl-card__title">
@@ -24,6 +32,7 @@
                     :key="job.name"
                     :name="job.name"
                     :title="job.title"
+                    :dates="job.dates"
                     :location="job.location"
                     :remote="job.remote"
                     :url="job.url"
@@ -43,6 +52,14 @@
                     {{ job.name }}
                 </a>
             </div>
+        </div>
+
+        <div
+            class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp"
+            id="projects"
+            v-if="apiData.projects && apiData.projects.length"
+        >
+            <ProjectsSection :projects="apiData.projects" :technologies="apiData.allTechnologies" />
         </div>
 
         <div
@@ -100,6 +117,8 @@ import Technologies from "./Technologies.vue";
 import AboutMe from "./AboutMe.vue";
 import Education from "./Education.vue";
 import Contact from "./Contact.vue";
+import ProjectsSection from "./ProjectsSection.vue";
+import AchievementsSection from "./AchievementsSection.vue";
 
 const apiData = ref(null);
 const loading = ref(true);

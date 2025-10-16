@@ -1,37 +1,49 @@
 [
   {
     "name": "Readytech",
-    "title": "Engineering Manager",
+    "title": "Engineering Lead",
+    "dates": "2023 - Present",
     "location": "Sydney, Australia",
     "remote": true,
     "url": "https://www.readytech.com.au/",
     "description": [
-      "Lead and manage engineering team development efforts",
-      "Estimate and plan new feature implementations",
-      "Develop and test Ruby on Rails applications",
-      "Deliver technical presentations at company retreats",
-      "Drive innovation through extensive use of AI tools and technologies",
-      "Architect and execute large-scale refactoring of legacy applications to modern standards"
+      "Leading engineering team for student management system serving Australia's largest universities and TAFEs",
+      "Automated Rails 5.0 to 5.1 upgrade fixing 23,000 failing tests in 19 days using AI orchestration (35x productivity multiplier)",
+      "Architected zero-downtime curriculum versioning - largest refactoring in 18-year application history",
+      "Lead highest-performing team in company (55-60 story points vs 30 average, 2x productivity per developer)",
+      "Drove company-wide AI transformation, securing full sponsorship after demonstrating ROI",
+      "Delivered 130+ person AI workshop and multiple technical presentations on AI-augmented development",
+      "Integrated multiple payment gateways for automated enrollment workflows",
+      "Reduced error rates using comprehensive monitoring (Rollbar, Datadog)"
     ],
     "technologies": [
       "ruby-on-rails",
       "jquery",
       "css",
       "mysql",
-      "hotwire",
       "github-copilot",
-      "cline",
-      "claude-code"
+      "claude-code",
+      "sidekiq",
+      "redis",
+      "datadog",
+      "rollbar"
     ]
   },
   {
     "name": "Reinteractive",
     "title": "Senior Web Developer",
+    "dates": "2017 - 2022",
     "location": "Sydney, Australia",
     "remote": true,
     "url": "https://www.reinteractive.net/",
     "description": [
-      "Worked on auditing and consulting products for PwC, nib and other clients"
+      "Managed 20+ client applications under Code Care program, providing Rails expertise to enterprise clients",
+      "Raised test coverage to 90%+ across all client projects",
+      "Mastered comprehensive monitoring stack (New Relic, Skylight, Datadog, Scout APM, Honeybadger, Sentry)",
+      "Delivered consulting for PwC, nib, and other enterprise clients",
+      "Led technical interviews and built team for growing client base",
+      "Worked across 30+ projects including Vue.js and GraphQL implementations",
+      "Reduced incident response times through proactive monitoring and alerting"
     ],
     "technologies": [
       "ruby-on-rails",
@@ -42,12 +54,21 @@
       "relay",
       "css",
       "google-cloud-datastore",
-      "elasticsearch"
+      "elasticsearch",
+      "new-relic",
+      "skylight",
+      "datadog",
+      "scout-apm",
+      "honeybadger",
+      "sentry",
+      "rspec",
+      "capybara"
     ]
   },
   {
     "name": "DashBid Media",
     "title": "Senior Web Developer",
+    "dates": "2015 - 2017",
     "location": "New York, USA",
     "remote": true,
     "url": "https://www.dashbid.com/",
@@ -75,6 +96,7 @@
   {
     "name": "XL Solutions",
     "title": "Web Developer",
+    "dates": "2012 - 2015",
     "location": "Rio de Janeiro, Brazil",
     "remote": false,
     "url": "http://www.xlsol.com/",
@@ -100,6 +122,7 @@
   {
     "name": "Kissy",
     "title": "Web Developer, Operations",
+    "dates": "2011 - 2012",
     "location": "Rio de Janeiro, Brazil",
     "remote": false,
     "url": "https://www.kissy.app/",
@@ -121,6 +144,7 @@
   {
     "name": "Hands S.A.",
     "title": "Web Developer",
+    "dates": "2007 - 2012",
     "location": "Rio de Janeiro, Brazil",
     "remote": false,
     "url": "http://www.hands.com.br/",

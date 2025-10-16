@@ -149,7 +149,7 @@ body {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-.employment-card .mdl-card__title {
+.inner-card .mdl-card__title {
     background-color: rgba(51, 51, 51, 0.8);
     color: var(--dark-text-light);
     box-sizing: border-box;
@@ -157,7 +157,7 @@ body {
     -webkit-backdrop-filter: blur(var(--glass-blur));
 }
 
-.employment-card .mdl-card__supporting-text {
+.inner-card .mdl-card__supporting-text {
     color: var(--dark-text-light);
 }
 

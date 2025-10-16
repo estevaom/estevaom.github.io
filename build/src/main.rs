@@ -28,12 +28,33 @@ struct Technology {
 struct Employment {
     name: String,
     title: String,
+    dates: Option<String>,
     location: String,
     remote: bool,
     url: Option<String>,
     description: Vec<String>,
     technologies: Vec<String>,
     featured: Option<bool>,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+struct Project {
+    name: String,
+    description: String,
+    url: String,
+    highlights: Vec<String>,
+    technologies: Vec<String>,
+    year: String,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+struct Achievement {
+    title: String,
+    metric: String,
+    description: String,
+    details: Vec<String>,
+    impact: String,
+    year: String,
 }
 
 #[derive(Debug, Deserialize, Serialize)]
@@ -59,6 +80,12 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let employment: Vec<Employment> = load_json(&args.input, "employment.json")?;
     let resume_data: ResumeData = load_json(&args.input, "resume.json")?;
 
+    // Load new data files with error handling
+    let projects: Vec<Project> = load_json(&args.input, "projects.json")
+        .unwrap_or_else(|_| Vec::new());
+    let achievements: Vec<Achievement> = load_json(&args.input, "achievements.json")
+        .unwrap_or_else(|_| Vec::new());
+
     fs::create_dir_all(&args.output)?;
 
     let mut api_responses = HashMap::new();
@@ -83,6 +110,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             json!({
                 "name": emp.name,
                 "title": emp.title,
+                "dates": emp.dates,
                 "location": emp.location,
                 "remote": emp.remote,
                 "url": emp.url,
@@ -112,13 +140,21 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .collect();
     api_responses.insert("technologiesByCategory", json!(tech_by_category));
 
+    // Add projects data
+    api_responses.insert("projects", json!(projects));
+
+    // Add achievements data
+    api_responses.insert("achievements", json!(achievements));
+
     api_responses.insert(
         "profileData",
         json!({
             "name": "Estevão de Abreu Machado",
-            "title": "Full Stack Developer & Engineering Manager",
+            "title": "Engineering Lead / Senior Rails & AI Automation Engineer",
             "totalTechnologies": technologies.len(),
-            "totalEmployment": employment.len()
+            "totalEmployment": employment.len(),
+            "totalProjects": projects.len(),
+            "totalAchievements": achievements.len()
         }),
     );
 
@@ -137,6 +173,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         "  - {} technology categories",
         resume_data.technologies.len()
     );
+    println!("  - {} open source projects", projects.len());
+    println!("  - {} key achievements", achievements.len());
 
     Ok(())
 }
