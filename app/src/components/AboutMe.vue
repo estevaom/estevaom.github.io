@@ -5,16 +5,15 @@
     </div>
     <div class="mdl-card__supporting-text">
       <p class="about-me-intro">
-          I'm a Staff Engineer specializing in Ruby and Rust, with 15+ years building production systems at scale while pioneering AI-augmented development practices.
+          I'm a Senior Software Engineer specializing in Ruby and Rust, with 15+ years building production systems at scale while pioneering AI-augmented development practices.
       </p>
 
       <div class="about-me-details">
           <p>
-              I operate at the intersection of deep technical expertise and cross-team influence,
-              setting engineering standards adopted company-wide, building institutional tooling,
-              and driving technical excellence. While I currently hold an Engineering Lead title
-              due to organizational structure, my primary focus is technical architecture,
-              system design, and creating tools that multiply team effectiveness.
+              I currently wear many hats. I set engineering standards that get adopted company-wide,
+              build internal tools, and help teams work more effectively. My current title is
+              Engineering Lead, but I spend most of my time on technical architecture and system
+              design rather than people management.
           </p>
 
           <p>Throughout my career, I have designed, built and tested many projects including:</p>
@@ -38,9 +37,9 @@
           </p>
 
           <p>
-              I've delivered technical presentations to 130+ engineers on AI-augmented development,
-              created institutional onboarding systems adopted across departments, and built
-              cross-team engineering standards that define quality expectations company-wide.
+              I've given technical talks to 130+ engineers on AI-augmented development,
+              built onboarding tools used across multiple departments, and created
+              engineering standards that teams actually follow.
           </p>
 
           <p>
