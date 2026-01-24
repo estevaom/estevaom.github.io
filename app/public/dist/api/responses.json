@@ -1,5 +1,4 @@
 {
-  "featuredEmployment": [],
   "allTechnologies": [
     {
       "handler": "ai-agents",
@@ -332,6 +331,413 @@
       "url": "https://codeium.com/windsurf"
     }
   ],
+  "featuredEmployment": [],
+  "achievements": [
+    {
+      "description": "Fixed 23,000 failing tests in 19 days during Rails 5.0 to 5.1 upgrade using AI-powered automation",
+      "details": [
+        "Required only 30 hours of oversight for what would take months manually",
+        "Built multi-agent system using Claude and custom orchestration",
+        "Reduced complex refactoring cases to just 9 files requiring manual intervention"
+      ],
+      "impact": "critical",
+      "metric": "35x productivity multiplier",
+      "title": "Automated Rails Modernization at Scale",
+      "year": "2024"
+    },
+    {
+      "description": "Lead team consistently delivering 55-60 story points vs company average of 30",
+      "details": [
+        "Team of 3 regularly outperforms teams of 5+ engineers",
+        "Achieved through AI-augmented workflows and best practices",
+        "Highest performing team in company history"
+      ],
+      "impact": "high",
+      "metric": "2x productivity per developer",
+      "title": "Industry-Leading Team Performance",
+      "year": "2023-2025"
+    },
+    {
+      "description": "Architected and executed largest refactoring in 18-year application history",
+      "details": [
+        "Introduced primary keys to legacy join tables affecting 2,000+ queries",
+        "Executed phased migration with zero production incidents",
+        "Maintained full backward compatibility throughout transition"
+      ],
+      "impact": "critical",
+      "metric": "0 production incidents",
+      "title": "Zero-Downtime Curriculum Versioning",
+      "year": "2024"
+    },
+    {
+      "description": "Led AI adoption initiative securing full company sponsorship",
+      "details": [
+        "Delivered 5 technical presentations including 130+ person workshop",
+        "Established AI development practices now standard across engineering org",
+        "Personally mentored executives and technical leads on AI workflows",
+        "Demonstrated clear ROI leading to company-wide tool sponsorship"
+      ],
+      "impact": "transformative",
+      "metric": "130+ engineers trained",
+      "title": "Company-Wide AI Transformation",
+      "year": "2024-2025"
+    },
+    {
+      "description": "Consistently achieved 90%+ test coverage across all client projects",
+      "details": [
+        "Managed 20+ enterprise applications under Code Care program",
+        "Established testing best practices adopted company-wide",
+        "Reduced bug rates by over 60% through comprehensive testing"
+      ],
+      "impact": "high",
+      "metric": "90%+ test coverage",
+      "title": "Enterprise Code Quality Standards",
+      "year": "2017-2022"
+    },
+    {
+      "description": "Successfully collaborated remotely across multiple time zones and continents",
+      "details": [
+        "Worked with teams in USA, Australia, and Brazil",
+        "Maintained high productivity and communication standards",
+        "Led distributed teams effectively before remote work became mainstream"
+      ],
+      "impact": "foundational",
+      "metric": "10+ years",
+      "title": "Remote Engineering Excellence",
+      "year": "2015-Present"
+    }
+  ],
+  "technologiesByCategory": [
+    {
+      "technologies": [
+        {
+          "handler": "ruby",
+          "name": "Ruby",
+          "url": "https://www.ruby-lang.org/en/"
+        },
+        {
+          "handler": "rust",
+          "name": "Rust",
+          "url": "https://www.rust-lang.org/"
+        },
+        {
+          "handler": "javascript",
+          "name": "Javascript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "handler": "typescript",
+          "name": "Typescript",
+          "url": null
+        },
+        {
+          "handler": "csharp",
+          "name": "C#",
+          "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+        }
+      ],
+      "type": "Languages"
+    },
+    {
+      "technologies": [
+        {
+          "handler": "github-copilot",
+          "name": "Github Copilot",
+          "url": "https://github.com/features/copilot"
+        },
+        {
+          "handler": "cursor-ide",
+          "name": "Cursor IDE",
+          "url": "https://www.cursor.com/"
+        },
+        {
+          "handler": "windsurf-ide",
+          "name": "Windsurf IDE",
+          "url": "https://codeium.com/windsurf"
+        },
+        {
+          "handler": "claude-code",
+          "name": "Claude Code",
+          "url": "https://claude.ai/code"
+        },
+        {
+          "handler": "ai-agents",
+          "name": "AI Agents",
+          "url": "https://aws.amazon.com/what-is/ai-agents/"
+        },
+        {
+          "handler": "cline",
+          "name": "Cline",
+          "url": "https://cline.bot/"
+        },
+        {
+          "handler": "roo-code",
+          "name": "Roo Code",
+          "url": "https://github.com/RooVetGit/Roo-Code"
+        }
+      ],
+      "type": "AI Developer Tools"
+    },
+    {
+      "technologies": [
+        {
+          "handler": "ruby-on-rails",
+          "name": "Ruby on Rails",
+          "url": "http://rubyonrails.org/"
+        },
+        {
+          "handler": "node-js",
+          "name": "Node.js",
+          "url": "https://nodejs.org/en/"
+        },
+        {
+          "handler": "bun",
+          "name": "Bun",
+          "url": "https://bun.sh/"
+        }
+      ],
+      "type": "Backend"
+    },
+    {
+      "technologies": [
+        {
+          "handler": "angularjs",
+          "name": "AngularJS",
+          "url": "https://angularjs.org/"
+        },
+        {
+          "handler": "angular-4",
+          "name": "Angular 4",
+          "url": "https://angular.io/"
+        },
+        {
+          "handler": "bootstrap",
+          "name": "Bootstrap",
+          "url": "http://getbootstrap.com/"
+        },
+        {
+          "handler": "css",
+          "name": "CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "handler": "google-material",
+          "name": "Google Material",
+          "url": "https://getmdl.io/"
+        },
+        {
+          "handler": "html5",
+          "name": "HTML5",
+          "url": "https://www.w3.org/TR/html5/"
+        },
+        {
+          "handler": "hotwire",
+          "name": "Hotwire",
+          "url": "https://hotwired.dev/"
+        },
+        {
+          "handler": "javascript",
+          "name": "Javascript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "handler": "jquery",
+          "name": "JQuery",
+          "url": "https://jquery.com/"
+        },
+        {
+          "handler": "react",
+          "name": "React",
+          "url": "https://react.dev/"
+        },
+        {
+          "handler": "relay",
+          "name": "Relay",
+          "url": "https://relay.dev/"
+        },
+        {
+          "handler": "vuejs",
+          "name": "Vue.js",
+          "url": "https://vuejs.org/"
+        }
+      ],
+      "type": "Frontend"
+    },
+    {
+      "technologies": [
+        {
+          "handler": "mysql",
+          "name": "MySQL",
+          "url": "https://www.mysql.com/"
+        },
+        {
+          "handler": "postgresql",
+          "name": "PostgreSQL",
+          "url": "https://www.postgresql.org/"
+        },
+        {
+          "handler": "amazon-dynamodb",
+          "name": "Amazon DynamoDB",
+          "url": "https://aws.amazon.com/dynamodb/"
+        },
+        {
+          "handler": "amazon-redshift",
+          "name": "Amazon Redshift",
+          "url": "https://aws.amazon.com/redshift/"
+        },
+        {
+          "handler": "treasure-data",
+          "name": "Treasure Data",
+          "url": "https://www.treasuredata.com/"
+        },
+        {
+          "handler": "google-cloud-datastore",
+          "name": "Google Cloud Datastore",
+          "url": "https://cloud.google.com/datastore/"
+        },
+        {
+          "handler": "elasticsearch",
+          "name": "Elasticsearch",
+          "url": "https://www.elastic.co/products/elasticsearch"
+        },
+        {
+          "handler": "graphql",
+          "name": "GraphQL",
+          "url": "https://graphql.org/"
+        },
+        {
+          "handler": "memcached",
+          "name": "Memcached",
+          "url": "https://memcached.org/"
+        },
+        {
+          "handler": "redis",
+          "name": "Redis",
+          "url": "https://redis.io/"
+        }
+      ],
+      "type": "Database / Cache Storage"
+    },
+    {
+      "technologies": [
+        {
+          "handler": "capybara",
+          "name": "Capybara",
+          "url": null
+        },
+        {
+          "handler": "minitest",
+          "name": "Minitest",
+          "url": null
+        },
+        {
+          "handler": "mocha",
+          "name": "Mocha",
+          "url": null
+        },
+        {
+          "handler": "rspec",
+          "name": "Rspec",
+          "url": null
+        }
+      ],
+      "type": "Test"
+    },
+    {
+      "technologies": [
+        {
+          "handler": "amazon-s3",
+          "name": "Amazon S3",
+          "url": "https://aws.amazon.com/s3/"
+        },
+        {
+          "handler": "capistrano",
+          "name": "Capistrano",
+          "url": null
+        },
+        {
+          "handler": "git",
+          "name": "Git",
+          "url": null
+        },
+        {
+          "handler": "jenkins",
+          "name": "Jenkins",
+          "url": null
+        },
+        {
+          "handler": "new-relic",
+          "name": "New Relic",
+          "url": null
+        },
+        {
+          "handler": "semaphore",
+          "name": "Semaphore",
+          "url": null
+        },
+        {
+          "handler": "sidekiq",
+          "name": "Sidekiq",
+          "url": "http://sidekiq.org/"
+        },
+        {
+          "handler": "typescript",
+          "name": "Typescript",
+          "url": null
+        },
+        {
+          "handler": "webpack",
+          "name": "Webpack",
+          "url": null
+        }
+      ],
+      "type": "Other"
+    }
+  ],
+  "projects": [
+    {
+      "description": "High-performance semantic search engine for markdown journals with RAG system",
+      "highlights": [
+        "Built semantic search achieving <20ms query times",
+        "Implemented RAG system using LanceDB and BGE embeddings",
+        "Rust workspace with multiple crates for search and frontmatter analysis",
+        "Claude Code integration for AI-powered journaling"
+      ],
+      "name": "Markdown Journal Rust",
+      "technologies": [
+        "rust",
+        "lancedb",
+        "bge-embeddings",
+        "claude-code"
+      ],
+      "url": "https://github.com/estevaom/markdown-journal-rust",
+      "year": "2025"
+    },
+    {
+      "description": "Terminal music visualizer built with Rust",
+      "highlights": [
+        "Terminal-based audio visualization using Ratatui",
+        "Real-time audio processing and spectrum analysis",
+        "Cross-platform terminal UI with responsive design"
+      ],
+      "name": "Trackwatch",
+      "technologies": [
+        "rust",
+        "ratatui",
+        "terminal-ui"
+      ],
+      "url": "https://github.com/estevaom/trackwatch",
+      "year": "2025"
+    }
+  ],
+  "profileData": {
+    "name": "Estevão de Abreu Machado",
+    "title": "Engineering Lead / Senior Rails & AI Automation Engineer",
+    "totalAchievements": 6,
+    "totalEmployment": 6,
+    "totalProjects": 2,
+    "totalTechnologies": 66
+  },
   "employmentWithTechnologies": [
     {
       "dates": "2023 - Present",
@@ -736,411 +1142,5 @@
       "title": "Web Developer",
       "url": "http://www.hands.com.br/"
     }
-  ],
-  "technologiesByCategory": [
-    {
-      "technologies": [
-        {
-          "handler": "ruby",
-          "name": "Ruby",
-          "url": "https://www.ruby-lang.org/en/"
-        },
-        {
-          "handler": "rust",
-          "name": "Rust",
-          "url": "https://www.rust-lang.org/"
-        },
-        {
-          "handler": "javascript",
-          "name": "Javascript",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-        },
-        {
-          "handler": "typescript",
-          "name": "Typescript",
-          "url": null
-        },
-        {
-          "handler": "csharp",
-          "name": "C#",
-          "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
-        }
-      ],
-      "type": "Languages"
-    },
-    {
-      "technologies": [
-        {
-          "handler": "github-copilot",
-          "name": "Github Copilot",
-          "url": "https://github.com/features/copilot"
-        },
-        {
-          "handler": "cursor-ide",
-          "name": "Cursor IDE",
-          "url": "https://www.cursor.com/"
-        },
-        {
-          "handler": "windsurf-ide",
-          "name": "Windsurf IDE",
-          "url": "https://codeium.com/windsurf"
-        },
-        {
-          "handler": "claude-code",
-          "name": "Claude Code",
-          "url": "https://claude.ai/code"
-        },
-        {
-          "handler": "ai-agents",
-          "name": "AI Agents",
-          "url": "https://aws.amazon.com/what-is/ai-agents/"
-        },
-        {
-          "handler": "cline",
-          "name": "Cline",
-          "url": "https://cline.bot/"
-        },
-        {
-          "handler": "roo-code",
-          "name": "Roo Code",
-          "url": "https://github.com/RooVetGit/Roo-Code"
-        }
-      ],
-      "type": "AI Developer Tools"
-    },
-    {
-      "technologies": [
-        {
-          "handler": "ruby-on-rails",
-          "name": "Ruby on Rails",
-          "url": "http://rubyonrails.org/"
-        },
-        {
-          "handler": "node-js",
-          "name": "Node.js",
-          "url": "https://nodejs.org/en/"
-        },
-        {
-          "handler": "bun",
-          "name": "Bun",
-          "url": "https://bun.sh/"
-        }
-      ],
-      "type": "Backend"
-    },
-    {
-      "technologies": [
-        {
-          "handler": "angularjs",
-          "name": "AngularJS",
-          "url": "https://angularjs.org/"
-        },
-        {
-          "handler": "angular-4",
-          "name": "Angular 4",
-          "url": "https://angular.io/"
-        },
-        {
-          "handler": "bootstrap",
-          "name": "Bootstrap",
-          "url": "http://getbootstrap.com/"
-        },
-        {
-          "handler": "css",
-          "name": "CSS",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
-        },
-        {
-          "handler": "google-material",
-          "name": "Google Material",
-          "url": "https://getmdl.io/"
-        },
-        {
-          "handler": "html5",
-          "name": "HTML5",
-          "url": "https://www.w3.org/TR/html5/"
-        },
-        {
-          "handler": "hotwire",
-          "name": "Hotwire",
-          "url": "https://hotwired.dev/"
-        },
-        {
-          "handler": "javascript",
-          "name": "Javascript",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-        },
-        {
-          "handler": "jquery",
-          "name": "JQuery",
-          "url": "https://jquery.com/"
-        },
-        {
-          "handler": "react",
-          "name": "React",
-          "url": "https://react.dev/"
-        },
-        {
-          "handler": "relay",
-          "name": "Relay",
-          "url": "https://relay.dev/"
-        },
-        {
-          "handler": "vuejs",
-          "name": "Vue.js",
-          "url": "https://vuejs.org/"
-        }
-      ],
-      "type": "Frontend"
-    },
-    {
-      "technologies": [
-        {
-          "handler": "mysql",
-          "name": "MySQL",
-          "url": "https://www.mysql.com/"
-        },
-        {
-          "handler": "postgresql",
-          "name": "PostgreSQL",
-          "url": "https://www.postgresql.org/"
-        },
-        {
-          "handler": "amazon-dynamodb",
-          "name": "Amazon DynamoDB",
-          "url": "https://aws.amazon.com/dynamodb/"
-        },
-        {
-          "handler": "amazon-redshift",
-          "name": "Amazon Redshift",
-          "url": "https://aws.amazon.com/redshift/"
-        },
-        {
-          "handler": "treasure-data",
-          "name": "Treasure Data",
-          "url": "https://www.treasuredata.com/"
-        },
-        {
-          "handler": "google-cloud-datastore",
-          "name": "Google Cloud Datastore",
-          "url": "https://cloud.google.com/datastore/"
-        },
-        {
-          "handler": "elasticsearch",
-          "name": "Elasticsearch",
-          "url": "https://www.elastic.co/products/elasticsearch"
-        },
-        {
-          "handler": "graphql",
-          "name": "GraphQL",
-          "url": "https://graphql.org/"
-        },
-        {
-          "handler": "memcached",
-          "name": "Memcached",
-          "url": "https://memcached.org/"
-        },
-        {
-          "handler": "redis",
-          "name": "Redis",
-          "url": "https://redis.io/"
-        }
-      ],
-      "type": "Database / Cache Storage"
-    },
-    {
-      "technologies": [
-        {
-          "handler": "capybara",
-          "name": "Capybara",
-          "url": null
-        },
-        {
-          "handler": "minitest",
-          "name": "Minitest",
-          "url": null
-        },
-        {
-          "handler": "mocha",
-          "name": "Mocha",
-          "url": null
-        },
-        {
-          "handler": "rspec",
-          "name": "Rspec",
-          "url": null
-        }
-      ],
-      "type": "Test"
-    },
-    {
-      "technologies": [
-        {
-          "handler": "amazon-s3",
-          "name": "Amazon S3",
-          "url": "https://aws.amazon.com/s3/"
-        },
-        {
-          "handler": "capistrano",
-          "name": "Capistrano",
-          "url": null
-        },
-        {
-          "handler": "git",
-          "name": "Git",
-          "url": null
-        },
-        {
-          "handler": "jenkins",
-          "name": "Jenkins",
-          "url": null
-        },
-        {
-          "handler": "new-relic",
-          "name": "New Relic",
-          "url": null
-        },
-        {
-          "handler": "semaphore",
-          "name": "Semaphore",
-          "url": null
-        },
-        {
-          "handler": "sidekiq",
-          "name": "Sidekiq",
-          "url": "http://sidekiq.org/"
-        },
-        {
-          "handler": "typescript",
-          "name": "Typescript",
-          "url": null
-        },
-        {
-          "handler": "webpack",
-          "name": "Webpack",
-          "url": null
-        }
-      ],
-      "type": "Other"
-    }
-  ],
-  "achievements": [
-    {
-      "description": "Fixed 23,000 failing tests in 19 days during Rails 5.0 to 5.1 upgrade using AI-powered automation",
-      "details": [
-        "Required only 30 hours of oversight for what would take months manually",
-        "Built multi-agent system using Claude and custom orchestration",
-        "Reduced complex refactoring cases to just 9 files requiring manual intervention"
-      ],
-      "impact": "critical",
-      "metric": "35x productivity multiplier",
-      "title": "Automated Rails Modernization at Scale",
-      "year": "2024"
-    },
-    {
-      "description": "Lead team consistently delivering 55-60 story points vs company average of 30",
-      "details": [
-        "Team of 3 regularly outperforms teams of 5+ engineers",
-        "Achieved through AI-augmented workflows and best practices",
-        "Highest performing team in company history"
-      ],
-      "impact": "high",
-      "metric": "2x productivity per developer",
-      "title": "Industry-Leading Team Performance",
-      "year": "2023-2025"
-    },
-    {
-      "description": "Architected and executed largest refactoring in 18-year application history",
-      "details": [
-        "Introduced primary keys to legacy join tables affecting 2,000+ queries",
-        "Executed phased migration with zero production incidents",
-        "Maintained full backward compatibility throughout transition"
-      ],
-      "impact": "critical",
-      "metric": "0 production incidents",
-      "title": "Zero-Downtime Curriculum Versioning",
-      "year": "2024"
-    },
-    {
-      "description": "Led AI adoption initiative securing full company sponsorship",
-      "details": [
-        "Delivered 5 technical presentations including 130+ person workshop",
-        "Established AI development practices now standard across engineering org",
-        "Personally mentored executives and technical leads on AI workflows",
-        "Demonstrated clear ROI leading to company-wide tool sponsorship"
-      ],
-      "impact": "transformative",
-      "metric": "130+ engineers trained",
-      "title": "Company-Wide AI Transformation",
-      "year": "2024-2025"
-    },
-    {
-      "description": "Consistently achieved 90%+ test coverage across all client projects",
-      "details": [
-        "Managed 20+ enterprise applications under Code Care program",
-        "Established testing best practices adopted company-wide",
-        "Reduced bug rates by over 60% through comprehensive testing"
-      ],
-      "impact": "high",
-      "metric": "90%+ test coverage",
-      "title": "Enterprise Code Quality Standards",
-      "year": "2017-2022"
-    },
-    {
-      "description": "Successfully collaborated remotely across multiple time zones and continents",
-      "details": [
-        "Worked with teams in USA, Australia, and Brazil",
-        "Maintained high productivity and communication standards",
-        "Led distributed teams effectively before remote work became mainstream"
-      ],
-      "impact": "foundational",
-      "metric": "10+ years",
-      "title": "Remote Engineering Excellence",
-      "year": "2015-Present"
-    }
-  ],
-  "projects": [
-    {
-      "description": "High-performance semantic search engine for markdown journals with RAG system",
-      "highlights": [
-        "Built semantic search achieving <20ms query times",
-        "Implemented RAG system using LanceDB and BGE embeddings",
-        "Rust workspace with multiple crates for search and frontmatter analysis",
-        "Claude Code integration for AI-powered journaling"
-      ],
-      "name": "Markdown Journal Rust",
-      "technologies": [
-        "rust",
-        "lancedb",
-        "bge-embeddings",
-        "claude-code"
-      ],
-      "url": "https://github.com/estevaom/markdown-journal-rust",
-      "year": "2025"
-    },
-    {
-      "description": "Terminal music visualizer built with Rust",
-      "highlights": [
-        "Terminal-based audio visualization using Ratatui",
-        "Real-time audio processing and spectrum analysis",
-        "Cross-platform terminal UI with responsive design"
-      ],
-      "name": "Trackwatch",
-      "technologies": [
-        "rust",
-        "ratatui",
-        "terminal-ui"
-      ],
-      "url": "https://github.com/estevaom/trackwatch",
-      "year": "2025"
-    }
-  ],
-  "profileData": {
-    "name": "Estevão de Abreu Machado",
-    "title": "Engineering Lead / Senior Rails & AI Automation Engineer",
-    "totalAchievements": 6,
-    "totalEmployment": 6,
-    "totalProjects": 2,
-    "totalTechnologies": 66
-  }
+  ]
 }
