@@ -1,0 +1,178 @@
+/* Starry Night is the only theme so far. A new theme overrides these tokens under :root[data-theme="…"]. */
+:root {
+  --ink: #f4efe1;
+  --ink-dim: #c3cde3;
+  --gold: #f2c94c;
+  --gold-soft: #f7e3a1;
+  --night: #0a1640;
+  --card: rgba(8, 17, 50, 0.84);
+  --edge: rgba(247, 227, 161, 0.18);
+  --gutter: 17vw;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+html, body { margin: 0; background: var(--night); color: var(--ink); }
+body { font: 400 17px/1.6 Inter, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+
+/* The painting: a fixed, animated sky, and a fixed, still land that sinks as you scroll into the sky */
+#sky, #land { position: fixed; inset: 0; width: 100%; height: 100vh; height: 100lvh; display: block; z-index: 0; pointer-events: none; }
+#land { will-change: transform; }
+
+.topbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 10;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 28px;
+  background: linear-gradient(rgba(6, 12, 38, 0.82), rgba(6, 12, 38, 0));
+  transition: background-color 0.3s;
+}
+.topbar.scrolled { background: rgba(6, 12, 38, 0.9); box-shadow: 0 1px 0 var(--edge); }
+.mark { font: italic 500 1.25rem/1 Fraunces, serif; color: var(--ink); text-decoration: none; text-shadow: 0 2px 12px rgba(4, 8, 30, 0.9); }
+.mark .short { display: none; }
+.topbar nav { display: flex; align-items: center; gap: 26px; }
+.topbar nav a { color: var(--gold-soft); text-decoration: none; font-size: 0.95rem; letter-spacing: 0.02em; text-shadow: 0 2px 10px rgba(4, 8, 30, 0.9); }
+.topbar nav a:hover { color: #fff; }
+.theme {
+  width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center;
+  border: 1px solid var(--edge); background: rgba(8, 17, 50, 0.6); color: var(--gold); font-size: 1rem; cursor: pointer;
+}
+
+main { position: relative; z-index: 1; }
+/* overflow-x: clip keeps the text's soft backdrop from widening the page on phones */
+.hero { position: relative; min-height: 100vh; min-height: 100svh; overflow-x: clip; }
+.hero-copy { position: relative; z-index: 1; isolation: isolate; margin-left: var(--gutter); padding: 15vh 28px 0 0; max-width: 760px; }
+.hero-copy::before {
+  content: ""; position: absolute; inset: 4% -14% 10% -10%; z-index: -1;
+  background: radial-gradient(ellipse at 42% 48%, rgba(6, 12, 40, 0.66), rgba(6, 12, 40, 0) 68%);
+}
+.eyebrow span { white-space: nowrap; }
+.eyebrow { margin: 0 0 18px; color: var(--gold); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; }
+h1 {
+  margin: 0; font: 400 clamp(2.7rem, min(6.2vw, 9.5vh), 5.4rem)/1.02 Fraunces, serif; letter-spacing: -0.01em;
+  text-shadow: 0 3px 24px rgba(4, 8, 30, 0.85);
+}
+h1 em { color: var(--gold-soft); font-weight: 300; }
+.lede { margin: 24px 0 0; max-width: 38ch; font-size: clamp(1.1rem, 1.6vw, 1.3rem); line-height: 1.55; color: var(--ink); text-shadow: 0 2px 14px rgba(4, 8, 30, 0.9); }
+.availability {
+  display: inline-flex; align-items: center; gap: 10px; margin: 26px 0 0; padding: 7px 14px;
+  border: 1px solid var(--edge); border-radius: 999px; background: rgba(8, 17, 50, 0.62); font-size: 0.9rem; color: var(--ink-dim);
+}
+.availability .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 10px var(--gold); }
+.ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+.btn {
+  display: inline-block; padding: 12px 20px; border-radius: 999px; font-weight: 600; font-size: 0.95rem; text-decoration: none;
+  color: var(--gold-soft); border: 1px solid rgba(247, 227, 161, 0.45); background: rgba(8, 17, 50, 0.55);
+}
+.btn.primary { background: var(--gold); border-color: var(--gold); color: #0b1640; }
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; margin: 0 0 12vh; max-width: 1000px; padding: 26px 34px; border: 1px solid var(--edge); border-radius: 20px; background: var(--card); }
+.stats div { padding-top: 4px; }
+.stats dt { font: 500 clamp(1.7rem, 2.6vw, 2.3rem)/1 Fraunces, serif; color: var(--gold); text-shadow: 0 2px 14px rgba(4, 8, 30, 0.9); }
+.stats dd { margin: 8px 0 0; font-size: 0.85rem; line-height: 1.4; color: var(--ink-dim); text-shadow: 0 1px 8px rgba(4, 8, 30, 0.9); }
+
+.section { position: relative; padding: 12vh 6vw 6vh var(--gutter); }
+#work { padding-top: 16vh; }
+.section h2 { margin: 0 0 28px; font: 400 clamp(2rem, 3.6vw, 3rem)/1.1 Fraunces, serif; text-shadow: 0 3px 20px rgba(4, 8, 30, 0.9); }
+.case { max-width: 1000px; padding: 32px 34px; border: 1px solid var(--edge); border-radius: 20px; background: var(--card); box-shadow: 0 24px 60px rgba(2, 6, 24, 0.45); }
+.case-meta { margin: 0; color: var(--gold); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
+.case h3 { margin: 10px 0 24px; font: 400 clamp(1.5rem, 2.4vw, 2rem)/1.2 Fraunces, serif; }
+.case-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.case h4 { margin: 0 0 6px; color: var(--gold-soft); font: italic 500 1.05rem/1.3 Fraunces, serif; }
+.case p { margin: 0; color: var(--ink-dim); font-size: 0.96rem; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 26px 0 0; padding: 0; list-style: none; }
+.tags li { padding: 4px 12px; border: 1px solid var(--edge); border-radius: 999px; font-size: 0.8rem; color: var(--gold-soft); }
+.case + .case { margin-top: 22px; }
+.section h2.sub { margin-top: 10vh; }
+.timeline { max-width: 1000px; margin: 0; padding: 30px 34px; list-style: none; border: 1px solid var(--edge); border-radius: 20px; background: var(--card); }
+.timeline li { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 24px; padding: 20px 0; border-top: 1px solid rgba(247, 227, 161, 0.1); }
+.timeline li:first-child { padding-top: 0; border-top: 0; }
+.timeline li:last-child { padding-bottom: 0; }
+.when { margin: 0; padding-top: 4px; color: var(--gold); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.04em; }
+.role { margin: 0; font: 400 1.3rem/1.3 Fraunces, serif; }
+.role .at { color: var(--gold-soft); font-style: italic; font-weight: 300; }
+.where { margin: 2px 0 8px; color: var(--ink-dim); font-size: 0.82rem; letter-spacing: 0.02em; }
+.what { margin: 0; color: var(--ink-dim); font-size: 0.96rem; }
+.edu { max-width: 1000px; margin: 18px 0 0; color: var(--ink-dim); font-size: 0.92rem; text-shadow: 0 1px 8px rgba(4, 8, 30, 0.9); }
+.edu em { margin-right: 10px; color: var(--gold-soft); font: italic 500 1rem Fraunces, serif; }
+.skills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 34px; max-width: 1000px; padding: 30px 34px; border: 1px solid var(--edge); border-radius: 20px; background: var(--card); }
+.skills h3 { margin: 0; color: var(--gold-soft); font: italic 500 1.05rem/1.3 Fraunces, serif; }
+.skills .tags { margin-top: 12px; }
+.projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; max-width: 1000px; }
+.project { display: block; padding: 24px 26px; border: 1px solid var(--edge); border-radius: 18px; background: var(--card); color: inherit; text-decoration: none; transition: border-color 0.2s, transform 0.2s; }
+.project:hover { border-color: rgba(247, 227, 161, 0.5); transform: translateY(-2px); }
+.project h3 { margin: 0 0 6px; font: 400 1.35rem/1.2 Fraunces, serif; }
+.project p { margin: 0; color: var(--ink-dim); font-size: 0.95rem; }
+.project .meta { display: flex; gap: 16px; margin-top: 14px; color: var(--gold-soft); font-size: 0.82rem; }
+.section.contact { padding-bottom: 58vh; }
+.contact p { max-width: 36ch; margin: 0; font-size: 1.15rem; text-shadow: 0 2px 14px rgba(4, 8, 30, 0.9); }
+
+#hud { position: fixed; left: 12px; bottom: 12px; z-index: 20; padding: 6px 10px; border-radius: 8px; background: rgba(0, 0, 0, 0.6); color: #9fe39f; font: 12px/1.4 ui-monospace, monospace; white-space: pre; }
+
+@media screen and (orientation: portrait), screen and (max-width: 760px) {
+  :root { --gutter: 0px; }
+  .topbar { padding: 12px 14px; }
+  .theme { width: 32px; height: 32px; }
+  .mark .full { display: none; }
+  .mark .short { display: inline; }
+  .topbar nav { gap: 10px; }
+  .topbar nav a { font-size: 0.8rem; letter-spacing: 0; }
+  .hero-copy { margin: 0; padding: 96px 22px 0; }
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; padding: 20px; }
+  .section.contact { padding-bottom: 56svh; }
+  .section { padding: 10vh 18px 4vh; }
+  .case { padding: 24px 20px; }
+  .case-grid { grid-template-columns: 1fr; gap: 18px; }
+  .timeline { padding: 24px 20px; }
+  .timeline li { grid-template-columns: 1fr; gap: 4px; }
+  .skills, .projects { grid-template-columns: 1fr; }
+  .skills { padding: 24px 20px; }
+}
+
+/* Only the Starry Night theme paints; any other theme (or no JavaScript) hides the canvases */
+:root:not([data-theme="starry-night"]) #sky,
+:root:not([data-theme="starry-night"]) #land { display: none; }
+
+.skip { position: absolute; left: 12px; top: -60px; z-index: 30; padding: 8px 14px; border-radius: 8px; background: var(--gold); color: #0b1640; font-weight: 600; text-decoration: none; }
+.skip:focus { top: 12px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.print-only { display: none; }
+
+/* The same page, printed, is the CV: one clean A4 document, no painting */
+@media print {
+  @page { size: A4; margin: 12mm 14mm; }
+  :root { --ink: #111; --ink-dim: #333; --gold: #7a5c00; --gold-soft: #4a3b10; --card: transparent; --edge: #c8c8c8; --gutter: 0px; }
+  html, body { background: #fff; color: var(--ink); font-size: 10pt; line-height: 1.45; }
+  #sky, #land, #hud, .topbar, .skip, .ctas, .availability, .contact, .hero-copy::before { display: none !important; }
+  * { text-shadow: none !important; box-shadow: none !important; }
+  a { color: inherit; text-decoration: none; }
+  .print-only { display: block; }
+  .print-contact { margin: 8pt 0 0; color: var(--ink-dim); font-size: 9.5pt; }
+  .hero { min-height: 0; }
+  .hero-copy { margin: 0; padding: 0; max-width: none; }
+  .eyebrow { margin-bottom: 6pt; font-size: 8pt; }
+  h1 { font-size: 24pt; }
+  .lede { max-width: none; margin-top: 8pt; font-size: 10.5pt; }
+  .section, #work { padding: 0; margin-top: 12pt; }
+  .section h2 { margin: 0 0 8pt; font-size: 14pt; }
+  .section h2.sub { margin-top: 12pt; }
+  .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12pt; margin: 0 0 14pt; padding: 8pt 0; border: 0; border-top: 1px solid var(--edge); border-bottom: 1px solid var(--edge); border-radius: 0; }
+  .stats dt { font-size: 14pt; }
+  .stats dd { font-size: 8.5pt; }
+  .case, .timeline, .skills, .project { padding: 0; border: 0; border-radius: 0; background: none; }
+  .case { break-inside: avoid; }
+  .case + .case { margin-top: 12pt; }
+  .case h3 { margin: 2pt 0 6pt; font-size: 12pt; }
+  .case-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12pt; }
+  .case p, .what { font-size: 9.5pt; }
+  .timeline li { grid-template-columns: 70pt minmax(0, 1fr); gap: 10pt; padding: 4pt 0; border-top-color: #e2e2e2; break-inside: avoid; }
+  .where { margin: 0 0 2pt; }
+  .role { font-size: 11pt; }
+  .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6pt 20pt; }
+  .skills .tags { gap: 0; margin-top: 2pt; }
+  .skills .tags li { padding: 0; border: 0; font-size: 9pt; }
+  .skills .tags li:not(:last-child)::after { content: ",\00a0"; }
+  .tags { margin-top: 6pt; gap: 4pt; }
+  .tags li { padding: 0 6pt; border-color: #bbb; color: #333; font-size: 8pt; }
+  #projects { break-inside: avoid; }
+  .projects { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10pt; }
+  .project h3 { font-size: 11pt; }
+  .project p { font-size: 9pt; }
+}

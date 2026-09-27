@@ -1,0 +1,24 @@
+---
+import profile from "../../data/profile.json";
+import Contact from "../components/Contact.astro";
+import Experience from "../components/Experience.astro";
+import Hero from "../components/Hero.astro";
+import Projects from "../components/Projects.astro";
+import StarryNight from "../components/StarryNight.astro";
+import TopBar from "../components/TopBar.astro";
+import Work from "../components/Work.astro";
+import Base from "../layouts/Base.astro";
+---
+
+<Base title={`${profile.name} · ${profile.headline[0]}`} description={profile.description}>
+  <a class="skip" href="#main">Skip to content</a>
+  <StarryNight />
+  <TopBar />
+  <main id="main">
+    <Hero />
+    <Work />
+    <Experience />
+    <Projects />
+    <Contact />
+  </main>
+</Base>

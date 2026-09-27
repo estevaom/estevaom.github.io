@@ -1,0 +1,64 @@
+---
+import "../styles/global.css";
+import profile from "../../data/profile.json";
+import { THEMES } from "../themes";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL("/og.jpg", Astro.site);
+const themeIds = THEMES.map((theme) => theme.id);
+const person = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: profile.name,
+  jobTitle: profile.headline[0],
+  email: `mailto:${profile.email}`,
+  address: { "@type": "PostalAddress", addressLocality: "Brisbane", addressCountry: "AU" },
+  url: Astro.site?.href,
+  sameAs: profile.links.map((link) => link.url),
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <meta name="theme-color" content="#0a1640" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&display=swap"
+    />
+    <script type="application/ld+json" set:html={JSON.stringify(person)} />
+    <script is:inline define:vars={{ themeIds }}>
+      // Set the theme before the first paint so the page never flashes the wrong one
+      let theme = themeIds[0];
+      try {
+        const saved = localStorage.getItem("theme");
+        if (themeIds.includes(saved)) theme = saved;
+      } catch {}
+      document.documentElement.dataset.theme = theme;
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

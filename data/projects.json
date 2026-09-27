@@ -1,27 +1,20 @@
 [
   {
-    "name": "Markdown Journal Rust",
-    "description": "High-performance semantic search engine for markdown journals with RAG system",
-    "url": "https://github.com/estevaom/markdown-journal-rust",
-    "highlights": [
-      "Built semantic search achieving <20ms query times",
-      "Implemented RAG system using LanceDB and BGE embeddings",
-      "Rust workspace with multiple crates for search and frontmatter analysis",
-      "Claude Code integration for AI-powered journaling"
-    ],
-    "technologies": ["rust", "lancedb", "bge-embeddings", "claude-code"],
-    "year": "2025"
+    "name": "trackwatch",
+    "repo": "estevaom/trackwatch",
+    "description": "A terminal music visualiser with pixelated album art and synchronised lyrics.",
+    "language": "Rust"
   },
   {
-    "name": "Trackwatch",
-    "description": "Terminal music visualizer built with Rust",
-    "url": "https://github.com/estevaom/trackwatch",
-    "highlights": [
-      "Terminal-based audio visualization using Ratatui",
-      "Real-time audio processing and spectrum analysis",
-      "Cross-platform terminal UI with responsive design"
-    ],
-    "technologies": ["rust", "ratatui", "terminal-ui"],
-    "year": "2025"
+    "name": "markdown-journal-rust",
+    "repo": "estevaom/markdown-journal-rust",
+    "description": "Semantic search and RAG over a markdown journal, built for Claude Code to query.",
+    "language": "Rust"
+  },
+  {
+    "name": "linux-wiim",
+    "repo": "estevaom/linux-wiim",
+    "description": "Control WiiM streamers from Linux, with Plex and Tidal.",
+    "language": "Python"
   }
 ]

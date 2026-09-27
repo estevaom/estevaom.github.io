@@ -1,168 +1,51 @@
 [
   {
-    "name": "Readytech",
-    "title": "Engineering Lead",
-    "dates": "2023 - Present",
-    "location": "Sydney, Australia",
-    "remote": true,
-    "url": "https://www.readytech.com.au/",
-    "description": [
-      "Leading engineering team for student management system serving Australia's largest universities and TAFEs",
-      "Automated Rails 5.0 to 5.1 upgrade fixing 23,000 failing tests in 19 days using AI orchestration (35x productivity multiplier)",
-      "Architected zero-downtime curriculum versioning - largest refactoring in 18-year application history",
-      "Lead highest-performing team in company (55-60 story points vs 30 average, 2x productivity per developer)",
-      "Drove company-wide AI transformation, securing full sponsorship after demonstrating ROI",
-      "Delivered 130+ person AI workshop and multiple technical presentations on AI-augmented development",
-      "Integrated multiple payment gateways for automated enrollment workflows",
-      "Reduced error rates using comprehensive monitoring (Rollbar, Datadog)"
-    ],
-    "technologies": [
-      "ruby-on-rails",
-      "jquery",
-      "css",
-      "mysql",
-      "github-copilot",
-      "claude-code",
-      "sidekiq",
-      "redis",
-      "datadog",
-      "rollbar"
-    ]
+    "role": "Tech Lead",
+    "company": "Readytech",
+    "dates": "2026 – now",
+    "where": "Remote from Brisbane",
+    "summary": "Led the Rails 5.0 → 8.1 and Ruby 2.7 → 4.0 migration of the student management system. Now bringing the surrounding apps up to date, and introduced Stimulus and ViewComponents to the modernised stack."
   },
   {
-    "name": "Reinteractive",
-    "title": "Senior Web Developer",
-    "dates": "2017 - 2022",
-    "location": "Sydney, Australia",
-    "remote": true,
-    "url": "https://www.reinteractive.net/",
-    "description": [
-      "Managed 20+ client applications under Code Care program, providing Rails expertise to enterprise clients",
-      "Raised test coverage to 90%+ across all client projects",
-      "Mastered comprehensive monitoring stack (New Relic, Skylight, Datadog, Scout APM, Honeybadger, Sentry)",
-      "Delivered consulting for PwC, nib, and other enterprise clients",
-      "Led technical interviews and built team for growing client base",
-      "Worked across 30+ projects including Vue.js and GraphQL implementations",
-      "Reduced incident response times through proactive monitoring and alerting"
-    ],
-    "technologies": [
-      "ruby-on-rails",
-      "angularjs",
-      "vuejs",
-      "react",
-      "graphql",
-      "relay",
-      "css",
-      "google-cloud-datastore",
-      "elasticsearch",
-      "new-relic",
-      "skylight",
-      "datadog",
-      "scout-apm",
-      "honeybadger",
-      "sentry",
-      "rspec",
-      "capybara"
-    ]
+    "role": "Founding Engineer",
+    "company": "Finta",
+    "dates": "2025 – 2026",
+    "where": "Fintech startup · remote",
+    "summary": "Cut a key dashboard from two minutes to under three seconds, took test coverage from zero to 25%+, and built bank reconciliation, Stripe payments and tax filing. Ran the UI redesign as a semi-autonomous AI workflow across Figma, Claude Code and Codex."
   },
   {
-    "name": "DashBid Media",
-    "title": "Senior Web Developer",
-    "dates": "2015 - 2017",
-    "location": "New York, USA",
-    "remote": true,
-    "url": "https://www.dashbid.com/",
-    "description": [
-      "Developed countless features in an agile environment",
-      "Planned and carried out daily scrums, weekly estimations and retrospectives and pair programming",
-      "Developed and tested customer facing apps and internal dashboards using Google Material",
-      "Created Treasure Data and RedShift big data services queries to feed our database",
-      "Built and tested REST APIs and their docs to be used by our many customers",
-      "Set up and maintained applications on Amazon Web Services"
-    ],
-    "technologies": [
-      "node-js",
-      "angular-4",
-      "amazon-dynamodb",
-      "ruby-on-rails",
-      "jquery",
-      "css",
-      "mysql",
-      "amazon-elasticache",
-      "amazon-redshift",
-      "treasure-data"
-    ]
+    "role": "Engineering Lead",
+    "company": "Readytech",
+    "dates": "2023 – 2025",
+    "where": "Remote from Brisbane",
+    "summary": "Led a squad on the student management system used by Australian universities and TAFEs. Drove the company's AI adoption with talks and a 130-person workshop, and made the first Rails 5.0 → 5.1 hop in 19 days with an agent pipeline."
   },
   {
-    "name": "XL Solutions",
-    "title": "Web Developer",
-    "dates": "2012 - 2015",
-    "location": "Rio de Janeiro, Brazil",
-    "remote": false,
-    "url": "http://www.xlsol.com/",
-    "description": [
-      "Built e-commerces for the biggest phone carriers in Brazil (Claro, Tim, Vivo, Oi, Porto Seguro)",
-      "Often worked in a support role answering tickets, fixing bugs, talking to customers, going to meetings and creating new features on demand for our many projects",
-      "Developed and tested APIs and high traffic websites like real time auction, e-learning school and e-commerces",
-      "Developed a mobile web app to be opened on specific tablets and be used as interface for selling mobile phones in stores in Angular 1.5",
-      "Full implementation and maintenance of marketplaces with millions of items parsed from XMLs or Json APIs loaded to ElasticSearch",
-      "Ported legacy applications from Ruby 1.8 and Rails 2.3 to Ruby 2 and Rails 4"
-    ],
-    "technologies": [
-      "ruby-on-rails",
-      "jquery",
-      "css",
-      "mysql",
-      "angularjs",
-      "amazon-s3",
-      "sidekiq",
-      "elasticsearch"
-    ]
+    "role": "Senior Software Engineer",
+    "company": "Reinteractive",
+    "dates": "2017 – 2023",
+    "where": "Rails consultancy · remote",
+    "summary": "Kept 20+ enterprise client apps healthy under the Code Care program, raised their test coverage to 90%+, and consulted for clients including PwC and nib. Ran technical interviews as the team grew."
   },
   {
-    "name": "Kissy",
-    "title": "Web Developer, Operations",
-    "dates": "2011 - 2012",
-    "location": "Rio de Janeiro, Brazil",
-    "remote": false,
-    "url": "https://www.kissy.app/",
-    "description": [
-      "Created and maintained an iPhone and Android webview dating app with push notification and HTML5 geolocation",
-      "Set up all services on Amazon Web Services to host the app",
-      "Interacted with many social network APIs like Gmail, Google Maps, Facebook and Foursquare"
-    ],
-    "technologies": [
-      "ruby-on-rails",
-      "jquery",
-      "css",
-      "mysql",
-      "amazon-ec2",
-      "amazon-rds",
-      "amazon-s3"
-    ]
+    "role": "Senior Software Engineer",
+    "company": "DashBid",
+    "dates": "2015 – 2017",
+    "where": "Ad tech, New York · remote",
+    "summary": "Built customer dashboards and documented REST APIs, and fed the production database from Redshift and Treasure Data. Ran the team's scrums and retrospectives."
   },
   {
-    "name": "Hands S.A.",
-    "title": "Web Developer",
-    "dates": "2007 - 2012",
-    "location": "Rio de Janeiro, Brazil",
-    "remote": false,
-    "url": "http://www.hands.com.br/",
-    "description": [
-      "Maintained a crawler that saved websites news to be displayed in a mobile environment",
-      "Released the first mobile portal in Brazil the same day the first iPhone was",
-      "Planned and executed the codebase migration from C# to Ruby on Rails",
-      "Developed mobile websites",
-      "Developed and maintained a CMS in Ruby on Rails"
-    ],
-    "technologies": [
-      "csharp",
-      "xml",
-      "html5",
-      "ruby",
-      "ruby-on-rails",
-      "css",
-      "javascript"
-    ]
+    "role": "Software Engineer",
+    "company": "XL Solutions",
+    "dates": "2012 – 2015",
+    "where": "Rio de Janeiro",
+    "summary": "Built e-commerce for Brazil's largest phone carriers, a real-time auction platform, and marketplaces with millions of items on Elasticsearch. Ported legacy apps from Rails 2.3 to Rails 4."
+  },
+  {
+    "role": "Software Engineer",
+    "company": "Hands",
+    "dates": "2007 – 2012",
+    "where": "Rio de Janeiro",
+    "summary": "Released Brazil's first mobile portal the same day the first iPhone launched, and led the codebase's migration from C# to Ruby on Rails. On the side, founded Kissy, a dating app that launched before Tinder."
   }
 ]

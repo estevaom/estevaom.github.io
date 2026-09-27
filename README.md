@@ -3,98 +3,54 @@
 [![Website](https://img.shields.io/badge/website-estevaom.com-1f305e)](https://www.estevaom.com)
 
 <p align="center">
-  <img src="./.github/images/screenshot1.png" width="80%" />
+  <img src="./.github/images/screenshot.jpg" width="80%" />
 </p>
 
-Personal portfolio website showcasing professional experience, technical skills, and projects.
+My personal site and CV. The Starry Night theme is a live painting: the sky is laid down once
+with a few thousand flow-field brushstrokes, a few hundred more keep drifting along the same
+currents, and the hills and cypress sink away as you scroll up into the sky.
 
-## Architecture
+## Stack
 
-The site uses a modern static generation approach with a Rust build tool that transforms JSON data into GraphQL-like API responses, which are then consumed by a Vue 3 frontend.
+- **[Astro](https://astro.build)**: the page is rendered to static HTML at build time, so the content
+  is readable without JavaScript, by search engines and by link previews.
+- **Canvas 2D** for the painting, in plain JavaScript (`src/scripts/starry-night.js`), no dependencies.
+- **Bun** for installing, building and scripts.
+- **Playwright** renders the CV PDF and the link-preview image from the built page.
+- **GitHub Pages**, deployed by GitHub Actions on every push to `master`.
 
-### Technology Stack
-
-- **Build Tool**: Rust with serde/serde_json for data processing
-- **Runtime**: Bun for package management and development server
-- **Frontend Framework**: Vue 3 with Composition API
-- **Build System**: Vite
-- **UI Library**: Material Design Lite (MDL)
-- **Hosting**: GitHub Pages with GitHub Actions for CI/CD
-
-## Project Structure
+## Layout
 
 ```
-/
-├── app/                    # Vue 3 application
-│   ├── src/               # Vue components and application logic
-│   ├── public/            # Static assets (themes, styles, images)
-│   └── package.json       # Vue application dependencies
-├── build/                 # Rust build tool
-│   ├── src/               # Rust source code
-│   └── Cargo.toml        # Rust dependencies
-├── data/                  # Source data files
-│   ├── employment.json    # Work experience data
-│   ├── technologies.json  # Technology definitions
-│   └── resume.json       # Resume structure and categories
-└── dist/                  # Build output (gitignored)
-    └── api/              # Generated API responses
+data/                 Content, the single source of truth
+  profile.json        Name, headline, availability, contact, education
+  work.json           Headline stats and case studies
+  employment.json     Timeline
+  skills.json         Tools, grouped
+  projects.json       Open-source repos (star counts are fetched at build time)
+src/
+  pages/index.astro   The page, assembled from the components below
+  components/         One component per section, plus StarryNight (the canvases)
+  scripts/            The painting engine
+  styles/global.css   Layout, the Starry Night tokens, and the print stylesheet (the CV)
+  themes.ts           The list of themes; the toggle appears once there is more than one
+scripts/snapshots.mjs Writes dist/cv.pdf and dist/og.jpg from the built site
 ```
 
 ## Development
 
-### Prerequisites
-
-- Rust (latest stable)
-- Bun (latest version)
-
-### Getting Started
-
-1. Clone the repository
-2. Run the development server:
-   ```bash
-   ./dev.sh
-   ```
-
-This script will:
-- Build the API responses using the Rust tool (if not already built)
-- Start the Vue development server on http://localhost:5173
-
-### Building for Production
-
 ```bash
-./build.sh
+bun install
+bun run dev          # http://localhost:4321, add ?hud to see the painting's frame rate
+bun run check        # type-check
+bun run build        # static site in dist/
+bun run snapshots    # dist/cv.pdf and dist/og.jpg (needs a build first)
 ```
 
-This generates a production-ready build in the `app/dist` directory.
+`snapshots` uses Playwright's Chromium (`bunx playwright install chromium`), or a system one via
+`CHROMIUM_PATH=/usr/bin/chromium bun run snapshots`.
 
-## Deployment
+## Editing content
 
-The site is automatically deployed to GitHub Pages when changes are pushed to the main branch. The GitHub Actions workflow handles:
-
-1. Building the Rust API generator
-2. Installing dependencies
-3. Building the Vue application
-4. Deploying to GitHub Pages
-
-## Data Management
-
-Content is managed through JSON files in the `/data` directory:
-
-- **employment.json**: Professional experience entries
-- **technologies.json**: Technology definitions with URLs
-- **resume.json**: Categorizes technologies and defines the resume structure
-
-After modifying data files, run the build process to regenerate the API responses.
-
-## Features
-
-- Responsive design with Material Design components
-- Three theme options: Light, Dark, and Starry Night
-- Static site generation for optimal performance
-- GraphQL-like API structure for future scalability
-- Smooth scrolling navigation
-- Mobile-optimized layout
-
----
-
-Built with Claude Opus 4 @ Claude Code
+Change the JSON in `data/`, then check it with `bun run dev`. Everything on the page, including the
+printed CV, comes from those files.

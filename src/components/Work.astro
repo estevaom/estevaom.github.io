@@ -1,0 +1,25 @@
+---
+import work from "../../data/work.json";
+---
+
+<section class="section" id="work">
+  <dl class="stats">
+    {work.stats.map((stat) => <div><dt>{stat.value}</dt><dd>{stat.label}</dd></div>)}
+  </dl>
+
+  <h2>Selected work</h2>
+  {
+    work.caseStudies.map((study) => (
+      <article class="case">
+        <p class="case-meta">{study.company} · {study.year}</p>
+        <h3>{study.title}</h3>
+        <div class="case-grid">
+          <div><h4>Problem</h4><p>{study.problem}</p></div>
+          <div><h4>Approach</h4><p>{study.approach}</p></div>
+          <div><h4>Result</h4><p>{study.result}</p></div>
+        </div>
+        <ul class="tags">{study.tags.map((tag) => <li>{tag}</li>)}</ul>
+      </article>
+    ))
+  }
+</section>

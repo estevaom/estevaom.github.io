@@ -1,0 +1,24 @@
+---
+import projects from "../../data/projects.json";
+import { starCount } from "../lib/github";
+
+const withStars = await Promise.all(projects.map(async (project) => ({ ...project, stars: await starCount(project.repo) })));
+---
+
+<section class="section" id="projects">
+  <h2>Open source</h2>
+  <div class="projects">
+    {
+      withStars.map((project) => (
+        <a class="project" href={`https://github.com/${project.repo}`}>
+          <h3>{project.name}</h3>
+          <p>{project.description}</p>
+          <p class="meta">
+            <span>{project.language}</span>
+            {project.stars ? <span>★ {project.stars}</span> : null}
+          </p>
+        </a>
+      ))
+    }
+  </div>
+</section>

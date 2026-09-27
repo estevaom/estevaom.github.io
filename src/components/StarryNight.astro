@@ -1,0 +1,28 @@
+<canvas id="sky" aria-hidden="true"></canvas>
+<canvas id="land" aria-hidden="true"></canvas>
+
+<script>
+  import { startStarryNight } from "../scripts/starry-night.js";
+
+  // Paint while the Starry Night theme is active; the moment it isn't, stop() tears everything down.
+  const root = document.documentElement;
+  const sky = document.getElementById("sky") as HTMLCanvasElement;
+  const land = document.getElementById("land") as HTMLCanvasElement;
+  const hud = new URLSearchParams(location.search).has("hud")
+    ? document.body.appendChild(Object.assign(document.createElement("div"), { id: "hud" }))
+    : null;
+  let stop: (() => void) | null = null;
+
+  const sync = () => {
+    const active = root.dataset.theme === "starry-night";
+    if (active && !stop) {
+      stop = startStarryNight({ sky, land, hud });
+    } else if (!active && stop) {
+      stop();
+      stop = null;
+    }
+  };
+
+  new MutationObserver(sync).observe(root, { attributes: true, attributeFilter: ["data-theme"] });
+  sync();
+</script>

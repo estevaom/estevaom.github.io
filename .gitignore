@@ -1,10 +1,10 @@
-/build/target/
-/build/Cargo.lock
+# build output
+dist/
+# generated types
+.astro/
 
-/dist/
+# dependencies
+node_modules/
 
-/app/node_modules/
-/app/dist/
-/app/public/dist/
-
+.env
 .DS_Store

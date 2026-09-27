@@ -21,45 +21,35 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Rust
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-          profile: minimal
-
       - name: Setup Bun
-        uses: oven-sh/setup-bun@v1
-        with:
-          bun-version: latest
-
-      - name: Build API with Rust
-        run: |
-          cd build
-          cargo run --release
+        uses: oven-sh/setup-bun@v2
 
       - name: Install dependencies
-        run: |
-          cd app
-          bun install
+        run: bun install --frozen-lockfile
 
-      - name: Build Vue app
-        run: |
-          cd app
-          bun run build
+      - name: Type-check
+        run: bun run check
 
-      - name: Prepare deployment directory
-        run: |
-          mkdir -p _site
-          cp -r app/dist/* _site/
-          cp -r dist/api _site/dist/
+      - name: Build site
+        run: bun run build
+        env:
+          # Lets the build read GitHub star counts without hitting the anonymous rate limit
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ASTRO_TELEMETRY_DISABLED: 1
+
+      - name: Install Chromium for snapshots
+        run: bunx playwright install --with-deps chromium
+
+      - name: Render CV PDF and link-preview image
+        run: bun run snapshots
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_site
+          path: ./dist
 
   deploy:
     environment:

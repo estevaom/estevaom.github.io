@@ -1,0 +1,28 @@
+{
+  "name": "estevaom-site",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "snapshots": "bun scripts/snapshots.mjs",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^7.3.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@types/node": "^26.6.3",
+    "playwright": "^1.59.1",
+    "typescript": "^6"
+  },
+  "allowScripts": {
+    "esbuild": true
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "group": "Every day",
+    "items": ["Ruby on Rails", "Ruby", "Hotwire & Stimulus", "ViewComponent", "PostgreSQL", "MySQL", "Redis", "Sidekiq", "RSpec"]
+  },
+  {
+    "group": "AI engineering",
+    "items": ["Claude Code", "Codex", "Multi-agent orchestration", "Agent code review", "RAG"]
+  },
+  {
+    "group": "Observability",
+    "items": ["Datadog", "Skylight", "AppSignal", "New Relic", "Sentry", "Rollbar"]
+  },
+  {
+    "group": "Also shipped with",
+    "items": ["TypeScript", "Vue", "React", "Rust", "Elasticsearch", "AWS"]
+  }
+]
