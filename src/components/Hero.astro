@@ -1,0 +1,25 @@
+---
+import profile from "../../data/profile.json";
+
+const names = profile.name.split(" ");
+const given = names[0];
+const family = names[names.length - 1];
+const middle = names.slice(1, -1).join(" ");
+const printContact = [profile.location, profile.email, ...profile.links.map((link) => link.url.replace(/^https?:\/\/(www\.)?/, "")), "www.estevaom.com"];
+---
+
+<section class="hero" id="top">
+  <div class="hero-copy">
+    <p class="eyebrow">
+      {profile.headline.map((part, i) => <Fragment><span>{i < profile.headline.length - 1 ? `${part} ·` : part}</span>{" "}</Fragment>)}
+    </p>
+    <h1>{given} <em>{middle}</em> {family}</h1>
+    <p class="lede">{profile.lede}</p>
+    <p class="print-only print-contact">{printContact.join(" · ")}</p>
+    <p class="availability"><span class="dot"></span>{profile.availability}</p>
+    <div class="ctas">
+      <a class="btn primary" href={`mailto:${profile.email}`}>Start a conversation</a>
+      <a class="btn" href="/cv.pdf" download="Estevao-Machado-CV.pdf">Download CV</a>
+    </div>
+  </div>
+</section>

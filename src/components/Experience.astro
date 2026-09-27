@@ -1,0 +1,38 @@
+---
+import employment from "../../data/employment.json";
+import profile from "../../data/profile.json";
+import skills from "../../data/skills.json";
+
+const { education } = profile;
+---
+
+<section class="section" id="experience">
+  <h2>Experience</h2>
+  <ol class="timeline">
+    {
+      employment.map((job) => (
+        <li>
+          <p class="when">{job.dates}</p>
+          <div>
+            <h3 class="role">{job.role} <span class="at">at {job.company}</span></h3>
+            <p class="where">{job.where}</p>
+            <p class="what">{job.summary}</p>
+          </div>
+        </li>
+      ))
+    }
+  </ol>
+  <p class="edu"><em>Education</em> {education.degree}, {education.school}, {education.year}</p>
+
+  <h2 class="sub">Tools I reach for</h2>
+  <div class="skills">
+    {
+      skills.map((group) => (
+        <div>
+          <h3>{group.group}</h3>
+          <ul class="tags">{group.items.map((item) => <li>{item}</li>)}</ul>
+        </div>
+      ))
+    }
+  </div>
+</section>

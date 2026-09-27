@@ -1,0 +1,25 @@
+---
+import profile from "../../data/profile.json";
+
+const nav = [
+  { href: "#work", label: "Work" },
+  { href: "#experience", label: "Experience" },
+  { href: "#projects", label: "Projects" },
+  { href: "#contact", label: "Contact" },
+];
+---
+
+<header class="topbar">
+  <a class="mark" href="#top"><span class="full">{profile.shortName}</span><span class="short">{profile.initials}</span></a>
+  <nav aria-label="Primary">
+    {nav.map((link) => <a href={link.href}>{link.label}</a>)}
+  </nav>
+</header>
+
+<script>
+  // The bar turns solid once content scrolls underneath it
+  const topbar = document.querySelector(".topbar");
+  const markScrolled = () => topbar?.classList.toggle("scrolled", window.scrollY > window.innerHeight * 0.5);
+  window.addEventListener("scroll", markScrolled, { passive: true });
+  markScrolled();
+</script>

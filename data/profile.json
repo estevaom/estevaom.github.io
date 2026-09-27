@@ -1,0 +1,25 @@
+{
+  "name": "Estevão de Abreu Machado",
+  "shortName": "Estevão Machado",
+  "initials": "EM",
+  "headline": ["Tech Lead", "15+ years of Ruby on Rails", "AI agent orchestration"],
+  "lede": "I modernise legacy Rails systems by orchestrating fleets of AI coding agents. This year that meant moving a 19‑year‑old monolith, 1.7 million lines of it, from Rails 5.0 to 8.1 in six weeks.",
+  "description": "Tech Lead with 15+ years of Ruby on Rails. I modernise legacy Rails systems by orchestrating fleets of AI coding agents. Based in Brisbane, open to part-time and consulting work.",
+  "location": "Brisbane, Australia",
+  "timezone": "AEST",
+  "availability": "Brisbane · open to part-time and consulting work outside my day job's hours",
+  "email": "estevaom@gmail.com",
+  "links": [
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/estevaom" },
+    { "label": "GitHub", "url": "https://github.com/estevaom" }
+  ],
+  "contact": {
+    "title": "Let's talk",
+    "text": "Part-time, consulting, or one hard problem you want gone. I'm in Brisbane (AEST) and work outside my day job's hours."
+  },
+  "education": {
+    "degree": "B.A. Computer Science & Project Management",
+    "school": "Universidade Gama Filho, Rio de Janeiro",
+    "year": "2009"
+  }
+}

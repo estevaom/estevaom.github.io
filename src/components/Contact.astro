@@ -1,0 +1,12 @@
+---
+import profile from "../../data/profile.json";
+---
+
+<section class="section contact" id="contact">
+  <h2>{profile.contact.title}</h2>
+  <p>{profile.contact.text}</p>
+  <div class="ctas">
+    <a class="btn primary" href={`mailto:${profile.email}`}>{profile.email}</a>
+    {profile.links.map((link) => <a class="btn" href={link.url}>{link.label}</a>)}
+  </div>
+</section>
