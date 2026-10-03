@@ -1,24 +1,24 @@
 [
   {
     "role": "Tech Lead",
-    "company": "Readytech",
+    "company": "Education technology company",
     "dates": "2026 – now",
     "where": "Remote from Brisbane",
-    "summary": "Led the Rails 5.0 → 8.1 and Ruby 2.7 → 4.0 migration of the student management system. Now bringing the surrounding apps up to date, and introduced Stimulus and ViewComponents to the modernised stack."
+    "summary": "Led a major Rails and Ruby modernisation across a large, long-lived platform. Now bringing the surrounding applications up to date and introducing modern frontend and component patterns."
   },
   {
     "role": "Founding Engineer",
-    "company": "Finta",
+    "company": "Early-stage fintech",
     "dates": "2025 – 2026",
     "where": "Fintech startup · remote",
-    "summary": "Cut a key dashboard from two minutes to under three seconds, took test coverage from zero to 25%+, and built bank reconciliation, Stripe payments and tax filing. Ran the UI redesign as a semi-autonomous AI workflow across Figma, Claude Code and Codex."
+    "summary": "Improved application performance and reliability, established automated test coverage, and helped develop core fintech workflows. Led a UI redesign through an AI-assisted delivery process."
   },
   {
     "role": "Engineering Lead",
-    "company": "Readytech",
+    "company": "Education technology company",
     "dates": "2023 – 2025",
     "where": "Remote from Brisbane",
-    "summary": "Led a squad on the student management system used by Australian universities and TAFEs. Drove the company's AI adoption with talks and a 130-person workshop, and made the first Rails 5.0 → 5.1 hop in 19 days with an agent pipeline."
+    "summary": "Led a squad responsible for a large, long-running Rails platform. Helped drive the organisation's AI adoption through talks, workshops, and an agent-assisted upgrade workflow."
   },
   {
     "role": "Senior Software Engineer",

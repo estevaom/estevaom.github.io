@@ -1,28 +1,28 @@
 {
   "stats": [
-    { "value": "6 weeks", "label": "Rails 5.0 → 8.1 and Ruby 2.7 → 4.0 on a live monolith" },
-    { "value": "1.71M", "label": "lines of code in it, from 271 contributors over 19 years" },
-    { "value": "2 min → 3 s", "label": "load time of a key customer dashboard" },
-    { "value": "0 → 25%", "label": "test coverage in 48 days, on a codebase that had none" }
+    { "value": "6 weeks", "label": "to complete a major Rails and Ruby modernisation" },
+    { "value": "Large-scale", "label": "legacy monolith upgraded across several major releases" },
+    { "value": "Minutes → seconds", "label": "load time of a key customer dashboard" },
+    { "value": "0 → 25%+", "label": "test coverage introduced on a codebase that had none" }
   ],
   "caseStudies": [
     {
-      "company": "Readytech",
+      "company": "Education technology company",
       "year": "2026",
-      "title": "A 19-year-old monolith, brought to the latest Rails in six weeks",
-      "problem": "Readytech's student management system: 1.71 million lines, 271 contributors, still on Rails 5.0 and Ruby 2.7. The goal was Rails 7.2, with 8.0 as a stretch.",
-      "approach": "I led it with one other engineer and a fleet of parallel Claude and Codex agents, each fixing one file and its specs with backward-compatible changes. Those merged into the main branch continuously, while the next Rails version ran alongside, gated in CI.",
-      "result": "Rails 8.1.3 on Ruby 4.0.5, skipping Ruby 3 entirely, and past the 8.0 stretch goal. Every production server was on 8.1 by July 20.",
-      "tags": ["Ruby on Rails 8.1", "Ruby 4.0", "Claude Code", "Codex", "Multi-agent orchestration"]
+      "title": "A long-lived monolith, modernised in six weeks",
+      "problem": "A large Rails platform had fallen several major framework and language versions behind, making ongoing development harder and riskier.",
+      "approach": "I led the work with one other engineer and a fleet of parallel AI coding agents. We split the migration into small, backwards-compatible changes, merged continuously, and used CI to validate each step.",
+      "result": "Completed the upgrade through several major Rails and Ruby releases in six weeks, then rolled the modernised stack out across production.",
+      "tags": ["Ruby on Rails", "Ruby", "AI coding agents", "CI", "Multi-agent orchestration"]
     },
     {
-      "company": "Finta",
+      "company": "Early-stage fintech",
       "year": "2025–2026",
-      "title": "A two-minute dashboard, down to three seconds",
-      "problem": "As founding engineer at a fintech startup, I found the largest client's dashboard taking about two minutes to load, or failing outright, on a codebase with no automated tests.",
-      "approach": "Profiled with Skylight, AppSignal and PostHog, then rewrote the slow queries, moved heavy panels to async loading and right-sized the servers. Added containerised system tests from scratch.",
-      "result": "Under three seconds, and test coverage from 0 to 25%+ in 48 days, while building bank reconciliation, Stripe payments and tax filing on state machines.",
-      "tags": ["Ruby on Rails", "Performance", "Stripe", "State machines", "System tests"]
+      "title": "A slow customer dashboard, reduced from minutes to seconds",
+      "problem": "A key customer dashboard took minutes to load and sometimes failed, on a codebase with little automated coverage.",
+      "approach": "I profiled the application, rewrote slow queries, moved heavy panels to asynchronous loading, right-sized the infrastructure, and introduced system tests.",
+      "result": "Brought load times down to a few seconds, established meaningful automated test coverage, and improved the reliability of core financial workflows.",
+      "tags": ["Ruby on Rails", "Performance", "Fintech", "State machines", "System tests"]
     }
   ]
 }

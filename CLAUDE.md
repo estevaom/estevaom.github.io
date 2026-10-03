@@ -5,7 +5,7 @@ Guidance for Claude Code in this repository.
 ## What this is
 
 Estevão's personal site and CV, www.estevaom.com: one static page built with Astro and deployed to
-GitHub Pages. It doubles as his CV for part-time and consulting work, so every claim on it must be true.
+GitHub Pages. It doubles as his CV for consulting work, so every claim on it must be true.
 
 ## Commands
 
